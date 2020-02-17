@@ -37,28 +37,29 @@ timeline:
   - date: '1965'
     description: >-
       Received international vocation for the first feature film "Through the
-      Cemetery"
+      Cemetery".
   - date: '1966'
     description: >-
       In the film "I come from childhood" for the first time sounded from the
       screen the songs of Vladimir Vysotsky, who played the role of the tanker
-      Volodya in the film
+      Volodya in the film.
   - date: '1967'
     description: Diploma for Best Director (the film "I come from childhood").
   - date: '1976'
     description: >-
       1st Secretary of the Union of Cinematographers of the Belarusian SSR.
-      Academician of the World Academy of Slavic Art
+      Academician of the World Academy of Slavic Art.
   - date: '1982'
-    description: At the All-Union Film Festival in Tallinn, the film "People in the Swamp" received the main prize and a diploma, a prize for a female role and a prize of the Estonian SSR Filmmakers Union
+    description: >-
+     At the All-Union Film Festival in Tallinn, the film "People in the Swamp" received the main prize and a diploma, a prize for a female role and a prize of the Estonian SSR Filmmakers Union
   - date: '1988'
     description: >-
-      the film received an award from the Ministry of Defense of the Polish
-      People's Republic
+      The film received an award from the Ministry of Defense of the Polish
+      People's Republic.
   - date: '1989'
     description: >-
       He led the directorial workshop at the Belarusian Academy of Arts
-      (professor)
+      (professor).
   - date: '1996'
     description: >-
       He died on October 31, 1996. He was buried in Minsk at the Eastern

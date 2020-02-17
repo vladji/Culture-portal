@@ -27,15 +27,15 @@ directorsInfo: >-
   after a serious long illness. He was buried at Vostryakovsky cemetery.
 timeline:
   - date: '1940'
-    description: 'Rubinchik Valeriy Davidovich was born on April 17, 1940 in Minsk'
+    description: Rubinchik Valeriy Davidovich was born on April 17, 1940 in Minsk
   - date: '1962'
     description: >-
       He graduated from three courses of the Belarusian Theater and Art
-      Institute in Minsk
+      Institute in Minsk.
   - date: '1962'
     description: >-
       He entered the directing department of VGIK (he was accepted immediately
-      to the second year)
+      to the second year).
   - date: '1969'
     description: Graduated from the directing department of VGIK (workshop of Jacob Segel)
   - date: '1969'
@@ -43,19 +43,19 @@ timeline:
   - date: '1981'
     description: >-
       He took part in the filming and dubbing of the film "The Adventures of Tom
-      Sawyer and Huckleberry Finn"
+      Sawyer and Huckleberry Finn".
   - date: '1990'
     description: The director on "Mosfilm"
   - date: '1999'
     description: >-
       He headed the film and television directing workshop at the Institute of
-      Contemporary Art
+      Contemporary Art.
   - date: '2004'
     description: >-
       He became dean of the faculty of directing film and TV at the Institute of
-      Contemporary Art
+      Contemporary Art.
   - date: '2011'
-    description: 'He passed away March 2, 2011 in Moscow'
+    description: He passed away March 2, 2011 in Moscow
 listOfWorks:
   - film: A son
     id: '1'
@@ -100,13 +100,13 @@ geolocation:
     longitude: 27.4189919
   - description: >-
       He worked as a laborer, assistant director, assistant and director at the
-      "Belarusfilm"  studio in Minsk
+      "Belarusfilm"  studio in Minsk.
     id: '2'
     latitude: 53.926980
     longitude: 27.630014
   - description: >-
       He graduated from three courses of the Belarusian Theater and Art
-      Institute in Minsk
+      Institute in Minsk.
     id: '3'
     latitude: 53.922589
     longitude: 27.601054

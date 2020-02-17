@@ -15,7 +15,7 @@ timeline:
     description: Graduated from the Faculty of Journalism of the Belarusian State University
   - date: '1956—1958'
     description: >-
-    Actor of the Belarusian Republican Youth Theater
+     Actor of the Belarusian Republican Youth Theater.
   - date: '1963'
     description: All-Russian State Institute of Cinematography named after Gerasimov (workshop of Mikhail Romm)
   - date: 'с 1963'
@@ -24,7 +24,7 @@ timeline:
     description: Secretary of the Board of the Union of Cinematographers of the BSSR
   - date: '1993'
     description: >-
-    Professor of the Institute of Modern Knowledge named A.Shirokov (Minsk)
+     Professor of the Institute of Modern Knowledge named A.Shirokov (Minsk).
 listOfWorks:
   - film: Mom i'm alive
     id: '1'

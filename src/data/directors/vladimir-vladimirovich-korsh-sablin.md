@@ -41,21 +41,21 @@ timeline:
   - date: '1926'
     description: >-
       Moving to Minsk and working as an actor and director of the film studio
-      “Soviet Belarus” (later “Belarusfilm”)
+      “Soviet Belarus” (later “Belarusfilm”).
   - date: '1945'
     description: He is the artistic director of the film studio "Belarusfilm"
   - date: '1950'
     description: Stalin Prize of the third degree for the film "Konstantin Zaslonov"
-    - date: '1957'
-    description: He holds the post of chairman of the Organizing Bureau of the Union of Cinematography Workers of the Belarusian SSR.
+  - date: '1957'
+    description: >-
+      He holds the post of chairman of the Organizing Bureau of the Union of Cinematography Workers of the Belarusian SSR.
   - date: '1962'
     description: >-
-      He holds the post of first secretary of the Union of Cinematographers of
-      Belarus.
+      He holds the post of first secretary of the Union of Cinematographers of Belarus.
   - date: '1964'
     description: >-
       Receives the Second Prize in the section of historical and revolutionary
-      films of the I-st All-Union Film Festival for the film "Moscow - Genoa"
+      films of the I-st All-Union Film Festival for the film "Moscow - Genoa".
   - date: '1969'
     description: Receives the award "People's Artist of the USSR"
   - date: '1974'
@@ -101,7 +101,7 @@ geolocation:
     longitude: 27.587685
   - description: >-
       Most of his life he lived and worked in the Belarusfilm film studio in
-      Minsk
+      Minsk.
     id: '2'
     latitude: 53.92698
     longitude: 27.630014

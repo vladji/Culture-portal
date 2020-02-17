@@ -30,15 +30,15 @@ timeline:
       Shchukin, Ptashuk entered the Higher Directing Courses of the Goskino of
       the USSR. The workshop of George Danelia became a good professional school
       for the beginning director. Thesis' Ptashuk was the film 'About Victor,
-      about Masha and the Marine Corps'
+      about Masha and the Marine Corps'.
   - date: '1974'
     description: >-
       The long-term creative cooperation of the director with the National Film
-      Studio Belarusfilm began
+      Studio Belarusfilm began.
   - date: '1989'
     description: >-
       Mikhail Ptashuk organizes the Belarusian Independent Studio at the Union
-      of Cinematographers of the Republic and becomes its art director
+      of Cinematographers of the Republic and becomes its art director.
   - date: '2002'
     description: >-
       A talented film director died in a car accident in Moscow.
@@ -81,7 +81,7 @@ geolocation:
     longitude: 27.593218
   - description: >-
       Street of Mikhail Ptashuk. Lyakhovichi, Lyakhovichi district, Brest
-      region, Belarus
+      region, Belarus.
     id: '2'
     latitude: 53.043586
     longitude: 26.278139

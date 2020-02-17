@@ -7,7 +7,7 @@ title: Yuri Tsvetkov
 city: Minsk
 titleText: >-
   Soviet and Belarusian film director, screenwriter, cameraman, director of
-  "Belarusian Video Center", Director of the National Film Studio "BelarusFilm"
+  "Belarusian Video Center", Director of the National Film Studio "BelarusFilm".
 directorsLifeYears: 14.02.1941 - 25.01.2011
 directorsInfo: >-
   Born February 14, 1941 in the village of Dvorishchi (now Sebezhsky district,
@@ -29,13 +29,13 @@ timeline:
   - date: '1980'
     description: >-
       Director of the creative association of feature films based on the
-      Belarusfilm film studio
+      Belarusfilm film studio.
   - date: '1986'
     description: Laureate of the State Prize of the BSSR
   - date: '1989'
     description: >-
       Head of the Republican Production and Technical Association "Belvideo
-      Center"
+      Center".
   - date: '1991'
     description: Honored Artist of the BSSR
   - date: '1993'
