@@ -49,6 +49,8 @@ timeline:
     description: >-
       1st Secretary of the Union of Cinematographers of the Belarusian SSR.
       Academician of the World Academy of Slavic Art
+    - date: '1982'
+    description: At the All-Union Film Festival in Tallinn, the film "People in the Swamp" received the main prize and a diploma, a prize for a female role and a prize of the Estonian SSR Filmmakers Union
   - date: '1988'
     description: >-
       the film received an award from the Ministry of Defense of the Polish

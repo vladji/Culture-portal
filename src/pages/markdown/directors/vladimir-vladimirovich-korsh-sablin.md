@@ -36,7 +36,7 @@ timeline:
     description: Vladimir Korsh-Sablin was born in Moscow.
   - date: '1917'
     description: Theatrical school graduation
-  - date: '1923'
+  - date: '1925'
     description: Work as an assistant director at the Goskino film studio in Moscow
   - date: '1926'
     description: >-
@@ -46,6 +46,8 @@ timeline:
     description: He is the artistic director of the film studio "Belarusfilm"
   - date: '1950'
     description: Stalin Prize of the third degree for the film "Konstantin Zaslonov"
+    - date: '1957'
+    description: He holds the post of chairman of the Organizing Bureau of the Union of Cinematography Workers of the Belarusian SSR.
   - date: '1962'
     description: >-
       He holds the post of first secretary of the Union of Cinematographers of
@@ -61,30 +63,33 @@ timeline:
 listOfWorks:
   - film: Born of fire
     id: '1'
-    year: '1930'
+    year: '1929'
   - film: First platoon
     id: '2'
-    year: '1933'
-  - film: My love
+    year: '1932'
+  - film: Искатели счастья
     id: '3'
-    year: '1940'
-  - film: Konstantin Zaslonov
+    year: '1936' 
+  - film: My love
     id: '4'
+    year: '1940'
+  - film: New house
+    id: '5'
+    year: '1947'
+  - film: Konstantin Zaslonov
+    id: '6'
     year: '1949'
   - film: Who laughs last
-    id: '5'
+    id: '7'
     year: '1954'
   - film: Red leaves
-    id: '6'
+    id: '8'
     year: '1958'
   - film: First test
-    id: '7'
-    year: '1960'
-  - film: Moscow - Genoa
-    id: '8'
-    year: '1964'
-  - film: The collapse of the empire
     id: '9'
+    year: '1960'
+  - film: The collapse of the empire
+    id: '10'
     year: '1970'
 gallery: KorshSablin
 youtube: g1qkRRX6aKc
