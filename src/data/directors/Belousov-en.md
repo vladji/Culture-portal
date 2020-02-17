@@ -30,10 +30,10 @@ listOfWorks:
   - film: Very old man with huge wings
     id: '1'
     year: '1990'
-    film: Cube
+  - film: Cube
     id: '2'
     year: '1988'
-    film: Rook of despair
+  - film: Rook of despair
     id: '3'
     year: '1987'
   - film: A Song about aurochs

@@ -59,10 +59,10 @@ listOfWorks:
   - film: A son
     id: '1'
     year: '1965'
-    film: Autumn Etude, Sixth Summerо
+  - film: Autumn Etude, Sixth Summerо
     id: '2'
     year: '1967'
-    film: Red agitator Trofim Glushkov
+  - film: Red agitator Trofim Glushkov
     id: '3'
     year: '1969'
   - film: Grave of a lion

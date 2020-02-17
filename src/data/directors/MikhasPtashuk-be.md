@@ -66,7 +66,7 @@ listOfWorks:
   - film: У жніўні 44-га
     id: '8'
     year: '2001'
-    - film: У чэрвені 41-га
+  - film: У чэрвені 41-га
     id: '9'
     year: '2003'
 gallery: Ptashuk

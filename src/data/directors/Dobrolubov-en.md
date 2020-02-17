@@ -29,22 +29,22 @@ listOfWorks:
   - film: Mom i'm alive
     id: '1'
     year: '1985'
-    film: White dews
+  - film: White dews
     id: '2'
     year: '1984'
-    film: Schedule for the day after tomorrow
+  - film: Schedule for the day after tomorrow
     id: '3'
     year: '1978'
-    film: As a secret to the whole world
+  - film: As a secret to the whole world
     id: '4'
     year: '1976'
-    film: Brother
+  - film: Brother
     id: '5'
     year: '1975'
-    film: Ivan Makarovich
+  - film: Ivan Makarovich
     id: '6'
     year: '1968'
-    film: Going to look for"
+  - film: Going to look for"
     id: '7'
     year: '1966'
 gallery: Dobrolubov
