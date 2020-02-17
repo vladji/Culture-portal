@@ -5,11 +5,10 @@ imagepath: Authors/Dobrolubov/Dobrolubov.jpg
 type: director
 title: Igor Mikhailovich Dobrolyubov
 city: Novosibirsk city, Russian Federation
-titleText:Belarusian Soviet film director, actor, teacher and screenwriter, National Artist of the Byelorussian SSR (1985). Member of the CPSU since 1963
+titleText: Belarusian Soviet film director, actor, teacher and screenwriter, National Artist of the Byelorussian SSR (1985). Member of the CPSU since 1963
 directorsLifeYears: 22.10.1933 - 19.07.2010
 directorsInfo: >-
- Igor Dobrolyubov was born on October 22, 1933 in Novosibirsk. He graduated from the Faculty of Journalism of Belarusian State University (1956), the directing department of VGIK (1963). In the workshop of Mikhail Romm, his fellow students were Andrei Tarkovsky and Vasily Shukshin. Igor Mikhailovich liked to quote his teacher: “Never call yourself an artist. This is not appropriate. Let others call you artists. ”
- By the way, the most honored artist of the Byelorussian SSR (1974), People’s Artist of the Byelorussian SSR (1985), the winner of many awards, the order-bearer of the Red Banner of Labor, Igor Dobrolyubov, appreciated the title of master of sports in athletics.
+    Igor Dobrolyubov was born on October 22, 1933 in Novosibirsk. He graduated from the Faculty of Journalism of Belarusian State University (1956), the directing department of VGIK (1963). In the workshop of Mikhail Romm, his fellow students were Andrei Tarkovsky and Vasily Shukshin. Igor Mikhailovich liked to quote his teacher: “Never call yourself an artist. This is not appropriate. Let others call you artists. ”By the way, the most honored artist of the Byelorussian SSR (1974), People’s Artist of the Byelorussian SSR (1985), the winner of many awards, the order-bearer of the Red Banner of Labor, Igor Dobrolyubov, appreciated the title of master of sports in athletics.
 timeline:
   - date: '1956'
     description: Graduated from the Faculty of Journalism of the Belarusian State University
