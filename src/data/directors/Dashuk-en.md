@@ -30,10 +30,10 @@ listOfWorks:
   - film: War has no female face
     id: '1'
     year: '1980'
-    film: Vitebsk affair
+  - film: Vitebsk affair
     id: '2'
     year: '1989 - 1991'
-    film: Soldier Vasily Bykov
+  - film: Soldier Vasily Bykov
     id: '3'
     year: '2005'
 gallery: Dashuk
