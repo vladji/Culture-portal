@@ -59,29 +59,35 @@ listOfWorks:
   - film: A son
     id: '1'
     year: '1965'
-  - film: Grave of a lion
+    film: Autumn Etude, Sixth Summerо
     id: '2'
+    year: '1967'
+    film: Red agitator Trofim Glushkov
+    id: '3'
+    year: '1969'
+  - film: Grave of a lion
+    id: '4'
     year: '1971'
   - film: The last summer of childhood
-    id: '3'
+    id: '5'
     year: '1975'
   - film: Wreath of Sonnets
-    id: '4'
+    id: '6'
     year: '1977'
   - film: The Wild Hunt of King Stach
-    id: '5'
+    id: '7'
     year: '1979'
   - film: Cultural trip to the theater
-    id: '6'
+    id: '8'
     year: '1982'
   - film: "Comic Lover, or Sir John Falstaff's Love Affair"
-    id: '7'
+    id: '9'
     year: '1983'
   - film: Dislike
-    id: '8'
+    id: '10'
     year: '1991'
   - film: Nanjing landscape
-    id: '9'
+    id: '11'
     year: '2005'
 gallery: Rubinchik
 youtube: HPB8z_s3buU

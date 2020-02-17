@@ -41,13 +41,8 @@ timeline:
       of Cinematographers of the Republic and becomes its art director
   - date: '2002'
     description: >-
-      A talented film director died in a car accident in Moscow. On the eve of
-      the tragedy, Mikhail Ptashuk flew from Hollywood to Moscow to present the
-      Nika Cinema Prize. His painting "In August of the 44th ..." fell into all
-      the main film award nominations. But, alas, the solemn ceremony was not
-      destined to become a moment of glory for Ptashuk. It was from the stage in
-      Moscow that the terrible news was first voiced: the car in which the
-      Belarusian director was located flew into the oncoming lane.
+      A talented film director died in a car accident in Moscow.
+      He was buried at the Eastern cemetery in Minsk.
 listOfWorks:
   - film: 'About Vitya, about Masha and the Marine Corps'
     id: '1'
@@ -73,6 +68,9 @@ listOfWorks:
   - film: In August the 44th
     id: '8'
     year: '2001'
+  - film: In June 41th
+    id: '9'
+    year: '2003'
 gallery: Ptashuk
 youtube: Z_gRBoITbnU
 filmography: Filmography

@@ -42,6 +42,8 @@ timeline:
     description: Director of the National Film Studio Belarusfilm
   - date: '1996'
     description: Deputy Minister of Culture of the Republic of Belarus
+    - date: '2001'
+    description: Head of the Republican Institution “State Register of Cinema and Video Films and Cinema and Video Programs”
   - date: '2006'
     description: Chairman of the Belarusian Union of Cinematographers
   - date: '2011'
