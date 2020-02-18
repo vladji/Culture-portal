@@ -1,6 +1,16 @@
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.styleguide-section {
+  margin: 40px 0 20px;
+}
+
 .colors-inner {
   display: flex;
 }
+
 .color-card {
   border-radius: 2px;
   position: relative;
@@ -8,7 +18,7 @@
   border: 1px solid #ccc;
   width: 100px;
   height: 120px;
-  margin: 20px;
+  margin: 20px 20px 20px 0;
   position: relative;
 }
 
@@ -17,6 +27,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff; 
+  background-color: #fff;
+  text-align: center;
+  padding: 5px; 
 }
 
+.buttons-block {
+  margin: 10px 0 20px;
+}
+
+.buttons-inner * {
+  margin-right: 20px;
+}
