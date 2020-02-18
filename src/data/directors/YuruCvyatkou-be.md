@@ -1,7 +1,7 @@
 ---
 lang: be
 slug: tcvetkov
-imagepath: Authors/Tcvetkov/Tcvetkov.jpg
+imagepath: /assets/Authors/Tcvetkov/Tcvetkov.jpg
 type: director
 title: Юрый Цвяткоў
 city: Мінск

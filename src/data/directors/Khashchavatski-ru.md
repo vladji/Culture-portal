@@ -1,7 +1,7 @@
 ---
 lang: ru
 slug: khashchavatski
-imagepath: Authors/Khashchavatski/Khashchavatski.jpg
+imagepath: /assets/Authors/Khashchavatski/Khashchavatski.jpg
 type: director
 title: Юрий Иосифович Хащеватский
 city: Одесса

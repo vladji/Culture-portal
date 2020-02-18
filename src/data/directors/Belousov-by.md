@@ -1,7 +1,7 @@
 ---
 lang: by
 slug: belousov
-imagepath: Authors/Belousov/Belousov.jpg
+imagepath: /assets/Authors/Belousov/Belousov.jpg
 type: director
 title: Алег Паўлавіч Белавусаў
 city: г. Слуцк, Мінская вобласць

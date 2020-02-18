@@ -1,7 +1,7 @@
 ---
 lang: en
 slug: belousov
-imagepath: Authors/Belousov/Belousov.jpg
+imagepath: /assets/Authors/Belousov/Belousov.jpg
 type: director
 title: Oleg Pavlovich Belousov
 city: Slutsk, Minsk region

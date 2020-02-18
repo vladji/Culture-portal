@@ -1,7 +1,7 @@
 ---
 lang: be
 slug: rubinchik
-imagepath: Authors/Rubinchik/rubinchik.jpg
+imagepath: /assets/Authors/Rubinchik/rubinchik.jpg
 type: director
 title: Валерый Рубінчык
 city: Мінск

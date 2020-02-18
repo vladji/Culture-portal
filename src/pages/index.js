@@ -2,19 +2,32 @@ import React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import {navigate} from "gatsby"
 
+
+const LinkItem = ({url, caption})=> (
+  <a href="url" onClick={(e)=>{
+    e.preventDefault()
+    navigate(url);
+  }}>{caption}</a>
+)
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data // data.markdownRemark holds your post data
+
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Привет ребята, это Олег</h1>
+      <h1>Список писателей</h1>
       {allMarkdownRemark.nodes.map((el, idx) => (
-        <p key={idx}>
+        <div key={idx}>
+        <p >
           {`Я режиссер - ${el.frontmatter.title}. Годы жизни: ${el.frontmatter.directorsLifeYears}`}
         </p>
+          <p>
+          <LinkItem url={`/${el.frontmatter.slug}/${el.frontmatter.lang}/`} caption={`Ссылка`}/>
+          </p>
+        </div>
       ))}
       <Link to="/page-2/">Go to page 2</Link>
     </Layout>
@@ -27,8 +40,9 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark {
       nodes {
-        fileAbsolutePath
         frontmatter {
+          slug
+          lang
           title
           directorsLifeYears
         }

@@ -1,7 +1,7 @@
 ---
 lang: be
 slug: turov
-imagepath: Authors/Turov/turov-logo.jpg
+imagepath: /assets/Authors/Turov/turov-logo.jpg
 type: director
 title: Віктар Тураў
 city: Мінск

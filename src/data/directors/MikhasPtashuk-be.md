@@ -1,7 +1,7 @@
 ---
 lang: be
 slug: ptashuk
-imagepath: Authors/Ptashuk/Ptashuk.jpg
+imagepath: /assets/Authors/Ptashuk/Ptashuk.jpg
 type: director
 title: Міхаіл Пташук
 city: Мінск
