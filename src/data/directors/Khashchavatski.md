@@ -1,7 +1,7 @@
 ---
 lang: en
-path: /directors/en/Khashchavatski
-imagepath: Authors/Khashchavatski/Khashchavatski.jpg
+slug: khashchavatski
+imagepath: /assets/Authors/Khashchavatski/Khashchavatski.jpg
 type: director
 title: Jury Chaščavacki (or Yury Khashchavatski)
 city: Odessa
@@ -59,9 +59,7 @@ listOfWorks:
   - film: Ordinary elections
     id: '10'
     year: '2011'
-gallery: Khashchavatski
 youtube: bMtqkkjvcig
-filmography: Filmography
 geolocation:
   - description: Square
     id: '1'

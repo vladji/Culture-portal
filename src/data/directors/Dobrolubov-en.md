@@ -1,7 +1,7 @@
 ---
 lang: ru
-path: /directors/ru/Dobrolubov
-imagepath: Authors/Dobrolubov/Dobrolubov.jpg
+slug: dobrolubov
+imagepath: /assets/Authors/Dobrolubov/Dobrolubov.jpg
 type: director
 title: Igor Mikhailovich Dobrolyubov
 city: Novosibirsk city, Russian Federation
@@ -46,9 +46,7 @@ listOfWorks:
   - film: Going to look for"
     id: '7'
     year: '1966'
-gallery: Dobrolubov
 youtube: 8Lzi80kxo4E
-filmography: Фильмография
 geolocation:
   - description: Graduated from the Faculty of Journalism of the Belarusian State University..
     id: '1'

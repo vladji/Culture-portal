@@ -1,7 +1,7 @@
 ---
 lang: en
-path: /directors/en/Turov
-imagepath: Authors/Turov/turov-logo.jpg
+slug: turov
+imagepath: /assets/Authors/Turov/turov-logo.jpg
 type: director
 title: Victor Turov
 city: Mogilev
@@ -95,9 +95,7 @@ listOfWorks:
   - film: Shlyahtich Zavalnya
     id: '10'
     year: '1994'
-gallery: Turov
 youtube: 2juET6V3YpM
-filmography: Filmography
 geolocation:
   - description: 'Viktor Turov Street, Minsk, Belarus'
     id: '1'

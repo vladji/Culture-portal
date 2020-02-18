@@ -1,7 +1,7 @@
 ---
 lang: en
-path: /directors/en/Tcvetkov
-imagepath: Authors/Tcvetkov/Tcvetkov.jpg
+slug: tcvetkov
+imagepath: /assets/Authors/Tcvetkov/Tcvetkov.jpg
 type: director
 title: Yuri Tsvetkov
 city: Minsk
@@ -72,9 +72,7 @@ listOfWorks:
   - film: Last year's quadrille
     id: '7'
     year: '1978'
-gallery: Tcvetkov
 youtube: KOiFtho8LO8
-filmography: Filmography
 geolocation:
   - description: No data
     id: '1'

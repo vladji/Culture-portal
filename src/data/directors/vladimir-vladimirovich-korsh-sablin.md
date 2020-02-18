@@ -1,7 +1,7 @@
 ---
 lang: en
-path: /directors/en/KorshSablin
-imagepath: Authors/KorshSablin/KorshSablin.jpg
+slug: korsh-sablin
+imagepath: /assets/Authors/KorshSablin/KorshSablin.jpg
 type: director
 title: Vladimir Vladimirovich Korsh-Sablin
 city: Minsk
@@ -91,9 +91,7 @@ listOfWorks:
   - film: The collapse of the empire
     id: '10'
     year: '1970'
-gallery: KorshSablin
 youtube: g1qkRRX6aKc
-filmography: Filmography
 geolocation:
   - description: Street named after Vladimir Korsh-Sablin in Minsk
     id: '1'

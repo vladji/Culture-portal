@@ -1,7 +1,7 @@
 ---
 lang: by
-path: /directors/ru/Dobrolubov
-imagepath: Authors/Dobrolubov/Dobrolubov.jpg
+slug: dobrolubov
+imagepath: /assets/Authors/Dobrolubov/Dobrolubov.jpg
 type: director
 title: Ігар Міхайлавіч Дабралюбаў
 city: г. Новасібірск, Расійская Федэрацыя
@@ -46,9 +46,7 @@ listOfWorks:
   - film: Іду шукаць
     id: '7'
     year: '1966'
-gallery: Dobrolubov
 youtube: 8Lzi80kxo4E
-filmography: Фильмография
 geolocation:
   - description: Скончыў факультэт журналістыкі Беларускага дзяржаўнага ўніверсітэту
     id: '1'

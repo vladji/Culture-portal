@@ -1,7 +1,7 @@
 ---
 lang: ru
-path: /directors/ru/KorshSablin
-imagepath: Authors/KorshSablin/KorshSablin.jpg
+slug: korshSablin
+imagepath: /assets/Authors/KorshSablin/KorshSablin.jpg
 type: director
 title: Владимир Владимирович Корш-Саблин
 city: Минск
@@ -84,9 +84,7 @@ listOfWorks:
   - film: Крушение империи
     id: '10'
     year: '1970'
-gallery: KorshSablin
 youtube: g1qkRRX6aKc
-filmography: Фильмография
 geolocation:
   - description: Улица имени Владимира Корш-Саблина в г. Минске
     id: '1'

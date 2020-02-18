@@ -1,7 +1,7 @@
 ---
 lang: be
-path: /directors/be/KorshSablin
-imagepath: Authors/KorshSablin/KorshSablin.jpg
+slug: korshSablin
+imagepath: /assets/Authors/KorshSablin/KorshSablin.jpg
 type: director
 title: Уладзімір Уладзіміравіч Корш-Саблін
 city: Мінск
@@ -86,9 +86,7 @@ listOfWorks:
   - film: Крушэнне імперыі
     id: '10'
     year: '1970'
-gallery: KorshSablin
 youtube: g1qkRRX6aKc
-filmography: Фільмаграфія
 geolocation:
   - description: Вуліца імя Уладзіміра Корш-Саблін ў г. Мінску
     id: '1'

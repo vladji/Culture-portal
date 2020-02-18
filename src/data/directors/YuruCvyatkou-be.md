@@ -1,7 +1,7 @@
 ---
 lang: be
-path: /directors/be/Tcvetkov
-imagepath: Authors/Tcvetkov/Tcvetkov.jpg
+slug: tcvetkov
+imagepath: /assets/Authors/Tcvetkov/Tcvetkov.jpg
 type: director
 title: Юрый Цвяткоў
 city: Мінск
@@ -69,9 +69,7 @@ listOfWorks:
   - film: Леташняя кадрыль
     id: '7'
     year: '1978'
-gallery: Tcvetkov
 youtube: KOiFtho8LO8
-filmography: Фільмаграфія
 geolocation:
   - description: No data
     id: '1'

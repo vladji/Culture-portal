@@ -1,7 +1,7 @@
 ---
 lang: ru
-path: /directors/ru/Dashuk
-imagepath: Authors/Dashuk/Dashuk.jpg
+slug: dashuk
+imagepath: /assets/Authors/Dashuk/Dashuk.jpg
 type: director
 title: Victor Nikiforovich Dashuk
 city:  Valoki village, Khoinitsky district, Gomel region
@@ -37,9 +37,7 @@ listOfWorks:
   - film: Soldier Vasily Bykov
     id: '3'
     year: '2005'
-gallery: Dashuk
 youtube: 8Lzi80kxo4E
-filmography: Фильмография
 geolocation:
   - description: Professor of the Belarusian State Academy of Arts, head of the workshop directing documentary films
     id: '1'

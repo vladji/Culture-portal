@@ -1,7 +1,7 @@
 ---
 lang: en
-path: /directors/ru/Belousov
-imagepath: Authors/Belousov/Belousov.jpg
+slug: belousov
+imagepath: /assets/Authors/Belousov/Belousov.jpg
 type: director
 title: Oleg Pavlovich Belousov
 city: Slutsk, Minsk region
@@ -45,9 +45,7 @@ listOfWorks:
   - film: Nesterka
     id: '6'
     year: '1980'
-gallery: Belousov
 youtube: _bw31-y7Dg
-filmography: Фильмография
 geolocation:
   - description: Graduated from Belarusian State University.
     id: '1'

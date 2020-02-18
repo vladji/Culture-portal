@@ -1,7 +1,7 @@
 ---
 lang: be
-path: /directors/be/Turov
-imagepath: Authors/Turov/turov-logo.jpg
+slug: turov
+imagepath: /assets/Authors/Turov/turov-logo.jpg
 type: director
 title: Віктар Тураў
 city: Мінск
@@ -83,9 +83,7 @@ listOfWorks:
   - film: Шляхціц Завальня
     id: '10'
     year: '1994'
-gallery: Turov
 youtube: 2juET6V3YpM
-filmography: Фільмаграфія
 geolocation:
   - description: 'вуліца Віктара Турава, Мінск, Беларусь'
     id: '1'

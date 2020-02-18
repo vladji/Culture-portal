@@ -1,7 +1,7 @@
 ---
 lang: en
-path: /directors/ru/Rubinchik
-imagepath: Authors/Rubinchik/rubinchik.jpg
+slug: rubinchik
+imagepath: /assets/Authors/Rubinchik/rubinchik.jpg
 type: director
 title: Valeriy Rubinchik
 city: Minsk
@@ -89,9 +89,7 @@ listOfWorks:
   - film: Nanjing landscape
     id: '11'
     year: '2005'
-gallery: Rubinchik
 youtube: HPB8z_s3buU
-filmography: Filmography
 geolocation:
   - description: He studied at school number 42 in Minsk
     id: '1'

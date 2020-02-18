@@ -1,7 +1,7 @@
 ---
 lang: by
-path: /directors/ru/Dashuk
-imagepath: Authors/Dashuk/Dashuk.jpg
+slug: dashuk
+imagepath: /assets/Authors/Dashuk/Dashuk.jpg
 type: director
 title: Віктар Нічыпаравіч Дашук
 city: в. Валокі Хойніцкага р-на Гомельскай вобласці
@@ -36,9 +36,7 @@ listOfWorks:
   - film: Салдат Васіль Быкаў
     id: '3'
     year: '2005'
-gallery: Dashuk
 youtube: 8Lzi80kxo4E
-filmography: Фильмография
 geolocation:
   - description: Прафесар Беларускай акадэміі мастацтваў, кіраўнік майстэрні рэжысуры дакументальнага кіно
     id: '1'

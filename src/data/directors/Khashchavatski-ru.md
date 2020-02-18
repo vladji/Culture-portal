@@ -1,7 +1,7 @@
 ---
 lang: ru
-path: /directors/ru/Khashchavatski
-imagepath: Authors/Khashchavatski/Khashchavatski.jpg
+slug: khashchavatski
+imagepath: /assets/Authors/Khashchavatski/Khashchavatski.jpg
 type: director
 title: Юрий Иосифович Хащеватский
 city: Одесса
@@ -60,9 +60,7 @@ listOfWorks:
   - film: Обыкновенные выборы
     id: '10'
     year: '2011'
-gallery: Khashchavatski
 youtube: bMtqkkjvcig
-filmography: Фильмография
 geolocation:
   - description: Площадь
     id: '1'
