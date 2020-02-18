@@ -1,7 +1,7 @@
 ---
 lang: en
 slug: khashchavatski
-imagepath: Authors/Khashchavatski/Khashchavatski.jpg
+imagepath: /assets/Authors/Khashchavatski/Khashchavatski.jpg
 type: director
 title: Jury Chaščavacki (or Yury Khashchavatski)
 city: Odessa

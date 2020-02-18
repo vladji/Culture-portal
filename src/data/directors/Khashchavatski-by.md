@@ -1,7 +1,7 @@
 ---
 lang: be
 slug: khashchavatski
-imagepath: Authors/Khashchavatski/Khashchavatski.jpg
+imagepath: /assets/Authors/Khashchavatski/Khashchavatski.jpg
 type: director
 title: Юрый Іосіфавіч Хашчавацкі
 city: Адэса

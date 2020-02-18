@@ -1,7 +1,39 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require(`path`)
 
-// You can delete this file if you're not using it
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+  const directorTemplate = path.resolve(`src/templates/director-template.js`)
+
+  return graphql(
+    `
+      query  {
+        allMarkdownRemark(
+          filter: { frontmatter: { type: { eq: "director" } } }
+        ) {
+          nodes {
+            frontmatter {
+              lang
+              slug
+            }
+          }
+        }
+      }
+    `
+  ).then(result => {
+    if (result.errors) {
+      throw result.errors
+    }
+
+    result.data.allMarkdownRemark.nodes.forEach(node => {
+        createPage({
+          // Path for this page — required
+          path: `${node.frontmatter.slug}/${node.frontmatter.lang}/`,
+          component: directorTemplate,
+          context: {
+            slug: node.frontmatter.slug,
+            lang: node.frontmatter.lang
+          },
+        })
+    })
+  })
+}

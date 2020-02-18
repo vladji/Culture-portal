@@ -1,7 +1,7 @@
 ---
 lang: be
 slug: korshSablin
-imagepath: Authors/KorshSablin/KorshSablin.jpg
+imagepath: /assets/Authors/KorshSablin/KorshSablin.jpg
 type: director
 title: Уладзімір Уладзіміравіч Корш-Саблін
 city: Мінск

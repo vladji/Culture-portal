@@ -1,7 +1,7 @@
 ---
 lang: by
 slug: dashuk
-imagepath: Authors/Dashuk/Dashuk.jpg
+imagepath: /assets/Authors/Dashuk/Dashuk.jpg
 type: director
 title: Віктар Нічыпаравіч Дашук
 city: в. Валокі Хойніцкага р-на Гомельскай вобласці
