@@ -1,6 +1,6 @@
 ---
 lang: be
-path: /directors/be/Ptashuk
+slug: ptashuk
 imagepath: Authors/Ptashuk/Ptashuk.jpg
 type: director
 title: Міхаіл Пташук
@@ -69,9 +69,7 @@ listOfWorks:
   - film: У чэрвені 41-га
     id: '9'
     year: '2003'
-gallery: Ptashuk
 youtube: Z_gRBoITbnU
-filmography: Фільмаграфія
 geolocation:
   - description: Вуліца Міхаіла Пташука ў г. Мінску
     id: '1'

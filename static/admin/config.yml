@@ -11,7 +11,7 @@ collections:
     fields:
       - { name: lang, label: lang }
       - { name: path, label: Path }
-      - { name: imagepath, label: Image Path }
+      - { name: imagepath, label: Image Path, widget: image}
       - { name: type, label: Type }
       - { name: title, label: Title }
       - { name: city, label: City }
@@ -39,7 +39,7 @@ collections:
         name: gallery
         widget: list
         fields :
-          - { label: src, name: src, widget: string }
+          - { label: src, name: src, widget: image }
           - { label: alt, name: alt, widget: string }
       - { label: Youtube, name: youtube, widget: string }
       - label: Geolocation
