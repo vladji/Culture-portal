@@ -1,6 +1,6 @@
 ---
 lang: en
-path: /directors/en/Tcvetkov
+slug: tcvetkov
 imagepath: Authors/Tcvetkov/Tcvetkov.jpg
 type: director
 title: Yuri Tsvetkov
@@ -72,9 +72,7 @@ listOfWorks:
   - film: Last year's quadrille
     id: '7'
     year: '1978'
-gallery: Tcvetkov
 youtube: KOiFtho8LO8
-filmography: Filmography
 geolocation:
   - description: No data
     id: '1'

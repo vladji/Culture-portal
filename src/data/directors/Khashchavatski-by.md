@@ -1,6 +1,6 @@
 ---
 lang: be
-path: /directors/be/Khashchavatski
+slug: khashchavatski
 imagepath: Authors/Khashchavatski/Khashchavatski.jpg
 type: director
 title: Юрый Іосіфавіч Хашчавацкі
@@ -59,9 +59,7 @@ listOfWorks:
   - film: Звычайныя выбары
     id: '10'
     year: '2011'
-gallery: Khashchavatski
 youtube: bMtqkkjvcig
-filmography: Фільмаграфія
 geolocation:
   - description: Плошча
     id: '1'

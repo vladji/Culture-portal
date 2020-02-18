@@ -1,6 +1,6 @@
 ---
 lang: en
-path: /directors/en/Ptashuk
+slug: ptashuk
 imagepath: Authors/Ptashuk/Ptashuk.jpg
 type: director
 title: Mikhail Ptashuk
@@ -71,9 +71,7 @@ listOfWorks:
   - film: In June 41th
     id: '9'
     year: '2003'
-gallery: Ptashuk
 youtube: Z_gRBoITbnU
-filmography: Filmography
 geolocation:
   - description: Mikhail Ptashuk Street in Minsk
     id: '1'

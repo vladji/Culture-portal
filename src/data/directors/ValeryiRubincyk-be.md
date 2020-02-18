@@ -1,6 +1,6 @@
 ---
 lang: be
-path: /directors/be/Rubinchik
+slug: rubinchik
 imagepath: Authors/Rubinchik/rubinchik.jpg
 type: director
 title: Валерый Рубінчык
@@ -84,9 +84,7 @@ listOfWorks:
   - film: Нанкінскім пейзаж
     id: '11'
     year: '2005'
-gallery: Rubinchik
 youtube: HPB8z_s3buU
-filmography: Фільмаграфія
 geolocation:
   - description: Вучыўся ў школе № 42 у Мінску
     id: '1'

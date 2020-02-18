@@ -1,6 +1,6 @@
 ---
 lang: by
-path: /directors/ru/Belousov
+slug: belousov
 imagepath: Authors/Belousov/Belousov.jpg
 type: director
 title: Алег Паўлавіч Белавусаў
@@ -44,9 +44,7 @@ listOfWorks:
   - film: Несцерка
     id: '6'
     year: '1980'
-gallery: Belousov
 youtube: _bw31-y7Dg
-filmography: Фильмография
 geolocation:
   - description: Скончыў Беларускі дзяржаўны ўніверсітэт
     id: '1'
