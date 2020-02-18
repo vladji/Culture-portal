@@ -1,0 +1,16 @@
+li {
+  list-style: none;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  padding: .5rem 0;
+}
+
+.custom-mr_left {
+  margin-left: auto;
+}
