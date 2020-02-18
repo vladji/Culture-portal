@@ -10,7 +10,7 @@ collections:
     create: true
     fields:
       - { name: lang, label: lang }
-      - { name: path, label: Path }
+      - { name: slug, label: slug }
       - { name: imagepath, label: Image Path, widget: image}
       - { name: type, label: Type }
       - { name: title, label: Title }
