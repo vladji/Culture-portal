@@ -2,6 +2,7 @@
 lang: ru
 slug: ptashuk
 imagepath: /assets/Authors/Ptashuk/Ptashuk.jpg
+imageName: Ptashuk.jpg
 type: director
 title: Михаил Пташук
 city: Минск

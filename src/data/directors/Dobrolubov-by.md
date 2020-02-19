@@ -1,7 +1,8 @@
 ---
-lang: by
+lang: be
 slug: dobrolubov
 imagepath: /assets/Authors/Dobrolubov/Dobrolubov.jpg
+imageName: Dobrolubov.jpg
 type: director
 title: Ігар Міхайлавіч Дабралюбаў
 city: г. Новасібірск, Расійская Федэрацыя

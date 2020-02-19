@@ -1,67 +1,69 @@
 ---
-lang: en
+lang: ru
 slug: khashchavatski
 imagepath: /assets/Authors/Khashchavatski/Khashchavatski.jpg
+imageName: Khashchavatski.jpg
 type: director
-title: Jury Chaščavacki (or Yury Khashchavatski)
-city: Odessa
+title: Юрий Иосифович Хащеватский
+city: Одесса
 titleText: >-
- Belarusian film director and public figure, a politician. Member of International and Eurasian Academy of Television and Radio.
- Laureate International Film Festival in New York, San Francisco, Geneva, Berlin, Munich, Leipzig, Belgrade, Kiev, St. Petersburg.
-directorsLifeYears: '18.10.1947 - Nowadays'
+  Белорусский кинорежиссер, общественный деятель, политик. Член Международной
+   и Евразийской академий телевидения и радио. Лауреат международных кинофестивалей
+   в Нью-Йорке, Сан-Франциско, Женеве, Берлине, Мюнхене, Лейпциге, Белграде, Киеве, Санкт-Петербурге.
+directorsLifeYears: 18 октября 1947 г - наше время
 directorsInfo: >-
-  Born on 18 October 1947 in Odessa. He graduated from the Odessa Institute of Technology. After distribution in Minsk worked as a freelance author with the Belarusian TV, later - director. In 1981 he graduated from the Leningrad State Institute of Theater, Music and Cinematography. Was at the forefront of the Minsk Association of Jewish Culture in 1988 joined the board of this organization, but soon left it because of disagreement with the methods of leadership. At the end of the 1990s was a member of the Board of Directors of the World Association of Belarusian Jews. Members of the United Civil Party. Notes that is a consistent opponents of the Lukashenko regime. Author of more than thirty films, many noted international festival prizes.
+  Родился 18 октября 1947 в Одессе. Окончил Одесский технологический институт. После распределения в Минск сотрудничал в качестве внештатного автора с Белорусским телевидением, позже - режиссер. В 1981-м окончил Ленинградский государственный институт театра, музыки и кинематографии. Стоял у истоков Минского объединения еврейской культуры в 1988 г. вошел в правление этой общественной организации, однако вскоре покинул его из-за несогласия с методами руководства. В конце 1990-х годов входил в Совет директоров Всемирной ассоциации белорусских евреев. Член Объединенной гражданской партии. Отмечает, что является последовательным оппонентом режима Лукашенко. Автор более тридцати кинофильмов, многие отмечены призами международных фестивалей. Член Международной и Евразийской академий телевидения и радио. Лауреат международных кинофестивалей в Нью-Йорке, Сан-Франциско, Женеве, Берлине, Мюнхене, Лейпциге, Белграде, Киеве, Санкт-Петербурге.
 timeline:
-  - date: '18 October 1947'
-    description: Born in Odessa.
+  - date: '18 октября 1947'
+    description: Родился в Одессе.
   - date: '1973'
-    description: He graduated from the Odessa Institute of Technology, distributed in Minsk
+    description: Окончил Одесский технологический институт, распределен в Минск
   - date: '1976'
-    description: He worked as a director in Beltorgreklama
+    description: Работал режиссером в Белторгрекламе
   - date: '1978'
-    description: He worked as a director at the Belarusian TV
+    description: Работал режиссером на Белорусском телевидении
   - date: '1981'
-    description: He graduated from the Leningrad State Institute of Theater, Music and Cinematography
+    description: окончил Ленинградский государственный институт театра, музыки и кинематографии
   - date: '1985'
-    description: He worked as a director on "Belarusian television movie"
+    description: Работал режиссером на «Белорусском телефильме»
   - date: '1989'
-    description: He worked as a director at the studio "BelarusFilm
+    description: Работал режиссером на киностудии «Беларусьфильм»
   - date: '1998'
-    description: Cinema award «Golden Gate Award» (San Francisco) for the film "Ordinary President"
+    description: Кино награда «Golden Gate Award» (Сан-Франциско) за фильм «Обыкновенный президент»
 listOfWorks:
-  - film: It is a quiet life in Glubokoye
+  - film: Это тихая жизнь в Глубоком
     id: '1'
     year: '1985'
-  - film: There was Krylov
+  - film: Здесь был Крылов
     id: '2'
     year: '1987'
-  - film: Counterclaim
+  - film: Встречный иск
     id: '3'
     year: '1989'
-  - film: Russian happiness
+  - film: Русское счастье
     id: '4'
     year: '1992'
-  - film: Oasis
+  - film: Оазис
     id: '5'
     year: '1996'
-  - film: Ordinary President
+  - film: Обыкновенный президент
     id: '6'
     year: '1996'
-  - film: Prisoner of the Caucasus
+  - film: Кавказские пленники
     id: '7'
     year: '2002'
-  - film: Square
+  - film: Площадь
     id: '8'
     year: '2007'
-  - film: Lobotomy
+  - film: Лоботомия
     id: '9'
     year: '2010'
-  - film: Ordinary elections
+  - film: Обыкновенные выборы
     id: '10'
     year: '2011'
 youtube: bMtqkkjvcig
 geolocation:
-  - description: Square
+  - description: Площадь
     id: '1'
     latitude: 53.902462
     longitude: 27.563062

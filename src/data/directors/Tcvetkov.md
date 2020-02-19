@@ -2,6 +2,7 @@
 lang: ru
 slug: tcvetkov
 imagepath: /assets/Authors/Tcvetkov/Tcvetkov.jpg
+imageName: Tcvetkov.jpg
 type: director
 title: Юрий Цветков
 city: Псков

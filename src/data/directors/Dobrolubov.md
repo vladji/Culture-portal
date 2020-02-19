@@ -2,6 +2,7 @@
 lang: ru
 slug: dobrolubov
 imagepath: /assets/Authors/Dobrolubov/Dobrolubov.jpg
+imageName: Dobrolubov.jpg
 type: director
 title: Игорь Михайлович Добролюбов
 city: г. Новосибирск, Российская Федерация

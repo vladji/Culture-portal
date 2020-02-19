@@ -3,17 +3,17 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {navigate} from "gatsby"
+import { navigate } from "gatsby"
 
 
-const LinkItem = ({url, caption})=> (
-  <a href="url" onClick={(e)=>{
+const LinkItem = ({ url, caption }) => (
+  <a href="url" onClick={(e) => {
     e.preventDefault()
     navigate(url);
   }}>{caption}</a>
 )
 const IndexPage = ({ data }) => {
-  const { allMarkdownRemark } = data // data.markdownRemark holds your post data
+  const { allMarkdownRemark } = data
 
   return (
     <Layout>
@@ -21,11 +21,11 @@ const IndexPage = ({ data }) => {
       <h1>Список писателей</h1>
       {allMarkdownRemark.nodes.map((el, idx) => (
         <div key={idx}>
-        <p >
-          {`Я режиссер - ${el.frontmatter.title}. Годы жизни: ${el.frontmatter.directorsLifeYears}`}
-        </p>
+          <p >
+            {`Я режиссер - ${el.frontmatter.title}. Годы жизни: ${el.frontmatter.directorsLifeYears}`}
+          </p>
           <p>
-          <LinkItem url={`/${el.frontmatter.slug}/${el.frontmatter.lang}/`} caption={`Ссылка`}/>
+            <LinkItem url={`/${el.frontmatter.slug}/${el.frontmatter.lang}/`} caption={`Ссылка`} />
           </p>
         </div>
       ))}

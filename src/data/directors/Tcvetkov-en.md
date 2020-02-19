@@ -2,6 +2,7 @@
 lang: en
 slug: tcvetkov
 imagepath: /assets/Authors/Tcvetkov/Tcvetkov.jpg
+imageName: Tcvetkov.jpg
 type: director
 title: Yuri Tsvetkov
 city: Minsk

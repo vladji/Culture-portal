@@ -2,6 +2,7 @@
 lang: ru
 slug: belousov
 imagepath: /assets/Authors/Belousov/Belousov.jpg
+imageName: Belousov.jpg
 type: director
 title: Олег Павлович Белоусов
 city: г. Слуцк, Минская область

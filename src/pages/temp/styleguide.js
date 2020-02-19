@@ -11,19 +11,19 @@ const Styleguide = () => {
           Colors
         </h4>
         <div className="colors-inner">
-          <div style={{backgroundColor: '#010000'}} className="color-card">
+          <div style={{ backgroundColor: '#010000' }} className="color-card">
             <span className="color-value">#010000</span>
           </div>
-          <div style={{backgroundColor: '#1a1a1a'}} className="color-card">
+          <div style={{ backgroundColor: '#1a1a1a' }} className="color-card">
             <span className="color-value">#1a1a1a</span>
           </div>
-          <div style={{backgroundColor: '#d9534f'}} className="color-card">
+          <div style={{ backgroundColor: '#d9534f' }} className="color-card">
             <span className="color-value">#d9534f</span>
           </div>
-          <div style={{backgroundColor: '#4bbf73'}} className="color-card">
+          <div style={{ backgroundColor: '#4bbf73' }} className="color-card">
             <span className="color-value">#4bbf73</span>
           </div>
-          <div style={{backgroundColor: '#f7f7f9'}} className="color-card">
+          <div style={{ backgroundColor: '#f7f7f9' }} className="color-card">
             <span className="color-value">#f7f7f9</span>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Styleguide = () => {
             <Button variant="primary" className="btn btn-primary">Primary</Button>
             <Button variant="secondary" className="btn btn-secondary">Secondary</Button>
             <Button variant="success" className="btn btn-success">Success</Button>
-            </div>
+          </div>
         </div>
         <div className="buttons-block">
           <p>

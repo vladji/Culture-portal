@@ -1,7 +1,8 @@
 ---
-lang: ru
+lang: en
 slug: dobrolubov
 imagepath: /assets/Authors/Dobrolubov/Dobrolubov.jpg
+imageName: Dobrolubov.jpg
 type: director
 title: Igor Mikhailovich Dobrolyubov
 city: Novosibirsk city, Russian Federation

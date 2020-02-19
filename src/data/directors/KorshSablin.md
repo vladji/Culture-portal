@@ -2,6 +2,7 @@
 lang: ru
 slug: korshSablin
 imagepath: /assets/Authors/KorshSablin/KorshSablin.jpg
+imageName: KorshSablin.jpg
 type: director
 title: Владимир Владимирович Корш-Саблин
 city: Минск

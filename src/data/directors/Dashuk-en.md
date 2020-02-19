@@ -1,7 +1,8 @@
 ---
-lang: ru
+lang: en
 slug: dashuk
 imagepath: /assets/Authors/Dashuk/Dashuk.jpg
+imageName: Dashuk.jpg
 type: director
 title: Victor Nikiforovich Dashuk
 city:  Valoki village, Khoinitsky district, Gomel region

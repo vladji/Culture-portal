@@ -2,6 +2,7 @@
 lang: ru
 slug: dashuk
 imagepath: /assets/Authors/Dashuk/Dashuk.jpg
+imageName: Dashuk.jpg
 type: director
 title: Виктор Никифорович Дашук
 city: с. Валоки Хойницкого р-на Гомельской области

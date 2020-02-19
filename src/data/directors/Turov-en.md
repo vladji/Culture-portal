@@ -1,7 +1,8 @@
 ---
 lang: en
 slug: turov
-imagepath: /assets/Authors/Turov/turov-logo.jpg
+imagepath: /assets/Authors/Turov/Turov.jpg
+imageName: Turov.jpg
 type: director
 title: Victor Turov
 city: Mogilev

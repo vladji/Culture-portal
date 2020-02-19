@@ -2,6 +2,7 @@
 lang: en
 slug: ptashuk
 imagepath: /assets/Authors/Ptashuk/Ptashuk.jpg
+imageName: Ptashuk.jpg
 type: director
 title: Mikhail Ptashuk
 city: Minsk

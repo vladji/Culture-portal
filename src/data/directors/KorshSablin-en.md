@@ -2,6 +2,7 @@
 lang: en
 slug: korsh-sablin
 imagepath: /assets/Authors/KorshSablin/KorshSablin.jpg
+imageName: KorshSablin.jpg
 type: director
 title: Vladimir Vladimirovich Korsh-Sablin
 city: Minsk
