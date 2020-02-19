@@ -14,3 +14,7 @@ li {
 .custom-mr_left {
   margin-left: auto;
 }
+
+.flex-responsive {
+  display: flex;
+}

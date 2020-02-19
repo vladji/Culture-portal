@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Belorussian Film Directors`,
+    description: `Culture portal about outstanding Belorussian Film Directors`,
+    author: `bot`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,11 +10,11 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `directors`,
-        path: `${__dirname}/src/data/directors`,
+        path: `${__dirname}/src/data/content`,
       },
     },
     `gatsby-transformer-remark`,
-   `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 
 const IndexPage = ({ data }) => {
-  const { allMarkdownRemark } = data // data.markdownRemark holds your post data
+  const { allMarkdownRemark } = data
   return (
     <Layout>
       <SEO title="Home" />

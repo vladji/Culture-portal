@@ -2,6 +2,7 @@
 lang: en
 path: /directors/ru/Rubinchik
 imagepath: Authors/Rubinchik/rubinchik.jpg
+imageName: rubinchik.jpg
 type: director
 title: Valeriy Rubinchik
 city: Minsk
