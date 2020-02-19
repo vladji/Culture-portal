@@ -32,9 +32,9 @@ Youtube.propTypes = {
 }
 
 Youtube.defaultProps = {
-    videoId: '',
-    onReady: () => {},
-    opts: {}
+  videoId: "",
+  onReady: () => {},
+  opts: {},
 }
 
 export default Youtube
