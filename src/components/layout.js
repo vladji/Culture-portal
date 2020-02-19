@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 
 import Navigation from "./navigation/navigation"
 
-import "./layout.css"
-
 const Layout = ({ children }) => {
   return (
     <>
