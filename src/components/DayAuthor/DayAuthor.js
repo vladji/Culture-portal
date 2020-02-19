@@ -26,10 +26,10 @@ const DayAuthor = () => {
     }
     allImageSharp {
       nodes {
-          fluid {
-            ...GatsbyImageSharpFluid
-            originalName
-          }
+        fluid {
+          ...GatsbyImageSharpFluid
+          originalName
+        }
       }
     }
   }
@@ -46,19 +46,15 @@ const DayAuthor = () => {
 
   let photo = null;
   data.allImageSharp.nodes.forEach((node) => {
-    if (node.fluid.originalName === currentPhoto) {
-      console.log('match')
-      photo = node.fluid;
-    }
+    if (node.fluid.originalName === currentPhoto) photo = node.fluid;
   })
 
   return (
     <section className="day-author">
       <div className="content-wrapper">
         <h2>Author of the day</h2>
-        <div className="flex-responsive">
-          <div className="day-author__img">
-            {/* <img src={photSrc}></img> */}
+        <div className="block-responsive">
+          <div className="day-author__photo">
             <Img
               fluid={photo}
               alt="Author of the day photo"

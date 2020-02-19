@@ -1,5 +1,25 @@
+html,
+body,
+#___gatsby {
+  height: 100%;
+}
+
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.body-inner {
+  flex: 1 0 auto;
+}
+
 li {
   list-style: none;
+}
+
+section {
+  padding-top: 3%;
 }
 
 .content-wrapper {
@@ -8,13 +28,27 @@ li {
 }
 
 .navbar {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 
 .custom-mr_left {
   margin-left: auto;
 }
 
-.flex-responsive {
+.block-responsive {
   display: flex;
+}
+
+footer {
+  display: flex;
+  flex: 0 0 auto;
+  height: 60px;
+  color: #fff;
+  background-color: #343a40;
+}
+
+@media (max-width: 568px) {
+  .block-responsive {
+    display: block;
+  }
 }

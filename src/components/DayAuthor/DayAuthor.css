@@ -1,5 +1,18 @@
-.day-author__img {
-  width: 200px;
-  height: 250px;
-  /* background-image: url("../../images/Authors/Dashuk/Daschuk.jpg"); */
+.gatsby-image-wrapper {
+  width: 230px;
+  height: 230px;
+}
+
+.day-author__description {
+  margin-left: 3%;
+}
+
+.day-author__description ul {
+  padding: 0;
+}
+
+@media (max-width: 568px) {
+  .day-author__description {
+    margin: 3% 0 0;
+  }
 }
