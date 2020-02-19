@@ -5,7 +5,11 @@ import Youtube from "../Youtube/youtube"
 
 const YoutubeModal = ({ videoId }) => {
   return (
-    <Popup trigger={<button>Video</button>} modal closeOnDocumentClick>
+    <Popup
+      trigger={<button class="btn btn-primary btn-sm">Video</button>}
+      modal
+      closeOnDocumentClick
+    >
       <Youtube videoId={videoId} />
       {/* pass director's video ID */}
     </Popup>

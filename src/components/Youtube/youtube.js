@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 
 import YouTube from "react-youtube"
 
+import "./youtube.css"
+
 class Youtube extends Component {
   onReady(event) {
     // access to player in all event handlers via event.target
@@ -21,7 +23,14 @@ class Youtube extends Component {
 
     const { videoId } = this.props
 
-    return <YouTube videoId={videoId} opts={opts} onReady={this.onReady} />
+    return (
+      <YouTube
+        className="youtube-video"
+        videoId={videoId}
+        opts={opts}
+        onReady={this.onReady}
+      />
+    )
   }
 }
 
