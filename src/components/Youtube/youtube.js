@@ -11,6 +11,10 @@ class Youtube extends Component {
     event.target.pauseVideo()
   }
 
+  extractIdFromUrl = url => {
+    return url.split("=")[1]
+  }
+
   render() {
     const opts = {
       height: "390",
@@ -21,12 +25,17 @@ class Youtube extends Component {
       },
     }
 
-    const { videoId } = this.props
+    let { videoId } = this.props
+    let correctId
+
+    videoId.startsWith("https://")
+      ? (correctId = this.extractIdFromUrl(videoId))
+      : (correctId = videoId)
 
     return (
       <YouTube
         className="youtube-video"
-        videoId={videoId}
+        videoId={correctId}
         opts={opts}
         onReady={this.onReady}
       />
