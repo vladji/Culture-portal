@@ -1,7 +1,13 @@
 import React from "react"
 
-const YoutubeTestPage = () => {
-  return <h1>youtube test</h1>
-}
+import YoutubeModal from "../../components/YoutubeModal/youtubeModal"
 
+const YoutubeTestPage = () => {
+  return (
+    <>
+      <YoutubeModal videoId="8Lzi80kxo4E" />
+      <YoutubeModal videoId="https://www.youtube.com/watch?v=kcrOAF473LM" />
+    </>
+  )
+}
 export default YoutubeTestPage

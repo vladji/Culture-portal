@@ -6,7 +6,7 @@ import Youtube from "../Youtube/youtube"
 const YoutubeModal = ({ videoId }) => {
   return (
     <Popup
-      trigger={<button class="btn btn-primary btn-sm">Video</button>}
+      trigger={<button className="btn btn-primary btn-sm">Video</button>}
       modal
       closeOnDocumentClick
     >
