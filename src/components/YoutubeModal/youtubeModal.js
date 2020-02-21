@@ -2,11 +2,16 @@ import React from "react"
 import Popup from "reactjs-popup"
 
 import Youtube from "../Youtube/youtube"
+import YoutubePreviewBtn from "../YoutubePreviewBtn/youtubePreviewBtn"
 
 const YoutubeModal = ({ videoId }) => {
   return (
     <Popup
-      trigger={<button className="btn btn-primary btn-sm">Video</button>}
+      trigger={
+        <div>
+          <YoutubePreviewBtn videoId={videoId} />
+        </div>
+      }
       modal
       closeOnDocumentClick
     >
