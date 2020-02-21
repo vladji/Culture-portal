@@ -1,5 +1,6 @@
 import React from 'react';
 import Gallery from '../../components/Gallery/gallery';
+import Gallery2 from '../../components/Gallery/gallery2';
 
 import exmp1 from '../../images/directors/Ptashuk/gallery/pic1.png';
 import exmp2 from '../../images/directors/Ptashuk/gallery/pic2.png';
@@ -24,6 +25,7 @@ const ptashuk = {
 const myGallery = () => (
     <div>
         <Gallery ptashuk={ptashuk} />
+        <Gallery2 ptashuk={ptashuk} />
     </div>
 )
 
