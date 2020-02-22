@@ -7,8 +7,12 @@ function SearchDirector({ authors }) {
     const [authorsList, authorsListHander] = useState(authors);
 
     const updateListHandler = (e) => {
+        const value = e.target.value.toLowerCase();
         const newList = authors.filter(author => {
-            return author.name.toLowerCase().includes(e.target.value.toLowerCase());
+            return (
+                author.name.toLowerCase().includes(value) || 
+                author.city.toLowerCase().includes(value)
+            );
         });
         authorsListHander(newList);
     }
@@ -18,7 +22,8 @@ function SearchDirector({ authors }) {
             <input
                 type="text"
                 onChange={updateListHandler}
-                // className="search"
+                className="search-bar"
+                placeholder="Type director name or city..."
             />
             <AuthorsList 
                 list={authorsList}
