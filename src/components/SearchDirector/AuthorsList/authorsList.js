@@ -1,17 +1,29 @@
 import React from 'react';
+import Image from '../../../components/AppImage/AppImage';
 
-const authorList = ({ list }) => {
-    console.log(list);
-    console.log(typeof(list))
+import './authorsList.css';
+
+const AuthorList = ({ list }) => {
     return (
-        <ul>
+        <ul className='authors-list--wrapper'>
             {list.map(author => (
-                <li>
-                    <p>{author.name}</p>
-                </li>
+                <a 
+                    href={author.slug}
+                    key={author.titleText}
+                >
+                    <Image 
+                        className='image'
+                        src={author.pathname} 
+                    />
+                    <li key={author.bday}>
+                        <p className='author-name'>{author.name}</p>
+                        <p className='author-years'>{author.bday}</p>
+                        <p className='author-title'>{author.titleText}</p>
+                    </li>
+                </a>
             ))}
         </ul>
     );
 };
 
-export default authorList;
+export default AuthorList;
