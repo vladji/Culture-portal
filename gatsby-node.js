@@ -26,12 +26,11 @@ exports.createPages = ({ graphql, actions }) => {
 
     result.data.allMarkdownRemark.nodes.forEach(node => {
         createPage({
-          // Path for this page — required
           path: `${node.frontmatter.slug}/${node.frontmatter.lang}/`,
           component: directorTemplate,
           context: {
             slug: node.frontmatter.slug,
-            lang: node.frontmatter.lang
+            lang: node.frontmatter.lang,
           },
         })
     })

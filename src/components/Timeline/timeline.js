@@ -3,10 +3,10 @@ import { Timeline as VerticalTimeline, TimelineItem }  from 'vertical-timeline-c
 import PropTypes from 'prop-types'
 
 const Timeline = ({ data }) => {
-  const items = data.map((el) => {
+  const items = data.map((el, id) => {
     return (
         <TimelineItem
-          key={el.description}
+          key={el.description || id}
           dateText={el.date}
           dateInnerStyle={{textAlign: 'center', backgroundColor: '#4bbf73'}}
         >
