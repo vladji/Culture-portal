@@ -42,7 +42,6 @@ const DayAuthor = () => {
   const currentAuthor = date % (autorsList.length - 1);
   const authorData = autorsList[currentAuthor].frontmatter;
   const currentPhoto = authorData.imageName;
-  console.log('currentPhoto', currentPhoto)
 
   let photo = null;
   data.allImageSharp.nodes.forEach((node) => {
