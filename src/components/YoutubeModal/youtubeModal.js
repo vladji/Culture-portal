@@ -3,7 +3,6 @@ import Popup from "reactjs-popup"
 
 import Youtube from "../Youtube/youtube"
 import YoutubePreviewBtn from "../YoutubePreviewBtn/youtubePreviewBtn"
-import "./youtubeModal.css"
 
 const minStyles = {
   padding: "0",
@@ -19,7 +18,7 @@ const maxStyles = {
 }
 
 const style = function() {
-  if (window.innerWidth < 1025) {
+  if (window.innerWidth < 1000) {
     return minStyles
   } else {
     return maxStyles
@@ -30,7 +29,9 @@ const YoutubeModal = ({ videoId }) => {
   return (
     <Popup
       trigger={
-        <div className="trigger">
+        <div
+          style={{ width: "100%", display: "flex", justifyContent: "center" }}
+        >
           <YoutubePreviewBtn videoId={videoId} />
         </div>
       }
