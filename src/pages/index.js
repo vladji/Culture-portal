@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Список писателей</h1>
+      <h1>Список режисеров</h1>
       {allMarkdownRemark.nodes.map((el, idx) => (
         <div key={idx}>
           <p >
@@ -37,16 +37,17 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark {
-      nodes {
-        frontmatter {
-          slug
-          lang
-          title
-          directorsLifeYears
-        }
+{
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "director"}, lang: {eq: "ru"}}}) {
+    nodes {
+      frontmatter {
+        slug
+        lang
+        title
+        directorsLifeYears
       }
     }
   }
+}
+
 `
