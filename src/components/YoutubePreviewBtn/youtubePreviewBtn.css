@@ -19,3 +19,24 @@
   color: #cc181e;
   transition: 0.3s;
 }
+
+@media screen and (max-width: 500px) {
+  .preview-image {
+    width: 100%;
+    height: 40vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .preview-image {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .preview-image {
+    height: 25vh;
+  }
+}

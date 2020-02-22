@@ -1,5 +1,15 @@
-.popup-content {
+/* .popup-content {
   padding: 0 !important;
   background: #000 !important;
   border: 0 !important;
+} */
+
+@media screen and (max-width: 500px) {
+  .trigger {
+    width: 90%;
+  }
+
+  /* .popup-content {
+    width: 100% !important;
+  } */
 }
