@@ -8,7 +8,7 @@ import "./youtube.css"
 class Youtube extends Component {
   onReady(event) {
     // access to player in all event handlers via event.target
-    event.target.stopVideo()
+    event.target.playVideo()
   }
 
   extractIdFromUrl = url => {

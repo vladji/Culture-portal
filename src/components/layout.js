@@ -1,24 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Navigation from "./navigation/navigation"
+import Container from "react-bootstrap/Container"
 
 const Layout = ({ children, lang }) => {
-  console.log('layout-props', lang);
   return (
     <>
-      <div className="body-inner">
-        <div className="bg-dark">
-          <header className="content-wrapper">
-            <Navigation langStore={lang} />
-          </header>
-        </div>
+      <header>
+        <Navigation langStore={lang} />
+      </header>
+      <Container fluid={true}>
         <main>{children}</main>
-      </div>
-      <footer>
-        <div className="content-wrapper">
-          © {new Date().getFullYear()}
-        </div>
-      </footer>
+        <footer>
+          <div className="text-center p-2">
+            © Songbirds Team {new Date().getFullYear()}
+          </div>
+        </footer>
+      </Container>
     </>
   )
 }

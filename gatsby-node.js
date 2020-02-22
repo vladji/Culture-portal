@@ -30,7 +30,7 @@ exports.createPages = ({ graphql, actions }) => {
           component: directorTemplate,
           context: {
             slug: node.frontmatter.slug,
-            lang: node.frontmatter.lang
+            lang: node.frontmatter.lang,
           },
         })
     })
