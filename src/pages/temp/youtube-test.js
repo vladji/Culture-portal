@@ -31,10 +31,9 @@ const YoutubeTestPage = () => {
           flexDirection: "column",
         }}
       >
-        {/* <YoutubeModal videoId={shortUrl_1} /> */}
-        <YoutubeComponent videoId={fullUrl} />
-        {/* <YoutubeModal videoId={shortUrl_2} /> */}
-        <YoutubeComponent videoId={shortUrl_2} />
+        <YoutubeModal videoId={shortUrl_1} />
+        <YoutubeModal videoId={fullUrl} />
+        <YoutubeModal videoId={shortUrl_2} />
       </div>
       <Link to="/">Back to homepage</Link>
     </div>
