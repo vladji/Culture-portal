@@ -1,13 +1,22 @@
 import React from "react"
 
-import Layout from "../../components/Layout"
+import Layout from "../../components/layout"
 import SEO from "../../components/Seo"
 import About from "../../components/About/About"
 import DayAuthor from "../../components/DayAuthor/DayAuthor"
 
+const getLang = () => {
+  if (window.localStorage.getItem('store-lang')) {
+    return window.localStorage.getItem('store-lang');
+  }
+  return 'en';
+}
+
 const Main = () => {
+  const lang = getLang();
+
   return (
-    <Layout>
+    <Layout lang={lang}>
       <SEO title="Home" />
       <About />
       <DayAuthor />
@@ -15,4 +24,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Main;

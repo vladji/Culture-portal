@@ -1,14 +1,15 @@
 import React from "react";
+import { navigate } from "gatsby"
 import { Navbar, Nav } from "react-bootstrap";
 import LangMenu from "../LangMenu/LangMenu";
 
-const Navigation = () => {
-  const [lang, setLang] = React.useState('en');
+const Navigation = ({ langStore }) => {
+  const [lang, setLang] = React.useState(langStore);
 
-  const handleClick = (e) => {
-    e.target.href = `${e.target.dataset.path}${lang}`;
-    console.log('href', e.target.href);
+  const onLinkClickHandler = (e, path) => {
     e.preventDefault();
+    const target = path + lang;
+    navigate(target);
   }
 
   return (
@@ -18,11 +19,11 @@ const Navigation = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="custom-mr_left">
-          <Nav.Link href="/" onClick={handleClick} data-path="main/">Main</Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, '')}>Main</Nav.Link>
           <Nav.Link href="/">Filmmakers</Nav.Link>
           <Nav.Link href="/temp/author">Our team</Nav.Link>
           <Nav.Link href="/">Worklog</Nav.Link>
-          <Nav.Link href="/" onClick={handleClick} data-path="styleguide/">Styleguide</Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'styleguide/')}>Styleguide</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

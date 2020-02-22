@@ -11,7 +11,7 @@ const getDate = () => {
 
 const DayAuthor = () => {
   const data = useStaticQuery(graphql`
-  query {
+  {
     allMarkdownRemark(filter: {frontmatter: {type: {eq: "director"}, lang: {eq: "en"}}}) {
         nodes {
           frontmatter {
