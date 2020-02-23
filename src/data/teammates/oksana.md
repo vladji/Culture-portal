@@ -1,4 +1,7 @@
 ---
+lang: en
+slug: developers
+type: developer
 title: card
 number: 6
 path: /pages/markdown/teammates
