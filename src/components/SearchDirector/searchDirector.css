@@ -7,5 +7,27 @@
     box-sizing: border-box;
     height: 45px;
     font-size: 1.7em;
-    color: royalblue;
+    color: #55595c;
+}
+
+.search-bar[placeholder] {
+    text-overflow: ellipsis;
+}
+
+.search-bar:focus::-webkit-input-placeholder {
+    opacity: 1; transition: opacity 0.3s ease;
+    opacity: 0; transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1550px) {
+    .search-bar {
+        width: 100%;
+    }  
+}
+
+@media (max-width: 500px) {
+    .search-bar {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
 }

@@ -11,9 +11,13 @@ const AuthorList = ({ list }) => {
                     href={author.slug}
                     key={author.titleText}
                 >
+                    <div className='modal-popup'>
+                        {author.name}
+                    </div>
                     <Image 
                         className='image'
                         src={author.pathname} 
+                        alt={author.name}
                     />
                     <li key={author.bday}>
                         <p className='author-name'>{author.name}</p>
