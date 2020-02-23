@@ -1,7 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-const AppImage = ({ src='/assets/no-photo.jpg', alt }) => {
+
+const AppImage = ({ src = '/assets/no-photo.jpg', alt }) => {
   const data = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -19,12 +20,12 @@ const AppImage = ({ src='/assets/no-photo.jpg', alt }) => {
   const srcArrSplit = src.split("/")
   const srcArrLength = srcArrSplit.length
   const fileName = srcArrLength === 1 ? src : srcArrSplit[srcArrLength - 1];
-  let source = nodes.find(el=>el.fluid.originalName===fileName);
+  let source = nodes.find(el => el.fluid.originalName === fileName);
   if (!source) {
-    source = nodes.find(el=>el.fluid.originalName==='no-photo.jpg');
+    source = nodes.find(el => el.fluid.originalName === 'no-photo.jpg');
   }
   const altSource = source.fluid.originalName;
-  return <Img fluid={source.fluid} alt={alt || altSource}/>
+  return <Img fluid={source.fluid} alt={alt || altSource} />
 }
 
 export default AppImage

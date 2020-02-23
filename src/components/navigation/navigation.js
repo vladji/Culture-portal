@@ -1,65 +1,27 @@
-import React from "react"
-import { Navbar, Nav } from "react-bootstrap"
+import React from "react";
 import { navigate } from "gatsby"
+import { Navbar, Nav } from "react-bootstrap";
+import LangMenu from "../LangMenu/LangMenu";
 
-const Navigation = () => {
-  const onLinkClickHandler = (e, target) => {
-    e.preventDefault()
-    navigate(target)
+const Navigation = ({ lang, location }) => {
+  const onLinkClickHandler = (e, path) => {
+    e.preventDefault();
+    const target = path + lang;
+    navigate(target);
   }
+
   return (
     <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand
-        href="/"
-        onClick={e => {
-          onLinkClickHandler(e, "/")
-        }}
-      >
-        Belarusian Filmmakers
-      </Navbar.Brand>
+      <Navbar.Brand href="/">Belarusian Filmmakers</Navbar.Brand>
+      <LangMenu lang={lang} location={location}/>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="custom-mr_left">
-          <Nav.Link
-            href="/temp/main"
-            onClick={e => {
-              onLinkClickHandler(e, "/temp/main")
-            }}
-          >
-            Main
-          </Nav.Link>
-          <Nav.Link
-            href="#ho"
-            onClick={e => {
-              onLinkClickHandler(e, "/")
-            }}
-          >
-            Filmmakers
-          </Nav.Link>
-          <Nav.Link
-            href="/temp/author"
-            onClick={e => {
-              onLinkClickHandler(e, "/")
-            }}
-          >
-            Our team
-          </Nav.Link>
-          <Nav.Link
-            href="#ha"
-            onClick={e => {
-              onLinkClickHandler(e, "/")
-            }}
-          >
-            Worklog
-          </Nav.Link>
-          <Nav.Link
-            href="#hq"
-            onClick={e => {
-              onLinkClickHandler(e, "/")
-            }}
-          >
-            Styleguide
-          </Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, '')}>Main</Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'temp/filmmakers/')}>Filmmakers</Nav.Link>
+          <Nav.Link href="/">Our team</Nav.Link>
+          <Nav.Link href="/">Worklog</Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'temp/styleguide/')}>Styleguide</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

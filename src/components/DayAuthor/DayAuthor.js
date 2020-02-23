@@ -9,21 +9,9 @@ const getDate = () => {
   return Number(date.toLocaleString('en-US', { day: 'numeric' }));
 }
 
-const DayAuthor = () => {
+const DayAuthor = ({ content }) => {
   const data = useStaticQuery(graphql`
-  query {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "director"}, lang: {eq: "en"}}}) {
-        nodes {
-          frontmatter {
-            city
-            directorsLifeYears
-            title
-            titleText
-            imagepath
-            imageName
-          }
-        }
-    }
+  {
     allImageSharp {
       nodes {
         fluid {
@@ -35,19 +23,13 @@ const DayAuthor = () => {
   }
 `);
 
-  console.log('data', data)
-
-  const autorsList = data.allMarkdownRemark.nodes;
+  const autorsList = content;
   const date = getDate();
   const currentAuthor = date % (autorsList.length - 1);
   const authorData = autorsList[currentAuthor].frontmatter;
   const currentPhoto = authorData.imageName;
-  console.log('currentPhoto', currentPhoto)
 
-  let photo = null;
-  data.allImageSharp.nodes.forEach((node) => {
-    if (node.fluid.originalName === currentPhoto) photo = node.fluid;
-  })
+  const photo = data.allImageSharp.nodes.find((node) => node.fluid.originalName === currentPhoto);
 
   return (
     <section className="day-author">
@@ -56,7 +38,7 @@ const DayAuthor = () => {
         <div className="block-responsive">
           <div className="day-author__photo">
             <Img
-              fluid={photo}
+              fluid={photo.fluid}
               alt="Author of the day photo"
             />
           </div>
