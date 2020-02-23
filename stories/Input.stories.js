@@ -14,11 +14,13 @@ export default {
 
 export const defaultInput = () => {
   return (
-    <Form.Group className="form-group">
-      <Form.Label className="col-form-label" htmlFor="inputDefault"> 
-        Default input
-      </Form.Label>
-      <Form.Control className="form-control" id="inputDefault" placeholder="Default input" />
-    </Form.Group>
+    <div style={{width: '300px'}}>
+      <Form.Group className="form-group">
+        <Form.Label className="col-form-label" htmlFor="inputDefault"> 
+          Default input
+        </Form.Label>
+        <Form.Control className="form-control" id="inputDefault" placeholder="Default input" />
+      </Form.Group>
+    </div>
   )
 }

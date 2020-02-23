@@ -3,7 +3,7 @@ import React from 'react'
 import '../src/pages/temp/styleguide.css'
 
 export default {
-  title: 'Colors',
+  title: 'Color',
 };
 
 export const primary = () => {

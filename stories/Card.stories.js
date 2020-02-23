@@ -2,7 +2,6 @@ import React from 'react'
 import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 
 import '../src/styles/bootstrap.min.css'
-import '../src/pages/temp/styleguide.css'
 
 export default {
   title: 'Card',
@@ -23,7 +22,7 @@ export const directorsCard = () => {
                 Some quick example text to build on the card title and make up the bulk of
                 the card's content.
               </Card.Text>
-              <Button variant="primary" className="btn btn-primary">
+              <Button href="https://google.com" variant="primary" className="btn btn-primary">
                 Go somewhere
               </Button>
             </Card.Body>

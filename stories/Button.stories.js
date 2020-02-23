@@ -1,6 +1,7 @@
-import React from 'react';
-import { Button } from 'react-bootstrap';
-import '../src/styles/bootstrap.min.css';
+import React from 'react'
+import { Button } from 'react-bootstrap'
+
+import '../src/styles/bootstrap.min.css'
 
 export default {
   title: 'Button',
