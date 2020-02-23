@@ -8,7 +8,11 @@ import "./youtube.css"
 class Youtube extends Component {
   onReady(event) {
     // access to player in all event handlers via event.target
-    event.target.pauseVideo()
+    event.target.playVideo()
+  }
+
+  extractIdFromUrl = url => {
+    return url.split("=")[1]
   }
 
   render() {
@@ -21,12 +25,17 @@ class Youtube extends Component {
       },
     }
 
-    const { videoId } = this.props
+    let { videoId } = this.props
+    let correctId
+
+    videoId.startsWith("https://")
+      ? (correctId = this.extractIdFromUrl(videoId))
+      : (correctId = videoId)
 
     return (
       <YouTube
         className="youtube-video"
-        videoId={videoId}
+        videoId={correctId}
         opts={opts}
         onReady={this.onReady}
       />

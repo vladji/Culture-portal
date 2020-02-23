@@ -1,19 +1,51 @@
-import React from "react"
-import Popup from "reactjs-popup"
+import React, { Component } from "react"
+import YoutubePreviewBtn from "../YoutubePreviewBtn/youtubePreviewBtn"
 
-import Youtube from "../Youtube/youtube"
+import ModalVideo from "react-modal-video"
+import "./youtubeModal.css"
 
-const YoutubeModal = ({ videoId }) => {
-  return (
-    <Popup
-      trigger={<button class="btn btn-primary btn-sm">Video</button>}
-      modal
-      closeOnDocumentClick
-    >
-      <Youtube videoId={videoId} />
-      {/* pass director's video ID */}
-    </Popup>
-  )
+class YoutubeModal extends Component {
+  constructor() {
+    super()
+    this.state = {
+      isOpen: false,
+    }
+    this.openModal = this.openModal.bind(this)
+  }
+
+  extractIdFromUrl = url => {
+    return url.split("=")[1]
+  }
+
+  openModal() {
+    this.setState({ isOpen: true })
+  }
+
+  render() {
+    let { videoId } = this.props
+    let correctId
+
+    videoId.startsWith("https://")
+      ? (correctId = this.extractIdFromUrl(videoId))
+      : (correctId = videoId)
+
+    return (
+      <div className="preview-image">
+        <ModalVideo
+          channel="youtube"
+          isOpen={this.state.isOpen}
+          videoId={correctId}
+          onClose={() => this.setState({ isOpen: false })}
+          properties={{
+            autoplay: 1,
+          }}
+        />
+        <div className="openModal" onClick={this.openModal}>
+          <YoutubePreviewBtn videoId={this.props.videoId} />
+        </div>
+      </div>
+    )
+  }
 }
 
 export default YoutubeModal
