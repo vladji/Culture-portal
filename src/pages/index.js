@@ -14,7 +14,7 @@ const Main = ({ location }) => {
         content
       }
     }
-    dayAuthor: allMarkdownRemark(filter: {frontmatter: {type: {eq: "director"}, lang: {eq: "be"}}}) {
+    dayAuthor: allMarkdownRemark(filter: {frontmatter: {type: {eq: "director"}, lang: {eq: ""}}}) {
       nodes {
         frontmatter {
           city
