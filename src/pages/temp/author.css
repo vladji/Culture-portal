@@ -1,0 +1,43 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 3rem auto 0;
+  padding: 0;
+  height: 90%;
+}
+
+.card {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 1px solid #ccc;
+  padding-bottom: 0.7rem;
+  padding-left: 0;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.developer-image {
+  width: 15rem;
+  height: 17rem;
+  border-radius: 0.1rem;
+  background-size: cover;
+  background-position: top center;
+}
+
+.github {
+  font-size: 1.5rem;
+}
+
+.github:hover {
+  cursor: pointer;
+  color: #777;
+  transition: 0.2s;
+}
