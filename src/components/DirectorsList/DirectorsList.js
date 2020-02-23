@@ -1,7 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { useStaticQuery, graphql } from "gatsby"
 import { navigate } from "gatsby"
 
 
@@ -11,12 +9,25 @@ const LinkItem = ({ url, caption }) => (
     navigate(url);
   }}>{caption}</a>
 )
-const DirectorsList = ({ data }) => {
-  const { allMarkdownRemark } = data
+
+const DirectorsList = () => {
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+  {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "director"}, lang: {eq: "ru"}}}) {
+      nodes {
+        frontmatter {
+          slug
+          lang
+          title
+          directorsLifeYears
+        }
+      }
+    }
+  }
+  `)
 
   return (
-    <Layout>
-      <SEO title="Home" />
+    <>
       <h1>Список режисеров</h1>
       {allMarkdownRemark.nodes.map((el, idx) => (
         <div key={idx}>
@@ -28,24 +39,8 @@ const DirectorsList = ({ data }) => {
           </p>
         </div>
       ))}
-    </Layout>
+    </>
   )
 }
 
 export default DirectorsList
-
-export const pageQuery = graphql`
-{
-  allMarkdownRemark(filter: {frontmatter: {type: {eq: "director"}, lang: {eq: "ru"}}}) {
-    nodes {
-      frontmatter {
-        slug
-        lang
-        title
-        directorsLifeYears
-      }
-    }
-  }
-}
-
-`

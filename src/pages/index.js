@@ -29,8 +29,6 @@ const Main = () => {
   }
 `);
 
-  console.log('query', query)
-
   return (
     <Layout>
       <SEO title="Home" />
