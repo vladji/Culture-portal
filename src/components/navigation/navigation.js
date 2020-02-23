@@ -4,7 +4,6 @@ import { Navbar, Nav } from "react-bootstrap";
 import LangMenu from "../LangMenu/LangMenu";
 
 const Navigation = ({ lang, location }) => {
-  console.log('loc', location)
   const onLinkClickHandler = (e, path) => {
     e.preventDefault();
     const target = path + lang;

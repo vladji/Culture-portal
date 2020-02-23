@@ -15,11 +15,9 @@ const LangMenu = ({ lang, location }) => {
     }
 
     const pathSplit = location.pathname.split('/')
-    console.log('pathSplit', pathSplit)
     pathSplit.length = pathSplit.length - 1;
     const newPath = pathSplit.join('/');
     const path = newPath + '/' + contentLang;
-    console.log('path', path)
     navigate(path);
   }
 
