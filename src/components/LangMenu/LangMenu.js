@@ -10,11 +10,13 @@ const LangMenu = (props) => {
   }
 
   const setLocalStore = (e) => {
+    console.log('location', window.location.pathname);
     window.localStorage.setItem('store-lang', e.target.dataset.lang);
     props.setLang(e.target.dataset.lang);
 
     const currentLang = e.target.dataset.lang.toUpperCase();
     setLangTitle(currentLang);
+    // window.location.href = window.location.pathname + '/' + e.target.dataset.lang;
   }
 
 

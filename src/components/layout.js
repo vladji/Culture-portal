@@ -3,7 +3,16 @@ import PropTypes from "prop-types"
 import Navigation from "./navigation/navigation"
 import Container from "react-bootstrap/Container"
 
-const Layout = ({ children, lang }) => {
+const getLang = () => {
+  if (window.localStorage.getItem('store-lang')) {
+    return window.localStorage.getItem('store-lang');
+  }
+  return 'en';
+}
+
+const Layout = ({ children }) => {
+  const lang = getLang();
+
   return (
     <>
       <header>
