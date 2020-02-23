@@ -1,5 +1,5 @@
 ---
-lang: be
+lang: ""
 slug: korshSablin
 imagepath: /assets/Authors/KorshSablin/KorshSablin.jpg
 imageName: KorshSablin.jpg
