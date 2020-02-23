@@ -1,5 +1,5 @@
 ---
-lang: be
+lang: ""
 slug: ptashuk
 imagepath: /assets/Authors/Ptashuk/Ptashuk.jpg
 imageName: Ptashuk.jpg
