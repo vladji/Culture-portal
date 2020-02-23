@@ -4,9 +4,9 @@ import SEO from "../../components/seo"
 import { Button, Form } from 'react-bootstrap'
 import './styleguide.css'
 
-const Styleguide = () => {
+const Styleguide = ({ location }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Home" />
       <div className="wrapper">
         <section className="styleguide-section colors">

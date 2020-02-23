@@ -35,7 +35,7 @@ const DirectorsList = () => {
             {`Я режиссер - ${el.frontmatter.title}. Годы жизни: ${el.frontmatter.directorsLifeYears}`}
           </p>
           <p>
-            <LinkItem url={`/${el.frontmatter.slug}/${el.frontmatter.lang}/`} caption={`Ссылка`} />
+            <LinkItem url={`/${el.frontmatter.slug}/${el.frontmatter.lang}`} caption={`Ссылка`} />
           </p>
         </div>
       ))}

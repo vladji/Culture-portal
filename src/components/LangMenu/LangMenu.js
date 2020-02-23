@@ -2,12 +2,9 @@ import React from 'react';
 import { navigate } from "gatsby"
 import { DropdownButton, Dropdown } from 'react-bootstrap';
 
-const LangMenu = (props) => {
-  let langBtn = React.createRef();
-
-  const setLangTitle = (langTitle) => {
-    langBtn.current.firstElementChild.innerText = langTitle;
-  }
+const LangMenu = ({ lang, location }) => {
+  let currentLang = lang;
+  if (!lang) currentLang = 'BY'
 
   const onLinkClickHandler = (e) => {
     let contentLang = null;
@@ -16,17 +13,13 @@ const LangMenu = (props) => {
     } else {
       contentLang = '';
     }
-    console.log('contentLang', contentLang)
-    props.setLang(contentLang);
 
-    const langTitle = e.target.dataset.lang.toUpperCase();
-    setLangTitle(langTitle);
-    window.localStorage.setItem('store-lang', langTitle);
-
-    const pathSplit = window.location.pathname.split('/')
+    const pathSplit = location.pathname.split('/')
+    console.log('pathSplit', pathSplit)
     pathSplit.length = pathSplit.length - 1;
     const newPath = pathSplit.join('/');
     const path = newPath + '/' + contentLang;
+    console.log('path', path)
     navigate(path);
   }
 
@@ -35,8 +28,7 @@ const LangMenu = (props) => {
     <DropdownButton alignRight
       title="Dropdown right"
       id="dropdown-menu-align-right"
-      title={window.localStorage.getItem('store-lang') ? window.localStorage.getItem('store-lang') : "BY"}
-      ref={langBtn}>
+      title={currentLang}>
       <Dropdown.Item as="button" onClick={onLinkClickHandler} data-lang="en">EN</Dropdown.Item>
       <Dropdown.Item as="button" onClick={onLinkClickHandler} data-lang="by">BY</Dropdown.Item>
       <Dropdown.Item as="button" onClick={onLinkClickHandler} data-lang="ru">RU</Dropdown.Item>

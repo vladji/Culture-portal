@@ -4,9 +4,9 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import DirectorsList from "../../components/DirectorsList/DirectorsList"
 
-const Filmmakers = () => {
+const Filmmakers = ({ location }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Home" />
       <DirectorsList />
     </Layout>

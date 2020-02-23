@@ -3,11 +3,9 @@ import { navigate } from "gatsby"
 import { Navbar, Nav } from "react-bootstrap";
 import LangMenu from "../LangMenu/LangMenu";
 
-const Navigation = () => {
-  const [lang, setLang] = React.useState('');
-
+const Navigation = ({ lang, location }) => {
+  console.log('loc', location)
   const onLinkClickHandler = (e, path) => {
-    console.log('lang', lang)
     e.preventDefault();
     const target = path + lang;
     navigate(target);
@@ -16,13 +14,13 @@ const Navigation = () => {
   return (
     <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
       <Navbar.Brand href="/">Belarusian Filmmakers</Navbar.Brand>
-      <LangMenu setLang={setLang} />
+      <LangMenu lang={lang} location={location}/>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="custom-mr_left">
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, '')}>Main</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'temp/filmmakers/')}>Filmmakers</Nav.Link>
-          <Nav.Link href="/temp/author">Our team</Nav.Link>
+          <Nav.Link href="/">Our team</Nav.Link>
           <Nav.Link href="/">Worklog</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'temp/styleguide/')}>Styleguide</Nav.Link>
         </Nav>

@@ -5,12 +5,12 @@ import SEO from "../components/seo"
 import About from "../components/about/about"
 import DayAuthor from "../components/DayAuthor/DayAuthor"
 
-const Main = ({ data }) => {
+const Main = ({ data, location }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Home" />
-      <About content={data.about.frontmatter.content}/>
-      <DayAuthor content={data.dayAuthor.nodes}/>
+      <About content={data.about.frontmatter.content} />
+      <DayAuthor content={data.dayAuthor.nodes} />
     </Layout>
   )
 }

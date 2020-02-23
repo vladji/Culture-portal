@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import About from "../components/about/about"
 import DayAuthor from "../components/DayAuthor/DayAuthor"
 
-const Main = () => {
+const Main = ({ location }) => {
   const query = useStaticQuery(graphql`
   {
     about: markdownRemark(frontmatter: { topic: { eq: "about" }, lang: {eq: "be"} }) {
@@ -30,7 +30,7 @@ const Main = () => {
 `);
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Home" />
       <About content={query.about.frontmatter.content}/>
       <DayAuthor content={query.dayAuthor.nodes}/>
