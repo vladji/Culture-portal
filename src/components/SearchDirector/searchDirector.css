@@ -1,13 +1,7 @@
 .search-bar {
-    width: 80%;
-    outline: none;
-    border: none;
-    box-shadow: 0px 0px 0px 2px lightgrey;
-    padding: 10px;
-    box-sizing: border-box;
-    height: 45px;
-    font-size: 1.7em;
-    color: #55595c;
+    width: 40%;
+    margin: 30px auto;
+    display: block;
 }
 
 .search-bar[placeholder] {
@@ -19,15 +13,10 @@
     opacity: 0; transition: opacity 0.3s ease;
 }
 
-@media (max-width: 1550px) {
-    .search-bar {
-        width: 100%;
-    }  
-}
-
 @media (max-width: 500px) {
     .search-bar {
         font-size: 1.4em;
         margin-bottom: 20px;
+        width: 100%;
     }
 }

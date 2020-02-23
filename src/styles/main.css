@@ -27,6 +27,11 @@ section {
   padding-top: 3%;
 }
 
+.container-fluid {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
 .content-wrapper {
   width: 90%;
   margin: auto;
