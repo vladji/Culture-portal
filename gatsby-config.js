@@ -36,6 +36,17 @@ module.exports = {
         icon: `${__dirname}/static/assets/gerb_belarusi.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Open Sans Condensed`,
+          `source sans-serif pro\:300,400,400i,700`
+        ],
+        display: `swap`,
+        subset: [`cyrillic`, `latin`],
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
