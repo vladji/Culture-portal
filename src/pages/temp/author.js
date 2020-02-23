@@ -25,19 +25,19 @@ const TeamList = ({ team }) => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
+              flexWrap: "wrap",
             }}
           >
             <img
               src={teammate.node.frontmatter.photo}
               alt="developer"
               style={{
-                width: "8rem",
+                width: "10rem",
                 borderRadius: ".1rem",
                 margin: ".3rem",
-                filter: "grayscale(100%)",
               }}
             />
-            <span>{teammate.node.frontmatter.name}</span>
+            <h5>{teammate.node.frontmatter.name}</h5>
             <a
               href={teammate.node.frontmatter.github}
               target="_blank"
@@ -71,7 +71,7 @@ export default OurTeamPage
 export const query = graphql`
   query MyQuery {
     allMarkdownRemark(
-      filter: { frontmatter: { title: { eq: "card" }, lang: { eq: "ru" } } }
+      filter: { frontmatter: { title: { eq: "card" }, lang: { eq: "be" } } }
     ) {
       edges {
         node {
