@@ -70,7 +70,9 @@ export default OurTeamPage
 
 export const query = graphql`
   query MyQuery {
-    allMarkdownRemark(filter: { frontmatter: { title: { eq: "card" } } }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { title: { eq: "card" }, lang: { eq: "ru" } } }
+    ) {
       edges {
         node {
           id
