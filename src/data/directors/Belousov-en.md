@@ -57,4 +57,17 @@ geolocation:
     id: '2'
     latitude: 53.926980
     longitude: 27.630014
+gallery:
+  - alt: Very old man with huge wings
+    src: /assets/Authors/Belousov/gallery/pic1.png
+  - alt: Cube
+    src: /assets/Authors/Belousov/gallery/pic2.png
+  - alt: Rook of despair
+    src: /assets/Authors/Belousov/gallery/pic3.png
+  - alt: A Song about aurochs
+    src: /assets/Authors/Belousov/gallery/pic4.png
+  - alt: Tale of a funny clown
+    src: /assets/Authors/Belousov/gallery/pic5.png
+  - alt: Nesterka
+    src: /assets/Authors/Belousov/gallery/pic6.png
 ---

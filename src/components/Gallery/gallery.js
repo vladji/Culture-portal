@@ -1,19 +1,21 @@
 import React from 'react';
+
+import Image from '../AppImage/AppImage';
 import Carousel from 'react-bootstrap/Carousel';
 
 import './gallery.css';
 
-const Gallery = ({ ptashuk: { gallery } }) => (
+const Gallery = ({ authorGallery }) => (
     <>
         <Carousel 
             interval={null}
             className='carousel--wrapper'
         >
-            {gallery.map(picture => (
+            {authorGallery.map(author => (
                 <Carousel.Item>
                     <Carousel.Caption>
                         <div>
-                            <img src={picture} />
+                            <img src={author.src} alt={author.alt} />
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>

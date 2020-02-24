@@ -58,4 +58,17 @@ geolocation:
     id: '2'
     latitude: 53.926980
     longitude: 27.630014
+gallery:
+  - alt: Dobrolubov work 1
+    src: /assets/Authors/Dobrolubov/gallery/pic1.png
+  - alt: Dobrolubov work 2
+    src: /assets/Authors/Dobrolubov/gallery/pic2.png
+  - alt: Dobrolubov work 3
+    src: /assets/Authors/Dobrolubov/gallery/pic3.png
+  - alt: Dobrolubov work 4
+    src: /assets/Authors/Dobrolubov/gallery/pic4.png
+  - alt: Dobrolubov work 5
+    src: /assets/Authors/Dobrolubov/gallery/pic5.png
+  - alt: Dobrolubov work 6
+    src: /assets/Authors/Dobrolubov/gallery/pic6.png
 ---

@@ -2,30 +2,37 @@ import React from 'react';
 import Gallery from '../../components/Gallery/gallery';
 import Gallery2 from '../../components/Gallery/gallery2';
 
-import exmp1 from '../../images/directors/Ptashuk/gallery/pic1.png';
-import exmp2 from '../../images/directors/Ptashuk/gallery/pic2.png';
-import exmp3 from '../../images/directors/Ptashuk/gallery/pic3.png';
-import exmp4 from '../../images/directors/Ptashuk/gallery/pic4.png';
-import exmp5 from '../../images/directors/Ptashuk/gallery/pic5.png';
-import exmp6 from '../../images/directors/Ptashuk/gallery/pic6.png';
-import exmp7 from '../../images/directors/Ptashuk/gallery/pic7.png';
-
-const ptashuk = {
-    gallery: [
-        exmp1, 
-        exmp2, 
-        exmp3, 
-        exmp4, 
-        exmp5, 
-        exmp6, 
-        exmp7,
-    ],
-};
+const authorGallery = [
+    {
+        alt: 'Very old man with huge wings',
+        src: '/assets/Authors/Belousov/gallery/pic1.png',
+    },
+    {
+        alt: 'Cube',
+        src: '/assets/Authors/Belousov/gallery/pic2.png',
+    },
+    {
+        alt: 'Rook of despair',
+        src: '/assets/Authors/Belousov/gallery/pic3.png',
+    },
+    {
+        alt: 'A Song about aurochs',
+        src: '/assets/Authors/Belousov/gallery/pic4.png',
+    },
+    {
+        alt: 'Tale of a funny clown',
+        src: '/assets/Authors/Belousov/gallery/pic5.png',
+    },
+    {
+        alt: 'Nesterka',
+        src: '/assets/Authors/Belousov/gallery/pic6.png',
+    }
+]
 
 const myGallery = () => (
     <div>
-        <Gallery ptashuk={ptashuk} />
-        <Gallery2 ptashuk={ptashuk} />
+        <Gallery authorGallery={authorGallery} />
+        <Gallery2 authorGallery={authorGallery} />
     </div>
 )
 

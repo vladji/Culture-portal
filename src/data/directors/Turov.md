@@ -102,5 +102,18 @@ geolocation:
     id: '2'
     latitude: 53.945428
     longitude: 30.362203
+gallery:
+  - alt: Turov work 1
+    src: /assets/Authors/Turov/gallery/pic1.png
+  - alt: Turov work 2
+    src: /assets/Authors/Turov/gallery/pic2.png
+  - alt: Turov work 3
+    src: /assets/Authors/Turov/gallery/pic3.png
+  - alt: Turov work 4
+    src: /assets/Authors/Turov/gallery/pic4.png
+  - alt: Turov work 5
+    src: /assets/Authors/Turov/gallery/pic5.png
+  - alt: Turov work 6
+    src: /assets/Authors/Turov/gallery/pic6.png
 ---
 

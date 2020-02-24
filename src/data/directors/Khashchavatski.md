@@ -67,5 +67,18 @@ geolocation:
     id: '1'
     latitude: 53.902462
     longitude: 27.563062
+gallery:
+  - alt: Khashchavatski work 1
+    src: /assets/Authors/Khashchavatski/gallery/pic1.png
+  - alt: Khashchavatski work 2
+    src: /assets/Authors/Khashchavatski/gallery/pic2.png
+  - alt: Khashchavatski work 3
+    src: /assets/Authors/Khashchavatski/gallery/pic3.png
+  - alt: Khashchavatski work 4
+    src: /assets/Authors/Khashchavatski/gallery/pic4.png
+  - alt: Khashchavatski work 5
+    src: /assets/Authors/Khashchavatski/gallery/pic5.png
+  - alt: Khashchavatski work 6
+    src: /assets/Authors/Khashchavatski/gallery/pic6.png
 ---
 

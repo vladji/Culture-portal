@@ -107,5 +107,18 @@ geolocation:
     id: '3'
     latitude: 53.922589
     longitude: 27.601054
+gallery:
+  - alt: Rubinchik work 1
+    src: /assets/Authors/Rubinchik/gallery/pic1.png
+  - alt: Rubinchik work 2
+    src: /assets/Authors/Rubinchik/gallery/pic2.png
+  - alt: Rubinchik work 3
+    src: /assets/Authors/Rubinchik/gallery/pic3.png
+  - alt: Rubinchik work 4
+    src: /assets/Authors/Rubinchik/gallery/pic4.png
+  - alt: Rubinchik work 5
+    src: /assets/Authors/Rubinchik/gallery/pic5.png
+  - alt: Rubinchik work 6
+    src: /assets/Authors/Rubinchik/gallery/pic6.png
 ---
 
