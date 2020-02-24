@@ -2,6 +2,7 @@ html,
 body,
 #___gatsby {
   height: 100%;
+  font-family: "Roboto Condensed", "Open Sans", sans-serif;
 }
 
 #gatsby-focus-wrapper {
@@ -18,8 +19,17 @@ li {
   list-style: none;
 }
 
+a.link {
+  text-decoration: underline;
+}
+
 section {
   padding-top: 3%;
+}
+
+.container-fluid {
+  max-width: 1900px;
+  margin: 0 auto;
 }
 
 .content-wrapper {
@@ -29,6 +39,7 @@ section {
 
 .navbar {
   padding: 0.5rem 0;
+  font-weight: 400;
 }
 
 .custom-mr_left {

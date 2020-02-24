@@ -1,5 +1,5 @@
 ---
-lang: be
+lang: ""
 slug: khashchavatski
 imagepath: /assets/Authors/Khashchavatski/Khashchavatski.jpg
 imageName: Khashchavatski.jpg

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SearchDirector from '../../components/SearchDirector/searchDirector';
+import Layout from '../../components/layout'
 import './search.css';
 
 const authors = [
@@ -78,10 +79,17 @@ const authors = [
     },
 ]
 
-const Search = () => (
-    <section className='search-temp-section'>
-        <SearchDirector authors={authors}/>
-    </section>
+const Search = ({ location }) => (
+    <Layout location={location}>
+        <div className="container-fluid">
+            <section className="authors-list">
+                <h2>
+                    Title goes here ... 
+                </h2>
+                <SearchDirector authors={authors}/>
+            </section>
+        </div> 
+    </Layout>  
 );
 
 export default Search;
