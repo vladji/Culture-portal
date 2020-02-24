@@ -3,6 +3,10 @@
   height: 230px;
 }
 
+.day-author__photo .gatsby-image-wrapper {
+  height: 230px;
+}
+
 .day-author__description {
   margin-left: 3%;
 }

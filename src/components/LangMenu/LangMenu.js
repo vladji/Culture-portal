@@ -23,9 +23,8 @@ const LangMenu = ({ lang, location }) => {
 
 
   return (
-    <DropdownButton alignRight
-      title="Dropdown right"
-      id="dropdown-menu-align-right"
+    <DropdownButton
+      className="custom-dropdown-btn"
       title={currentLang}>
       <Dropdown.Item as="button" onClick={onLinkClickHandler} data-lang="en">EN</Dropdown.Item>
       <Dropdown.Item as="button" onClick={onLinkClickHandler} data-lang="by">BY</Dropdown.Item>

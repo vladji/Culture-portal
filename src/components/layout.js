@@ -13,7 +13,7 @@ const Layout = ({ children, location }) => {
   return (
     <div className="min-vh-100 d-flex flex-column">
       <header>
-        <Navigation lang={getLang(location)} location={location}/>
+        <Navigation lang={getLang(location)} location={location} />
       </header>
       <div className="container-fluid d-flex flex-column flex-grow-1">
         <main className="flex-grow-1">{children}</main>
