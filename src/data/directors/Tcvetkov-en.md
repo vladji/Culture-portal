@@ -81,16 +81,16 @@ geolocation:
     longitude: 27
 gallery:
   - alt: Tcvetkov work 1
-    src: /assets/Authors/Tcvetkov/gallery/pic1.png
+    src: /assets/Authors/Tcvetkov/gallery/tcvetkovpic1.png
   - alt: Tcvetkov work 2
-    src: /assets/Authors/Tcvetkov/gallery/pic2.png
+    src: /assets/Authors/Tcvetkov/gallery/tcvetkovpic2.png
   - alt: Tcvetkov work 3
-    src: /assets/Authors/Tcvetkov/gallery/pic3.png
+    src: /assets/Authors/Tcvetkov/gallery/tcvetkovpic3.png
   - alt: Tcvetkov work 4
-    src: /assets/Authors/Tcvetkov/gallery/pic4.png
+    src: /assets/Authors/Tcvetkov/gallery/tcvetkovpic4.png
   - alt: Tcvetkov work 5
-    src: /assets/Authors/Tcvetkov/gallery/pic5.png
+    src: /assets/Authors/Tcvetkov/gallery/tcvetkovpic5.png
   - alt: Tcvetkov work 6
-    src: /assets/Authors/Tcvetkov/gallery/pic6.png
+    src: /assets/Authors/Tcvetkov/gallery/tcvetkovpic6.png
 ---
 

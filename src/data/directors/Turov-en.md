@@ -108,16 +108,16 @@ geolocation:
     longitude: 30.362203
 gallery:
   - alt: Turov work 1
-    src: /assets/Authors/Turov/gallery/pic1.png
+    src: /assets/Authors/Turov/gallery/turovpic1.png
   - alt: Turov work 2
-    src: /assets/Authors/Turov/gallery/pic2.png
+    src: /assets/Authors/Turov/gallery/turovpic2.png
   - alt: Turov work 3
-    src: /assets/Authors/Turov/gallery/pic3.png
+    src: /assets/Authors/Turov/gallery/turovpic3.png
   - alt: Turov work 4
-    src: /assets/Authors/Turov/gallery/pic4.png
+    src: /assets/Authors/Turov/gallery/turovpic4.png
   - alt: Turov work 5
-    src: /assets/Authors/Turov/gallery/pic5.png
+    src: /assets/Authors/Turov/gallery/turovpic5.png
   - alt: Turov work 6
-    src: /assets/Authors/Turov/gallery/pic6.png
+    src: /assets/Authors/Turov/gallery/turovpic6.png
 ---
 

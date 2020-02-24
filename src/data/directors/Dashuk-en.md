@@ -51,15 +51,15 @@ geolocation:
     longitude: 27.630014
 gallery:
   - alt: Dashuk work 1
-    src: /assets/Authors/Dashuk/gallery/pic1.png
+    src: /assets/Authors/Dashuk/gallery/dashukpic1.png
   - alt: Dashuk work 2
-    src: /assets/Authors/Dashuk/gallery/pic2.png
+    src: /assets/Authors/Dashuk/gallery/dashukpic2.png
   - alt: Dashuk work 3
-    src: /assets/Authors/Dashuk/gallery/pic3.png
+    src: /assets/Authors/Dashuk/gallery/dashukpic3.png
   - alt: Dashuk work 4
-    src: /assets/Authors/Dashuk/gallery/pic4.png
+    src: /assets/Authors/Dashuk/gallery/dashukpic4.png
   - alt: Dashuk work 5
-    src: /assets/Authors/Dashuk/gallery/pic5.png
+    src: /assets/Authors/Dashuk/gallery/dashukpic5.png
   - alt: Dashuk work 6
-    src: /assets/Authors/Dashuk/gallery/pic6.png
+    src: /assets/Authors/Dashuk/gallery/dashukpic6.png
 ---
