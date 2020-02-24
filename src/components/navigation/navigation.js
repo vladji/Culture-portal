@@ -11,7 +11,7 @@ const Navigation = ({ lang, location }) => {
   }
 
   return (
-    <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
+    <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg" className="content-wrapper">
       <Navbar.Brand href="/">Belarusian Filmmakers</Navbar.Brand>
       <LangMenu lang={lang} location={location}/>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
