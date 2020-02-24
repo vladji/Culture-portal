@@ -1,5 +1,5 @@
 ---
-lang: ""
+lang: "be"
 slug: belousov
 imagepath: /assets/Authors/Belousov/Belousov.jpg
 imageName: Belousov.jpg

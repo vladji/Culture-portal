@@ -11,19 +11,19 @@ const getLang = ({ pathname }) => {
 
 const Layout = ({ children, location }) => {
   return (
-    <>
+    <div className="min-vh-100 d-flex flex-column">
       <header>
         <Navigation lang={getLang(location)} location={location}/>
       </header>
-      <Container fluid={true}>
-        <main>{children}</main>
+      <div className="container-fluid d-flex flex-column flex-grow-1">
+        <main className="flex-grow-1">{children}</main>
         <footer>
           <div className="text-center p-2">
             © Songbirds Team {new Date().getFullYear()}
           </div>
         </footer>
-      </Container>
-    </>
+      </div>
+    </div>
   )
 }
 

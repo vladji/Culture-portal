@@ -50,3 +50,43 @@ collections:
           - { label: Latitude, name: latitude, widget: number }
           - { label: Longitude, name: longitude, widget: number }
           - { label: Description, name: description, widget: string }
+  - name: pages
+    label: pages
+    folder: src/data/pages
+    create: true
+    fields:
+      - { name: type, label: type }
+      - { name: name, label: name }
+      - { name: slug, label: slug }
+      - label: fields
+        name: fields
+        widget: list
+        fields:
+          -  label: fieldName
+             name: fildName
+             widget: string
+          -  label: fieldData
+             name: fieldData
+             widget: object
+             fields:
+               - { label: ru, name: ru, widget: string }
+               - { label: by, name: by, widget: string }
+               - { label: by, name: en, widget: string }
+  - name: navigation
+    label: navigation
+    folder: src/data/navigation
+    create: true
+    fields:
+      - { name: type, label: type }
+      - label: navigations
+        name: navigations
+        widget: list
+        fields:
+          - { name: id, label: id, widget: string }
+          - label: navigation
+            name: navigation
+            widget: object
+            fields:
+              - { label: ru, name: ru , widget: string }
+              - { label: by, name: by, widget: string }
+              - { label: by, name: en, widget: string }
