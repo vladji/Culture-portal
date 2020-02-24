@@ -2,33 +2,25 @@ import React from 'react';
 import { navigate } from "gatsby"
 import { DropdownButton, Dropdown } from 'react-bootstrap';
 
-const LangMenu = ({ lang, location }) => {
-  let currentLang = lang;
-  if (!lang) currentLang = 'BY'
+const LangMenu = ({ location, lang }) => {
 
-  const onLinkClickHandler = (e) => {
-    let contentLang = null;
-    if (e.target.dataset.lang !== 'by') {
-      contentLang = e.target.dataset.lang
-    } else {
-      contentLang = '';
+  const onLinkClickHandler = (path) => {
+    if(lang==='ru' || lang==='en'){
+      navigate(location.pathname.slice(0,-4)+path)
+    }else {
+      navigate(location.pathname+path)
     }
-
-    const pathSplit = location.pathname.split('/')
-    pathSplit.length = pathSplit.length - 1;
-    const newPath = pathSplit.join('/');
-    const path = newPath + '/' + contentLang;
-    navigate(path);
   }
 
 
   return (
-    <DropdownButton
-      className="custom-dropdown-btn"
-      title={currentLang}>
-      <Dropdown.Item as="button" onClick={onLinkClickHandler} data-lang="en">EN</Dropdown.Item>
-      <Dropdown.Item as="button" onClick={onLinkClickHandler} data-lang="by">BY</Dropdown.Item>
-      <Dropdown.Item as="button" onClick={onLinkClickHandler} data-lang="ru">RU</Dropdown.Item>
+    <DropdownButton alignRight
+      title="Dropdown right"
+      id="dropdown-menu-align-right"
+      title={lang}>
+      <Dropdown.Item as="button" onClick={()=>onLinkClickHandler('/en/')} data-lang="en">EN</Dropdown.Item>
+      <Dropdown.Item as="button" onClick={()=>onLinkClickHandler('')} data-lang="be">BY</Dropdown.Item>
+      <Dropdown.Item as="button" onClick={()=>onLinkClickHandler('/ru/')} data-lang="ru">RU</Dropdown.Item>
     </DropdownButton>
   )
 }

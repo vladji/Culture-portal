@@ -1,19 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Navigation from "./navigation/navigation"
-import Container from "react-bootstrap/Container"
 
-const getLang = ({ pathname }) => {
-  const pathArr = pathname.split('/')
-  const currentLang = pathArr.length - 1;
-  return pathArr[currentLang]
-}
 
 const Layout = ({ children, location }) => {
   return (
     <div className="min-vh-100 d-flex flex-column">
       <header>
-        <Navigation lang={getLang(location)} location={location} />
+        <Navigation location={location}/>
       </header>
       <div className="container-fluid d-flex flex-column flex-grow-1">
         <main className="flex-grow-1">{children}</main>

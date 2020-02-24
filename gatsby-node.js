@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const directorTemplate = path.resolve(`src/templates/director-template.js`)
   const mainTemplate = path.resolve(`src/templates/main-template.js`)
-
+  const searchTemplate = path.resolve(`src/templates/search-template.js`)
   return graphql(
     `
       {
@@ -45,6 +45,15 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: `/${makePath(lang)}`,
         component: mainTemplate,
+        context: {
+          lang: lang,
+        },
+      })
+    });
+    langArr.forEach(lang => {
+      createPage({
+        path: `/search/${makePath(lang)}`,
+        component: searchTemplate,
         context: {
           lang: lang,
         },
