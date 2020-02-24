@@ -5,12 +5,11 @@ const TeamList = ({ team }) => {
   return (
     <ul className="cards">
       {team.map(teammate => {
-        console.log(teammate.node.id)
         return (
           <li
             className="card bg-light mb-3"
             style={{ paddingBottom: "0" }}
-            id={teammate.node.id}
+            key={teammate.node.id}
           >
             <div
               className="developer-image"
