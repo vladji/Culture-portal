@@ -54,7 +54,7 @@ const Navigation = ({ location }) => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="custom-mr_left">
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, '')}>{getLabel('main')}</Nav.Link>
-          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'temp/filmmakers/')}>{getLabel('filmmakers')}</Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'search/')}>{getLabel('filmmakers')}</Nav.Link>
           <Nav.Link href="/">{getLabel('ourTeam')}</Nav.Link>
           <Nav.Link href="/">{getLabel('worklog')}</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'temp/styleguide/')}>{getLabel('styleguide')}</Nav.Link>
