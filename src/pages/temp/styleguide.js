@@ -59,14 +59,14 @@ const Styleguide = ({ location }) => {
             <p>
               Disabled
           </p>
-            <div class="buttons-inner">
-              <Button variant="primary" disabled className="btn btn-outline-primarydisabled">Primary</Button>
-              <Button variant="secondary" disabled className="btn btn-outline-secondarydisabled">Secondary</Button>
-              <Button variant="success" disabled className="btn btn-outline-successdisabled">Success</Button></div>
-          </div>
-          <div className="buttons-block">
-            <p>
-              Sizes
+          <div class="buttons-inner">
+            <Button variant="primary" disabled className="btn btn-outline-primary disabled">Primary</Button>
+            <Button variant="secondary" disabled className="btn btn-outline-secondary disabled">Secondary</Button>
+            <Button variant="success" disabled className="btn btn-outline-success disabled">Success</Button></div>
+        </div>
+        <div className="buttons-block">
+          <p>
+            Sizes
           </p>
             <div className="buttons-inner">
               <Button variant="primary" size="lg" class="btn btn-primary btn-lg">
