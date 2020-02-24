@@ -11,8 +11,8 @@ body,
   min-height: 100%;
 }
 
-.body-inner {
-  flex: 1 0 auto;
+header {
+  background-color: #343a40;
 }
 
 li {
@@ -30,6 +30,7 @@ section {
 .container-fluid {
   max-width: 1900px;
   margin: 0 auto;
+  flex: 1 0 auto;
 }
 
 .content-wrapper {
@@ -37,10 +38,18 @@ section {
   margin: auto;
 }
 
+/* Navbar */
+
 .navbar {
-  padding: 0.5rem 0;
+  padding: 0.5rem 15px;
   font-weight: 400;
 }
+
+.custom-dropdown-btn .btn-primary {
+  background-color: #777;
+}
+
+/* End Navbar */
 
 .custom-mr_left {
   margin-left: auto;
@@ -52,10 +61,16 @@ section {
 
 footer {
   display: flex;
+  height: 50px;
   flex: 0 0 auto;
-  height: 60px;
+  align-items: center;
   color: #fff;
   background-color: #343a40;
+}
+
+.footer-content {
+  max-width: 1900px;
+  padding: 0 15px;
 }
 
 @media (max-width: 568px) {

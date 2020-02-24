@@ -24,7 +24,6 @@ const DayAuthor = ({ content }) => {
 `);
 
   const autorsList = content;
-  console.log('autorsList', autorsList)
   const date = getDate();
   const currentAuthor = date % (autorsList.length - 1);
   const authorData = autorsList[currentAuthor].frontmatter;

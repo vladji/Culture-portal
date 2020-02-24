@@ -13,16 +13,16 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <header>
-        <Navigation lang={getLang(location)} location={location}/>
+        <Navigation lang={getLang(location)} location={location} />
       </header>
       <Container fluid={true}>
         <main>{children}</main>
-        <footer>
-          <div className="text-center p-2">
-            © Songbirds Team {new Date().getFullYear()}
-          </div>
-        </footer>
       </Container>
+      <footer>
+        <div className="content-wrapper footer-content">
+          © Songbirds Team {new Date().getFullYear()}
+        </div>
+      </footer>
     </>
   )
 }
