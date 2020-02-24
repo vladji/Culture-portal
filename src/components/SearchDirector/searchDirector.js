@@ -19,12 +19,13 @@ function SearchDirector({ authors }) {
 
     return (
         <>
-            <input
-                type="text"
-                onChange={updateListHandler}
-                className="search-bar"
-                placeholder="Type director name or city..."
-            />
+        	<div className="form-group">
+  				<input 
+	  				type="text"
+	  				placeholder="Type name or city..." 
+	      			className="form-control search-bar"
+	      			onChange={updateListHandler} />
+			</div>
             <AuthorsList 
                 list={authorsList}
             />
