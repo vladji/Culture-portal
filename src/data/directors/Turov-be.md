@@ -1,5 +1,5 @@
 ---
-lang: be
+lang: ""
 slug: turov
 imagepath: /assets/Authors/Turov/Turov.jpg
 imageName: Turov.jpg

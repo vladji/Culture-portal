@@ -1,5 +1,5 @@
 ---
-lang: be
+lang: ""
 slug: dobrolubov
 imagepath: /assets/Authors/Dobrolubov/Dobrolubov.jpg
 imageName: Dobrolubov.jpg
