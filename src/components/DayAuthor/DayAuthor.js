@@ -10,8 +10,7 @@ const DayAuthor = ({ authorsList, labelMore='More details'}) => {
   if(!authorsList.length) return <p>No data</p>;
 
   const date = getDate();
-  // const currentAuthor = date % (authorsList.length - 1);
-  const currentAuthor = 0;
+  const currentAuthor = date % (authorsList.length - 1);
   const authorData = authorsList[currentAuthor].frontmatter;
 
   return (

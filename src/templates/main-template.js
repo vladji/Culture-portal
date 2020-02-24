@@ -7,7 +7,6 @@ import { graphql } from "gatsby"
 
 const Main = ({ data, location, pageContext }) => {
   const authorData = data.dayAuthor.nodes;
-  console.log(pageContext.lang);
   const getData = name => {
     const { about } = data
     const { lang: currentLang } = pageContext
