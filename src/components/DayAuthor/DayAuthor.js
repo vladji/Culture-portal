@@ -1,58 +1,33 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from 'gatsby-image';
-
-import "./DayAuthor.css"
+import AppImage from "../AppImage/AppImage"
 
 const getDate = () => {
   let date = new Date();
   return Number(date.toLocaleString('en-US', { day: 'numeric' }));
 }
 
-const DayAuthor = ({ content }) => {
-  const data = useStaticQuery(graphql`
-  {
-    allImageSharp {
-      nodes {
-        fluid {
-          ...GatsbyImageSharpFluid
-          originalName
-        }
-      }
-    }
-  }
-`);
+const DayAuthor = ({ authorsList, labelMore='More details'}) => {
+  if(!authorsList.length) return <p>No data</p>;
 
-  const autorsList = content;
   const date = getDate();
-  const currentAuthor = date % (autorsList.length - 1);
-  const authorData = autorsList[currentAuthor].frontmatter;
-  const currentPhoto = authorData.imageName;
-
-  const photo = data.allImageSharp.nodes.find((node) => node.fluid.originalName === currentPhoto);
+  const currentAuthor = date % (authorsList.length - 1);
+  const authorData = authorsList[currentAuthor].frontmatter;
 
   return (
-    <section className="day-author">
-      <div className="content-wrapper">
-        <h2>Author of the day</h2>
-        <div className="block-responsive">
-          <div className="day-author__photo">
-            <Img
-              fluid={photo.fluid}
-              alt="Author of the day photo"
-            />
-          </div>
-          <div className="day-author__description">
-            <h3>{authorData.title}</h3>
-            <ul>
-              <li>{authorData.city}</li>
-              <li>{authorData.titleText}</li>
-              <li>{authorData.directorsLifeYears}</li>
-            </ul>
-          </div>
+    <div className="row align-items-center">
+      <div className="col-sm-5 col-md-3 py-2">
+        <AppImage src={authorData.imagepath} />
+      </div>
+      <div className="col-sm-7 col-md-9 d-flex flex-column align-self-center py-2">
+        <h1>{authorData.title}</h1>
+        <h4>{authorData.directorsLifeYears}</h4>
+        <h4> {authorData.city}</h4>
+        <p className="text-justify">{authorData.titleText}</p>
+        <div>
+        <button type="button" className="btn btn-primary d-inline">{labelMore}</button>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -1,5 +1,5 @@
 ---
-lang: ""
+lang: "be"
 slug: rubinchik
 imagepath: /assets/Authors/Rubinchik/Rubinchik.jpg
 imageName: Rubinchik.jpg

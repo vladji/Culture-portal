@@ -1,5 +1,5 @@
 ---
-lang: ""
+lang: "be"
 slug: tcvetkov
 imagepath: /assets/Authors/Tcvetkov/Tcvetkov.jpg
 imageName: Tcvetkov.jpg

@@ -1,10 +1,15 @@
 const path = require(`path`)
-
+const makePath =(lang)=>{
+  if (lang==='be'){
+    return ''
+  }
+  return `${lang}/`
+}
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const directorTemplate = path.resolve(`src/templates/director-template.js`)
   const mainTemplate = path.resolve(`src/templates/main-template.js`)
-
+  const searchTemplate = path.resolve(`src/templates/search-template.js`)
   return graphql(
     `
       {
@@ -26,7 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
     }
     result.data.directors.nodes.forEach(node => {
       createPage({
-        path: `${node.frontmatter.slug}/${node.frontmatter.lang}`,
+        path: `${node.frontmatter.slug}/${makePath(node.frontmatter.lang)}`,
         component: directorTemplate,
         context: {
           slug: node.frontmatter.slug,
@@ -35,11 +40,20 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const langArr = ['en', 'ru'];
+    const langArr = ['en', 'ru', 'be'];
     langArr.forEach(lang => {
       createPage({
-        path: `${lang}/`,
+        path: `/${makePath(lang)}`,
         component: mainTemplate,
+        context: {
+          lang: lang,
+        },
+      })
+    });
+    langArr.forEach(lang => {
+      createPage({
+        path: `/search/${makePath(lang)}`,
+        component: searchTemplate,
         context: {
           lang: lang,
         },
