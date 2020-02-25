@@ -7,6 +7,6 @@ number: 4
 path: /pages/markdown/teammates
 name: Victoria Butrym
 github: https://github.com/Victoria-Butrym
-photo: https://avatars3.githubusercontent.com/u/55103680?s=400&u=1cdc825c7d55d2c9ba8ffccad3dd6d60db336ded&v=4
-role: unset
+photo: assets/developer-viktoria.jpg
+role: "Senior React Frontend Developer. Wide experience in Rest API, WebSocket API, JSON, Authentication, Understanding of development processes and tools - git flow, source control tools, task and bug tracking systems, Flexibility and willingness to work in agile environment with focus on result" 
 ---

@@ -7,6 +7,6 @@ number: 2
 path: /pages/markdown/teammates
 name: Mikita Nemau
 github: https://github.com/dobrynanikitich
-photo: https://avatars0.githubusercontent.com/u/47753351?s=400&v=4
-role: unset
+photo: assets/developer-nikita.jpg
+role: "Senior React Frontend Developer. Work experience: 3+ years. Knowledge of common OOP patterns and anti-patterns.Good understanding of web protocols. Willingness to refactor and optimize written code" 
 ---

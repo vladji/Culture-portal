@@ -1,41 +1,37 @@
 import React from "react"
-import { FaGithubSquare } from "react-icons/fa"
-
-const TeamList = ({ team }) => {
+import AppImage from "../AppImage/AppImage"
+import { getFields } from "../../utils/fields"
+const TeamList = ({ team, source, lang }) => {
   return (
-    <ul className="cards">
+    <div className="row justify-content-center">
       {team.map(teammate => {
         return (
-          <li
-            className="card bg-light mb-3"
-            style={{ paddingBottom: "0" }}
-            key={teammate.node.id}
-          >
-            <div
-              className="developer-image"
-              src={teammate.node.frontmatter.photo}
-              alt="developer"
-              style={{
-                backgroundImage: `url(${teammate.node.frontmatter.photo})`,
-              }}
-            ></div>
-            <div style={{ width: "100%" }}>
+          <div className="col-lg-4 col-md-6 d-flex my-2" key={teammate.node.id}>
+            <div className="card d-flex flex-column p-3 flex-grow-1">
+            <div className="card-img-top">
+              <AppImage src={teammate.node.frontmatter.photo} />
+            </div>
+            <div className="flex-grow-1 d-flex flex-column">
               <h5 className="card-header">{teammate.node.frontmatter.name}</h5>
-              <div className="card-body">
-                <h6>{teammate.node.frontmatter.role}</h6>
+              <div className="card-body d-flex flex-column flex-grow-1">
+                <p className="flex-grow-1">{teammate.node.frontmatter.role}</p>
+                <p >{getFields('readyToWork', source, lang)}</p>
                 <a
                   href={teammate.node.frontmatter.github}
                   target="_blank"
+                  role="button"
                   rel="noopener noreferrer"
+                  className="btn-primary btn d-inline align-self-end"
                 >
-                  <FaGithubSquare className="github" />
+                  {getFields('offerLabel', source, lang)}
                 </a>
               </div>
             </div>
-          </li>
+            </div>
+          </div>
         )
       })}
-    </ul>
+    </div>
   )
 }
 

@@ -7,6 +7,6 @@ number: 2
 path: /pages/markdown/teammates
 name: Никита Немов
 github: https://github.com/dobrynanikitich
-photo: https://avatars0.githubusercontent.com/u/47753351?s=400&v=4
-role: unset
+photo: assets/developer-nikita.jpg
+role: "Старший разработчик React Frontend. Опыт работы: 3+ года. Знание общих шаблонов ООП и анти-шаблонов. Хорошее понимание веб-протоколов. Готовность к рефакторингу и оптимизации написанного кода"
 ---

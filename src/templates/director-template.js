@@ -7,11 +7,14 @@ import Map from "../components/Map/Map"
 import AppImage from "../components/AppImage/AppImage"
 import Timeline from "../components/Timeline/timeline"
 import YoutubeModal from "../components/YoutubeModal/youtubeModal"
+import { getFields } from "../utils/fields"
 
 
-const SecondPage = ({ data, location }) => {
+const SecondPage = ({ data, location, pageContext }) => {
+  const {lang} = pageContext;
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
+  const source = data.about.frontmatter.fields;
   return (
     <Layout location={location}>
       <SEO title={frontmatter.title} lang={frontmatter.lang} />
@@ -29,21 +32,21 @@ const SecondPage = ({ data, location }) => {
       </section>
       <div className="row">
         <section className="col-md-6">
-          <h2>Основные моменты жизни:</h2>
+          <h2>{getFields('timelineHeader', source, lang)}</h2>
           <Timeline data={frontmatter.timeline} />
         </section>
         <section className="col-md-6">
-          <h2>Список работ:</h2>
+          <h2>{getFields('worksLogHeader', source, lang)}</h2>
           <Timeline data={frontmatter.listOfWorks.map(el => ({ date: el.year, description: el.film }))} />
         </section>
       </div>
       {frontmatter.geolocation && frontmatter.geolocation.length ? (
         <section>
-          <h2 className="text-center">Место основной деятельности</h2>
+          <h2 className="text-center">{getFields('geolocationHeader', source, lang)}</h2>
           <div className="row flex-wrap justify-content-center">
             {frontmatter.geolocation.map((el, id) => (
-              <div key={id} className="col-md-6 p-3 d-flex flex-column align-items-center">
-                {el.description ? <h4>{el.description}</h4> : null}
+              <div key={id} className="col-md-6 p-3 d-flex flex-column align-items-center justify-content-between">
+                {el.description ? <h4 className="text-center">{el.description}</h4> : null}
                 {el.latitude && el.longitude ? (
                   <Map
                     geolocation={[
@@ -61,8 +64,11 @@ const SecondPage = ({ data, location }) => {
         </section>
       ) : null}
       <section className="container align-items-center d-flex flex-column">
-        <h2>Документальное видео</h2>
+        <h2>{getFields('videoHeader', source, lang)}</h2>
         <YoutubeModal videoId={frontmatter.youtube} />
+      </section>
+      <section className="container align-items-center d-flex flex-column">
+        <h2>{getFields('galleryHeader', source, lang)}</h2>
       </section>
     </Layout>
   )
@@ -98,6 +104,20 @@ export const query = graphql`
           id
           latitude
           longitude
+        }
+      }
+    }
+    about: markdownRemark(
+      frontmatter: { type: { eq: "page" }, name: { eq: "directors" } }
+    ) {
+      frontmatter {
+        fields {
+          fieldName
+          fieldData {
+            ru
+            be
+            en
+          }
         }
       }
     }
