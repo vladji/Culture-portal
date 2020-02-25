@@ -43,16 +43,16 @@ const Navigation = ({ location }) => {
 
   return (
     <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} >Belarusian Filmmakers 📽️</Navbar.Brand>
+      <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} >Belarusian Filmmakers <span role="img">📽</span>️</Navbar.Brand>
       <LangMenu location={location} lang={lang}/>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="custom-mr_left">
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, '')}>{getLabel('main')}</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'search/')}>{getLabel('filmmakers')}</Nav.Link>
-          <Nav.Link href="/">{getLabel('ourTeam')}</Nav.Link>
-          <Nav.Link href="/">{getLabel('worklog')}</Nav.Link>
-          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'temp/styleguide/')}>{getLabel('styleguide')}</Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'developers/')}>{getLabel('ourTeam')}</Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'worklog/')}>{getLabel('worklog')}</Nav.Link>
+          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'styleguide/')}>{getLabel('styleguide')}</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

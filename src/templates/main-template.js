@@ -4,21 +4,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import DayAuthor from "../components/DayAuthor/DayAuthor"
 import { graphql } from "gatsby"
+import { getFields } from "../utils/fields"
 
 const Main = ({ data, location, pageContext }) => {
   const authorData = data.dayAuthor.nodes;
-  const getData = name => {
-    const { about } = data
-    const { lang: currentLang } = pageContext
-    return about.frontmatter.fields.find(el => el.fieldName === name).fieldData[
-      currentLang
-    ]
-  }
+  const source = data.about.frontmatter.fields;
+  const { lang: currentLang } = pageContext
 
-  const header = getData("portalDescriptionLabel")
-  const content = getData("portalDescriptionData")
-  const author = getData("authorOfTheDay");
-  const labelMore = getData("labelMore")
+  const header = getFields("portalDescriptionLabel", source, currentLang)
+  const content = getFields("portalDescriptionData", source, currentLang)
+  const author = getFields("authorOfTheDay", source, currentLang);
+  const labelMore = getFields("labelMore", source, currentLang)
   return (
     <Layout location={location}>
       <SEO title="Home" />
@@ -30,7 +26,7 @@ const Main = ({ data, location, pageContext }) => {
       </section>
       <section>
         <h2>{author}</h2>
-        <DayAuthor authorsList ={authorData} labelMore={labelMore} />
+        <DayAuthor authorsList ={authorData} labelMore={labelMore} lang={pageContext.lang}/>
       </section>
     </Layout>
   )
@@ -50,6 +46,7 @@ export const query = graphql`
           title
           titleText
           imagepath
+          slug
         }
       }
     }

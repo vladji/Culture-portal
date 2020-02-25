@@ -1,15 +1,16 @@
 import React from 'react'
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import { Button, Form } from 'react-bootstrap'
-import './styleguide.css'
+import '../styles/styleguide.css'
 
-const Styleguide = ({ location }) => {
+const StyleguideTemplate = ({ location }) => {
   return (
     <Layout location={location}>
       <SEO title="Home" />
       <div className="wrapper">
         <section className="styleguide-section colors">
+          <h1>Переводить или не переводить эту страницу... </h1>
           <h4>
             Colors
         </h4>
@@ -95,4 +96,4 @@ const Styleguide = ({ location }) => {
   )
 }
 
-export default Styleguide
+export default StyleguideTemplate

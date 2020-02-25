@@ -5,8 +5,9 @@ import {navigate} from 'gatsby';
 
 import './authorsList.css';
 import { getLangPath } from "../../../utils/language"
+import { getFields } from "../../../utils/fields"
 
-const AuthorList = ({ list, lang }) => {
+const AuthorList = ({ list, lang, sourceFields }) => {
     const items = list.map((author) => {
         return (
             <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-4 mb-5"
@@ -20,6 +21,7 @@ const AuthorList = ({ list, lang }) => {
                         <h4 className="author-name">
                             {author.name}
                         </h4>
+                        <h5>{author.city}</h5>
                         <div className="card-text">
                           <p className='author-years'>{author.bday}</p>
                           <p className='author-title'>{author.titleText}</p>
@@ -29,7 +31,7 @@ const AuthorList = ({ list, lang }) => {
                                 e.preventDefault();
                                 navigate(`directors/${author.slug}/${getLangPath(lang)}`);
                             }}>
-                                Read more...
+                                {getFields('labelMore', sourceFields, lang)}
                             </Button>
                         </div>
                     </div>

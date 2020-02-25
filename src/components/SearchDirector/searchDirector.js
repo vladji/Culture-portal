@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 
 import AuthorsList from './AuthorsList/authorsList';
 import './searchDirector.css';
+import { getFields } from "../../utils/fields"
 
-function SearchDirector({ authors, lang }) {
+function SearchDirector({ authors, lang, sourceFields }) {
     const [authorsList, authorsListHander] = useState(authors);
 
     const updateListHandler = (e) => {
@@ -21,12 +22,12 @@ function SearchDirector({ authors, lang }) {
         	<div className="form-group">
   				<input
 	  				type="text"
-	  				placeholder="Type name or city..."
+	  				placeholder={getFields('searchPlaceholder', sourceFields, lang)}
 	      			className="form-control search-bar"
 	      			onChange={updateListHandler} />
 			</div>
             <AuthorsList
-                list={authorsList} lang={lang}
+                list={authorsList} lang={lang} sourceFields={sourceFields}
             />
         </>
     );
