@@ -31,7 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
     }
     result.data.directors.nodes.forEach(node => {
       createPage({
-        path: `${node.frontmatter.slug}/${makePath(node.frontmatter.lang)}`,
+        path: `/directors/${node.frontmatter.slug}/${makePath(node.frontmatter.lang)}`,
         component: directorTemplate,
         context: {
           slug: node.frontmatter.slug,

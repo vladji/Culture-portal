@@ -1,18 +1,20 @@
 import React from 'react';
 import Image from '../../../components/AppImage/AppImage';
-import { Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap';
+import {navigate} from 'gatsby';
 
 import './authorsList.css';
+import { getLangPath } from "../../../utils/language"
 
-const AuthorList = ({ list }) => {
+const AuthorList = ({ list, lang }) => {
     const items = list.map((author) => {
         return (
             <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-4 mb-5"
                 key={author.name}>
                 <div className="card">
                     <div className="card-body">
-                        <Image 
-                            src={author.pathname} 
+                        <Image
+                            src={author.pathname}
                             alt={author.name}
                         />
                         <h4 className="author-name">
@@ -23,7 +25,10 @@ const AuthorList = ({ list }) => {
                           <p className='author-title'>{author.titleText}</p>
                         </div>
                         <div className="link-wrapper">
-                            <Button href={author.slug} className="btn btn-primary">
+                            <Button href={author.slug} className="btn btn-primary" onClick={(e)=>{
+                                e.preventDefault();
+                                navigate(`directors/${author.slug}/${getLangPath(lang)}`);
+                            }}>
                                 Read more...
                             </Button>
                         </div>

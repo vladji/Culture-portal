@@ -5,7 +5,7 @@ import Layout from '../../components/layout'
 import './search.css';
 
 const authors = [
-    {  
+    {
         slug: 'belousov',
         name: 'Oleg Pavlovich Belousov',
         city: 'Slutsk',
@@ -84,12 +84,12 @@ const Search = ({ location }) => (
         <div className="container-fluid">
             <section className="authors-list">
                 <h2>
-                    Title goes here ... 
+                    Title goes here ...
                 </h2>
                 <SearchDirector authors={authors}/>
             </section>
-        </div> 
-    </Layout>  
+        </div>
+    </Layout>
 );
 
 export default Search;

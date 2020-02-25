@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, navigate, useStaticQuery } from "gatsby"
 import { Navbar, Nav } from "react-bootstrap";
 import LangMenu from "../LangMenu/LangMenu";
+import { getLangPath } from "../../utils/language"
 
 
 const Navigation = ({ location }) => {
@@ -34,13 +35,7 @@ const Navigation = ({ location }) => {
   const getLabel = (name)=>{
     return navigationData.find(el=>el.name===name).navigation[lang];
   }
-  const getLangPath = (l)=> {
-    switch (l) {
-      case 'ru': return 'ru/';
-      case 'en': return 'en/';
-      default: return '';
-    }
-  }
+
   const onLinkClickHandler = (e, path) => {
     e.preventDefault();
     navigate(path + getLangPath(lang));
