@@ -25,7 +25,7 @@ const AppImage = ({ src = '/assets/no-photo.jpg', alt }) => {
     source = nodes.find(el => el.fluid.originalName === 'no-photo.jpg');
   }
   const altSource = source.fluid.originalName;
-  return <Img fluid={source.fluid} alt={alt || altSource} />
+  return <Img fluid={source.fluid}  alt={alt || altSource} imgStyle={{objectFit: 'contain'}}/>
 }
 
 export default AppImage

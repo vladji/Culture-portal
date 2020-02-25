@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../src/pages/temp/styleguide.css'
+import '../src/styles/styleguide.css'
 
 export default {
   title: 'Color',
