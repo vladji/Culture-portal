@@ -1,8 +1,8 @@
 ---
 lang: en
 slug: rubinchik
-imagepath: /assets/Authors/Rubinchik/rubinchik.jpg
-imageName: rubinchik.jpg
+imagepath: /assets/Authors/Rubinchik/Rubinchik.jpg
+imageName: Rubinchik.jpg
 type: director
 title: Valeriy Rubinchik
 city: Minsk
@@ -107,5 +107,18 @@ geolocation:
     id: '3'
     latitude: 53.922589
     longitude: 27.601054
+gallery:
+  - alt: Rubinchik work 1
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic1.png
+  - alt: Rubinchik work 2
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic2.png
+  - alt: Rubinchik work 3
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic3.png
+  - alt: Rubinchik work 4
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic4.png
+  - alt: Rubinchik work 5
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic5.png
+  - alt: Rubinchik work 6
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic6.png
 ---
 

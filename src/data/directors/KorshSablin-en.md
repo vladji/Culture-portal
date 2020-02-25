@@ -108,5 +108,18 @@ geolocation:
     id: '3'
     latitude: 55.755814
     longitude: 37.617635
+gallery:
+  - alt: KorshSablin work 1
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic1.png
+  - alt: KorshSablin work 2
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic2.png
+  - alt: KorshSablin work 3
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic3.png
+  - alt: KorshSablin work 4
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic4.png
+  - alt: KorshSablin work 5
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic5.png
+  - alt: KorshSablin work 6
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic6.png
 ---
 

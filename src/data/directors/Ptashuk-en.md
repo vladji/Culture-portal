@@ -84,5 +84,18 @@ geolocation:
     id: '2'
     latitude: 53.043586
     longitude: 26.278139
+gallery:
+  - alt: Ptashuk work 1
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic1.png
+  - alt: Ptashuk work 2
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic2.png
+  - alt: Ptashuk work 3
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic3.png
+  - alt: Ptashuk work 4
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic4.png
+  - alt: Ptashuk work 5
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic5.png
+  - alt: Ptashuk work 6
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic6.png
 ---
 

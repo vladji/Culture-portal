@@ -1,0 +1,9 @@
+.carousel-custom--wrapper {
+    width: 100%;
+    max-width: 600px;
+}
+
+:global(.thumbs) {
+    display: flex;
+    padding: 0;
+}

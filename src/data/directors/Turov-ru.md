@@ -90,7 +90,6 @@ listOfWorks:
   - film: Шляхтич Завальня
     id: '11'
     year: '1994'
-gallery: Turov
 youtube: 2juET6V3YpM
 filmography: Фильмография
 geolocation:
@@ -102,5 +101,18 @@ geolocation:
     id: '2'
     latitude: 53.945428
     longitude: 30.362203
+gallery:
+  - alt: Turov work 1
+    src: /assets/Authors/Turov/gallery/turovpic1.png
+  - alt: Turov work 2
+    src: /assets/Authors/Turov/gallery/turovpic2.png
+  - alt: Turov work 3
+    src: /assets/Authors/Turov/gallery/turovpic3.png
+  - alt: Turov work 4
+    src: /assets/Authors/Turov/gallery/turovpic4.png
+  - alt: Turov work 5
+    src: /assets/Authors/Turov/gallery/turovpic5.png
+  - alt: Turov work 6
+    src: /assets/Authors/Turov/gallery/turovpic6.png
 ---
 

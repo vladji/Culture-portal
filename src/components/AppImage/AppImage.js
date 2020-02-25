@@ -20,7 +20,7 @@ const AppImage = ({ src = '/assets/no-photo.jpg', alt }) => {
   const srcArrSplit = src.split("/")
   const srcArrLength = srcArrSplit.length
   const fileName = srcArrLength === 1 ? src : srcArrSplit[srcArrLength - 1];
-  let source = nodes.find(el => el.fluid.originalName === fileName);
+  let source = nodes.find(el => el.fluid.originalName.includes(fileName));
   if (!source) {
     source = nodes.find(el => el.fluid.originalName === 'no-photo.jpg');
   }

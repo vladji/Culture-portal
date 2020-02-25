@@ -49,4 +49,17 @@ geolocation:
     id: '2'
     latitude: 53.926980
     longitude: 27.630014
+gallery:
+  - alt: Dashuk work 1
+    src: /assets/Authors/Dashuk/gallery/dashukpic1.png
+  - alt: Dashuk work 2
+    src: /assets/Authors/Dashuk/gallery/dashukpic2.png
+  - alt: Dashuk work 3
+    src: /assets/Authors/Dashuk/gallery/dashukpic3.png
+  - alt: Dashuk work 4
+    src: /assets/Authors/Dashuk/gallery/dashukpic4.png
+  - alt: Dashuk work 5
+    src: /assets/Authors/Dashuk/gallery/dashukpic5.png
+  - alt: Dashuk work 6
+    src: /assets/Authors/Dashuk/gallery/dashukpic6.png
 ---

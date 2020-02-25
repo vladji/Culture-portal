@@ -1,0 +1,43 @@
+.carousel--wrapper {
+    width: 100%;
+    height: 400px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    background: #CCCCFF;
+}
+
+:global(.carousel .slide) {
+    width: 60%;
+    height: 100%;
+}
+
+:global(.carousel-inner) {
+    width: 100%;
+    height: 100%;
+}
+
+:global(.carousel-item) {
+    height: 100%;
+}
+
+:global(.carousel-caption) {
+    display: flex;
+    justify-content: center;
+}
+
+:global(.carousel-indicators li) {
+    background-color: lightslategray;
+    width: 40px;
+    height: 5px;
+}
+
+:global(.carousel-control-next-icon) {
+    width: 40px;
+    height: 40px;
+}
+
+:global(.carousel-control-prev-icon) {
+    width: 40px;
+    height: 40px;
+}

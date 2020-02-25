@@ -90,7 +90,6 @@ export const query = graphql`
         directorsLifeYears
         directorsInfo
         youtube
-        filmography
         timeline {
           date
           description
