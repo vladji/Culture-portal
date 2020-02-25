@@ -7,6 +7,6 @@ number: 4
 path: /pages/markdown/teammates
 name: Виктория Бутрым
 github: https://github.com/Victoria-Butrym
-photo: https://avatars3.githubusercontent.com/u/55103680?s=400&u=1cdc825c7d55d2c9ba8ffccad3dd6d60db336ded&v=4
-role: unset
+photo: assets/developer-viktoria.jpg
+role: "Старший разработчик React Frontend. Большой опыт работы с API Rest, WebSocket API, JSON, аутентификацией, пониманием процессов и инструментов разработки - потока операций, инструментов управления исходным кодом, систем отслеживания задач и ошибок, гибкости и готовности работать в гибкой среде с акцентом на результат"
 ---
