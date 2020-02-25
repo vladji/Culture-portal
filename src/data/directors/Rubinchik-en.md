@@ -1,8 +1,8 @@
 ---
 lang: en
 slug: rubinchik
-imagepath: /assets/Authors/Rubinchik/rubinchik.jpg
-imageName: rubinchik.jpg
+imagepath: /assets/Authors/Rubinchik/Rubinchik.jpg
+imageName: Rubinchik.jpg
 type: director
 title: Valeriy Rubinchik
 city: Minsk
