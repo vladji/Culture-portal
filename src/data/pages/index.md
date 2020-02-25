@@ -1,6 +1,6 @@
 ---
 type: page
-slug: \
+slug: /
 name: main
 fields:
   - fieldName: portalDescriptionLabel

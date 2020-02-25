@@ -7,6 +7,6 @@ number: 2
 path: /pages/markdown/teammates
 name: Мікіта Немаў
 github: https://github.com/dobrynanikitich
-photo: https://avatars0.githubusercontent.com/u/47753351?s=400&v=4
-role: unset
+photo: assets/developer-nikita.jpg
+role: "Старэйшы распрацоўшчык React Frontend. Стаж працы: 3+ гады. Веданне агульных мадэляў OOP і анты-шаблонаў. Добрае разуменне вэб-пратаколаў. Гатоўнасць да рэфактар ​​і аптымізацыі напісанага кода"
 ---

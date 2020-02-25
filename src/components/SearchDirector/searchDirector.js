@@ -2,32 +2,32 @@ import React, { useState } from 'react';
 
 import AuthorsList from './AuthorsList/authorsList';
 import './searchDirector.css';
+import { getFields } from "../../utils/fields"
 
-function SearchDirector({ authors }) {
+function SearchDirector({ authors, lang, sourceFields }) {
     const [authorsList, authorsListHander] = useState(authors);
 
     const updateListHandler = (e) => {
         const value = e.target.value.toLowerCase();
         const newList = authors.filter(author => {
             return (
-                author.name.toLowerCase().includes(value) || 
+                author.name.toLowerCase().includes(value) ||
                 author.city.toLowerCase().includes(value)
             );
         });
         authorsListHander(newList);
     }
-
     return (
         <>
         	<div className="form-group">
-  				<input 
+  				<input
 	  				type="text"
-	  				placeholder="Type name or city..." 
+	  				placeholder={getFields('searchPlaceholder', sourceFields, lang)}
 	      			className="form-control search-bar"
 	      			onChange={updateListHandler} />
 			</div>
-            <AuthorsList 
-                list={authorsList}
+            <AuthorsList
+                list={authorsList} lang={lang} sourceFields={sourceFields}
             />
         </>
     );
