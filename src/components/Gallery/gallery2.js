@@ -11,7 +11,7 @@ const Gallery2 = ({ authorGallery }) => (
             showArrows={true} 
             infiniteLoop={true}>
             {authorGallery.map(author => (
-                <img src={author.src} alt={author.alt} />
+                <img src={author.src} alt={author.alt} key={author.src}/>
             ))}
         </Carousel>
     </>

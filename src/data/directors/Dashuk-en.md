@@ -56,10 +56,4 @@ gallery:
     src: /assets/Authors/Dashuk/gallery/dashukpic2.png
   - alt: Dashuk work 3
     src: /assets/Authors/Dashuk/gallery/dashukpic3.png
-  - alt: Dashuk work 4
-    src: /assets/Authors/Dashuk/gallery/dashukpic4.png
-  - alt: Dashuk work 5
-    src: /assets/Authors/Dashuk/gallery/dashukpic5.png
-  - alt: Dashuk work 6
-    src: /assets/Authors/Dashuk/gallery/dashukpic6.png
 ---

@@ -7,6 +7,7 @@ import Map from "../components/Map/Map"
 import AppImage from "../components/AppImage/AppImage"
 import Timeline from "../components/Timeline/timeline"
 import YoutubeModal from "../components/YoutubeModal/youtubeModal"
+import Gallery from "../components/Gallery/gallery2"
 import { getFields } from "../utils/fields"
 
 
@@ -69,6 +70,7 @@ const SecondPage = ({ data, location, pageContext }) => {
       </section>
       <section className="container align-items-center d-flex flex-column">
         <h2>{getFields('galleryHeader', source, lang)}</h2>
+        <Gallery authorGallery={frontmatter.gallery}/>
       </section>
     </Layout>
   )
@@ -104,6 +106,10 @@ export const query = graphql`
           id
           latitude
           longitude
+        }
+        gallery {
+          src
+          alt
         }
       }
     }
