@@ -5,7 +5,7 @@ imagepath: /assets/Authors/Rubinchik/Rubinchik.jpg
 imageName: Rubinchik.jpg
 type: director
 title: Валерий Рубинчик
-city: Minsk
+city: Минск
 titleText: Белорусский и российский советский кинорежиссёр и сценарист
 directorsLifeYears: 17.04.1940 - 02.03.2011
 directorsInfo: >-
