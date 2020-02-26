@@ -47,7 +47,7 @@ listOfWorks:
   - film: Іду шукаць
     id: '7'
     year: '1966'
-youtube: 8Lzi80kxo4E
+youtube: JRIF3iuQtpM
 geolocation:
   - description: Скончыў факультэт журналістыкі Беларускага дзяржаўнага ўніверсітэту
     id: '1'

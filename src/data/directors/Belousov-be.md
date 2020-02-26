@@ -45,7 +45,7 @@ listOfWorks:
   - film: Несцерка
     id: '6'
     year: '1980'
-youtube: _bw31-y7Dg
+youtube: 3BPv3UWiazw
 geolocation:
   - description: Скончыў Беларускі дзяржаўны ўніверсітэт
     id: '1'
