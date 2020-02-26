@@ -1,18 +1,21 @@
 import React from 'react';
 import Image from '../../../components/AppImage/AppImage';
+import AOS from 'aos'; 
 import { Button } from 'react-bootstrap';
 import {navigate} from 'gatsby';
-
-import './authorsList.css';
 import { getLangPath } from "../../../utils/language"
 import { getFields } from "../../../utils/fields"
 
+import '../../../../node_modules/aos/dist/aos.css'; 
+import './authorsList.css';
+
 const AuthorList = ({ list, lang, sourceFields }) => {
+  AOS.init();
     const items = list.map((author) => {
         return (
             <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-4 mb-5"
                 key={author.name}>
-                <div className="card">
+                <div className="card"  data-aos="fade-up">
                     <div className="card-body">
                         <Image
                             src={author.pathname}
