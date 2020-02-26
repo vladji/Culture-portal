@@ -46,7 +46,7 @@ listOfWorks:
   - film: Нестерка
     id: '6'
     year: '1980'
-youtube: _bw31-y7Dg
+youtube: 3BPv3UWiazw
 geolocation:
   - description: Закончил Белорусский государственный университет
     id: '1'

@@ -8,7 +8,7 @@ const YoutubePreviewBtn = ({ videoId }) => {
     videoId = videoId.split("=")[1]
   }
 
-  const previewImageUrl = `https://img.youtube.com/vi/${videoId}/sddefault.jpg`
+  const previewImageUrl = `https://img.youtube.com/vi/${videoId}/0.jpg`
 
   return (
     <>

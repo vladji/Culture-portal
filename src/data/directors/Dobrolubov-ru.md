@@ -49,7 +49,7 @@ listOfWorks:
   - film: Иду искать
     id: '7'
     year: '1966'
-youtube: 8Lzi80kxo4E
+youtube: JRIF3iuQtpM
 geolocation:
   - description: Окончил факультет журналистики Белорусского государственного университета
     id: '1'

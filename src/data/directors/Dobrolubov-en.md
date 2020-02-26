@@ -47,7 +47,7 @@ listOfWorks:
   - film: Going to look for"
     id: '7'
     year: '1966'
-youtube: 8Lzi80kxo4E
+youtube: JRIF3iuQtpM
 geolocation:
   - description: Graduated from the Faculty of Journalism of the Belarusian State University..
     id: '1'
