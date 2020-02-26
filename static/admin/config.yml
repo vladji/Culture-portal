@@ -70,8 +70,8 @@ collections:
              widget: object
              fields:
                - { label: ru, name: ru, widget: string }
-               - { label: by, name: by, widget: string }
-               - { label: by, name: en, widget: string }
+               - { label: be, name: be, widget: string }
+               - { label: en, name: en, widget: string }
   - name: navigation
     label: navigation
     folder: src/data/navigation
@@ -88,5 +88,5 @@ collections:
             widget: object
             fields:
               - { label: ru, name: ru , widget: string }
-              - { label: by, name: by, widget: string }
-              - { label: by, name: en, widget: string }
+              - { label: be, name: be, widget: string }
+              - { label: en, name: en, widget: string }
