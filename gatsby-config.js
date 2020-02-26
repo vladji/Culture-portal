@@ -40,8 +40,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Open Sans Condensed`,
-          `source sans-serif pro\:300,400,400i,700`
+          `Roboto Condensed`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
         ],
         display: `swap`,
         subset: [`cyrillic`, `latin`],
