@@ -19,7 +19,7 @@ navigations:
   - name: worklog
     navigation: 
       ru: Журнал событий
-      be: Журнал событый
+      be: Часопіс падзей
       en: Worklog
   - name: styleguide
     navigation: 

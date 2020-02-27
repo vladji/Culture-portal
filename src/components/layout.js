@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import Navigation from "./navigation/navigation"
 
-
 const Layout = ({ children, location }) => {
   return (
     <div className="min-vh-100 d-flex flex-column">
@@ -16,7 +15,7 @@ const Layout = ({ children, location }) => {
       </div>
         <footer className="bg-primary mt-5">
           <div className="container-fluid">
-            <div className="text-center p-4">
+            <div className="text-center">
               © Songbirds Team {new Date().getFullYear()}
             </div>
           </div>

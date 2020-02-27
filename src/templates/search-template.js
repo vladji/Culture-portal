@@ -20,14 +20,14 @@ const SearchTemplate = ({ location, data, pageContext }) => {
       pathname: el.frontmatter.imagepath,
       bday: el.frontmatter.directorsLifeYears,
     }))
-  console.log(data.about)
+
   return (
     <Layout location={location}>
       <div className="container-fluid">
-        <h2 className="page-title">
+        <h1 className="page-title">
           {getFields('searchTitle', sourceFields, lang)}
-        </h2>
-        <SearchDirector authors={transform(nodes)} lang={pageContext.lang} sourceFields={sourceFields}/>
+        </h1>
+        <SearchDirector authors={transform(nodes)} lang={pageContext.lang} sourceFields={sourceFields} />
       </div>
     </Layout>
   )

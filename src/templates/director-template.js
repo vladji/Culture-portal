@@ -10,7 +10,6 @@ import YoutubeModal from "../components/YoutubeModal/youtubeModal"
 import Gallery from "../components/Gallery/gallery2"
 import { getFields } from "../utils/fields"
 
-
 const SecondPage = ({ data, location, pageContext }) => {
   const { lang } = pageContext;
   const { markdownRemark } = data
