@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Image from '../AppImage/AppImage';
 import Carousel from 'react-bootstrap/Carousel';
 
 import './gallery.css';

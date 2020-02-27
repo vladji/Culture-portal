@@ -15,8 +15,9 @@
     display: none;
 }
 
-.carousel .thumbs-wrapper .thumbs .thumb {
-    display: flex;
+.carousel .thumbs-wrapper .thumbs .thumb img {
+    width: 100%;
+    height: 100%;
 }
 
 :global(.thumbs) {
