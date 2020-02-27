@@ -58,15 +58,15 @@ geolocation:
     longitude: 27.630014
 gallery:
   - alt: Very old man with huge wings
-    src: /assets/Authors/Belousov/gallery/belousovpic1.png
+    src: /assets/Authors/Belousov/gallery/belousovpic1.jpg
   - alt: Cube
-    src: /assets/Authors/Belousov/gallery/belousovpic2.png
+    src: /assets/Authors/Belousov/gallery/belousovpic2.jpg
   - alt: Rook of despair
-    src: /assets/Authors/Belousov/gallery/belousovpic3.png
+    src: /assets/Authors/Belousov/gallery/belousovpic3.jpg
   - alt: A Song about aurochs
-    src: /assets/Authors/Belousov/gallery/belousovpic4.png
+    src: /assets/Authors/Belousov/gallery/belousovpic4.jpg
   - alt: Tale of a funny clown
-    src: /assets/Authors/Belousov/gallery/belousovpic5.png
+    src: /assets/Authors/Belousov/gallery/belousovpic5.jpg
   - alt: Nesterka
-    src: /assets/Authors/Belousov/gallery/belousovpic6.png
+    src: /assets/Authors/Belousov/gallery/belousovpic6.jpg
 ---

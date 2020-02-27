@@ -67,17 +67,17 @@ geolocation:
     latitude: 53.902462
     longitude: 27.563062
 gallery:
-  - alt: Khashchavatski work 1
-    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic1.png
-  - alt: Khashchavatski work 2
-    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic2.png
-  - alt: Khashchavatski work 3
-    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic3.png
-  - alt: Khashchavatski work 4
-    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic4.png
-  - alt: Khashchavatski work 5
-    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic5.png
-  - alt: Khashchavatski work 6
-    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic6.png
+  - alt: It is a quiet life in Glubokoye
+    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic1.jpg
+  - alt: There was Krylov
+    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic2.jpg
+  - alt: Counterclaim
+    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic3.jpg
+  - alt: Russian happiness
+    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic4.jpg
+  - alt: Oasis
+    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic5.jpg
+  - alt: Ordinary President
+    src: /assets/Authors/Khashchavatski/gallery/khashchavatskipic6.jpg
 ---
 
