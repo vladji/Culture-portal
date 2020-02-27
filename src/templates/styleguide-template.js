@@ -40,7 +40,7 @@ const StyleguideTemplate = ({ location }) => {
             <p>
               Default
           </p>
-            <div class="buttons-inner">
+            <div className="buttons-inner">
               <Button variant="primary" className="btn btn-primary">Primary</Button>
               <Button variant="secondary" className="btn btn-secondary">Secondary</Button>
               <Button variant="success" className="btn btn-success">Success</Button>

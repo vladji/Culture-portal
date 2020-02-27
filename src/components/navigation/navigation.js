@@ -2,6 +2,7 @@ import React from "react";
 import { graphql, navigate, useStaticQuery } from "gatsby"
 import { Navbar, Nav } from "react-bootstrap";
 import LangMenu from "../LangMenu/LangMenu";
+import Logo from '../Logo/Logo'
 import { getLangPath } from "../../utils/language"
 
 
@@ -42,8 +43,10 @@ const Navigation = ({ location }) => {
   }
 
   return (
-    <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} >Belarusian Filmmakers <span role="img">📽</span>️</Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark bg-primary">
+      <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} className="navbar-brand">
+        <Logo />
+      </Navbar.Brand>
       <LangMenu location={location} lang={lang}/>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

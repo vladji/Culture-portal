@@ -24,12 +24,10 @@ const SearchTemplate = ({ location, data, pageContext }) => {
   return (
     <Layout location={location}>
       <div className="container-fluid">
-        <section className="authors-list">
-          <h2 className="text-center">
-            {getFields('searchTitle', sourceFields, lang)}
-          </h2>
-          <SearchDirector authors={transform(nodes)} lang={pageContext.lang} sourceFields={sourceFields}/>
-        </section>
+        <h2 className="page-title">
+          {getFields('searchTitle', sourceFields, lang)}
+        </h2>
+        <SearchDirector authors={transform(nodes)} lang={pageContext.lang} sourceFields={sourceFields}/>
       </div>
     </Layout>
   )

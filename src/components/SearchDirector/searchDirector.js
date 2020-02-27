@@ -19,7 +19,7 @@ function SearchDirector({ authors, lang, sourceFields }) {
     }
     return (
         <>
-        	<div className="form-group">
+        	<div className="form-group mb-5">
   				<input
 	  				type="text"
 	  				placeholder={getFields('searchPlaceholder', sourceFields, lang)}
