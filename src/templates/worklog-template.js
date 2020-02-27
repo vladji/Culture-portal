@@ -15,7 +15,7 @@ const Worklog = ({ data, location, pageContext }) => {
     <Layout location={location}>
       <SEO title="Worklog" />
       <section>
-        <h1 className="text-center">{getFields('worklogHeader', source, lang)}</h1>
+        <h1 className="page-title">{getFields('worklogHeader', source, lang)}</h1>
         <table className="table">
           <thead className="thead-default">
           <tr>

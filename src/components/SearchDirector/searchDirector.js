@@ -5,32 +5,32 @@ import './searchDirector.css';
 import { getFields } from "../../utils/fields"
 
 function SearchDirector({ authors, lang, sourceFields }) {
-    const [authorsList, authorsListHander] = useState(authors);
+  const [authorsList, authorsListHander] = useState(authors);
 
-    const updateListHandler = (e) => {
-        const value = e.target.value.toLowerCase();
-        const newList = authors.filter(author => {
-            return (
-                author.name.toLowerCase().includes(value) ||
-                author.city.toLowerCase().includes(value)
-            );
-        });
-        authorsListHander(newList);
-    }
-    return (
-        <>
-        	<div className="form-group mb-5">
-  				<input
-	  				type="text"
-	  				placeholder={getFields('searchPlaceholder', sourceFields, lang)}
-	      			className="form-control search-bar"
-	      			onChange={updateListHandler} />
-			</div>
-            <AuthorsList
-                list={authorsList} lang={lang} sourceFields={sourceFields}
-            />
-        </>
-    );
+  const updateListHandler = (e) => {
+    const value = e.target.value.toLowerCase();
+    const newList = authors.filter(author => {
+      return (
+        author.name.toLowerCase().includes(value) ||
+        author.city.toLowerCase().includes(value)
+      );
+    });
+    authorsListHander(newList);
+  }
+  return (
+    <>
+      <div className="form-group mb-5">
+        <input
+          type="text"
+          placeholder={getFields('searchPlaceholder', sourceFields, lang)}
+          className="form-control search-bar"
+          onChange={updateListHandler} />
+      </div>
+      <AuthorsList
+        list={authorsList} lang={lang} sourceFields={sourceFields}
+      />
+    </>
+  );
 };
 
 export default SearchDirector;

@@ -10,7 +10,7 @@ const StyleguideTemplate = ({ location }) => {
       <SEO title="Home" />
       <div className="wrapper">
         <section className="styleguide-section colors">
-          <h1>Переводить или не переводить эту страницу... </h1>
+          <h1 className="page-title">Styleguide</h1>
           <h4>
             Colors
         </h4>
@@ -50,7 +50,7 @@ const StyleguideTemplate = ({ location }) => {
             <p>
               With outline
           </p>
-            <div class="buttons-inner">
+            <div className="buttons-inner">
               <Button variant="outline-primary" className="btn btn-outline-primary">Primary</Button>
               <Button variant="outline-secondary" className="btn btn-outline-secondary">Secondary</Button>
               <Button variant="outline-success" className="btn btn-outline-success">Success</Button>
@@ -60,23 +60,23 @@ const StyleguideTemplate = ({ location }) => {
             <p>
               Disabled
           </p>
-          <div class="buttons-inner">
-            <Button variant="primary" disabled className="btn btn-outline-primary disabled">Primary</Button>
-            <Button variant="secondary" disabled className="btn btn-outline-secondary disabled">Secondary</Button>
-            <Button variant="success" disabled className="btn btn-outline-success disabled">Success</Button></div>
-        </div>
-        <div className="buttons-block">
-          <p>
-            Sizes
+            <div className="buttons-inner">
+              <Button variant="primary" disabled className="btn btn-outline-primary disabled">Primary</Button>
+              <Button variant="secondary" disabled className="btn btn-outline-secondary disabled">Secondary</Button>
+              <Button variant="success" disabled className="btn btn-outline-success disabled">Success</Button></div>
+          </div>
+          <div className="buttons-block">
+            <p>
+              Sizes
           </p>
             <div className="buttons-inner">
-              <Button variant="primary" size="lg" class="btn btn-primary btn-lg">
+              <Button variant="primary" size="lg" className="btn btn-primary btn-lg">
                 Large button
             </Button>
               <Button variant="primary" className="btn btn-primary">
                 Default button
             </Button>
-              <Button variant="primary" size="sm" class="btn btn-primary btn-sm">
+              <Button variant="primary" size="sm" className="btn btn-primary btn-sm">
                 Small button
             </Button>
             </div>
