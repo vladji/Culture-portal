@@ -13,24 +13,29 @@ const AuthorList = ({ list, lang, sourceFields }) => {
   AOS.init();
     const items = list.map((author) => {
         return (
-            <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-4 mb-5"
+            <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-4 mb-5 card-wrapper"
                 key={author.name}>
-                <div className="card"  data-aos="fade-up">
-                    <div className="card-body">
+                <div className="card h-100"  data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                    <div className="card-body d-flex flex-column">
+                    <a href="/" onClick={(e)=>{
+                                e.preventDefault();
+                                navigate(`directors/${author.slug}/${getLangPath(lang)}`);
+                            }}>
                         <Image
                             src={author.pathname}
                             alt={author.name}
                         />
+                        </a>
                         <h4 className="author-name">
                             {author.name}
                         </h4>
                         <h5>{author.city}</h5>
-                        <div className="card-text">
+                        <div className="card-text flex-grow-1">
                           <p className='author-years'>{author.bday}</p>
                           <p className='author-title'>{author.titleText}</p>
                         </div>
                         <div className="link-wrapper">
-                            <Button href={author.slug} className="btn btn-primary" onClick={(e)=>{
+                            <Button href={author.slug} variant="info" className="btn btn-info" onClick={(e)=>{
                                 e.preventDefault();
                                 navigate(`directors/${author.slug}/${getLangPath(lang)}`);
                             }}>
@@ -44,7 +49,7 @@ const AuthorList = ({ list, lang, sourceFields }) => {
     })
 
     return (
-        <div className="row">
+        <div className="row align-items-stretch">
             {items}
         </div>
     )

@@ -3,30 +3,43 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import DayAuthor from "../components/DayAuthor/DayAuthor"
+import ImageParallax from '../components/parallax/image-parallax/image-parallax'
 import { graphql } from "gatsby"
 import { getFields } from "../utils/fields"
+import Particles from 'react-particles-js';
+import particlesConfig from '../components/parallax/particles-config.js'
+
 
 const Main = ({ data, location, pageContext }) => {
   const authorData = data.dayAuthor.nodes;
   const source = data.about.frontmatter.fields;
   const { lang: currentLang } = pageContext
-
   const header = getFields("portalDescriptionLabel", source, currentLang)
   const content = getFields("portalDescriptionData", source, currentLang)
   const author = getFields("authorOfTheDay", source, currentLang);
   const labelMore = getFields("labelMore", source, currentLang)
   return (
     <Layout location={location}>
+      <Particles params={particlesConfig} className="particles"/>
+      <h1 className="visually-hidden">
+        Belarusian Filmmakers - portal, dedicated to film directors of Belarus
+      </h1>
       <SEO title="Home" />
-      <section>
-        <div>
-          <h1>{header}</h1>
-          <p>{content}</p>
-        </div>
+      <section className="about">
+        <h1 className="page-title">
+          {header}
+        </h1>
+        <p className="content-centered">
+          {content}
+        </p>
       </section>
-      <section>
-        <h2>{author}</h2>
-        <DayAuthor authorsList ={authorData} labelMore={labelMore} lang={pageContext.lang}/>
+      <section className="day-author">
+        <ImageParallax imgKey="dayAuthor">
+          <h2 className="page-title light">
+            {author}
+          </h2>
+        </ImageParallax>
+        <DayAuthor authorsList={authorData} labelMore={labelMore} lang={pageContext.lang} />
       </section>
     </Layout>
   )
