@@ -1,9 +1,26 @@
 .carousel-custom--wrapper {
     width: 100%;
-    max-width: 600px;
+    max-width: 450px;
+}
+
+.carousel-slider {
+    background: #000;
+}
+
+.slider {
+    align-items: center;
+}
+
+.thumb {
+    display: none;
+}
+
+.carousel .thumbs-wrapper .thumbs .thumb {
+    display: flex;
 }
 
 :global(.thumbs) {
     display: flex;
     padding: 0;
 }
+

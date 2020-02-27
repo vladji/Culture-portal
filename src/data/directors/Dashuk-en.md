@@ -50,10 +50,10 @@ geolocation:
     latitude: 53.926980
     longitude: 27.630014
 gallery:
-  - alt: Dashuk work 1
-    src: /assets/Authors/Dashuk/gallery/dashukpic1.png
-  - alt: Dashuk work 2
-    src: /assets/Authors/Dashuk/gallery/dashukpic2.png
-  - alt: Dashuk work 3
-    src: /assets/Authors/Dashuk/gallery/dashukpic3.png
+  - alt: War has no female face
+    src: /assets/Authors/Dashuk/gallery/dashukpic1.jpg
+  - alt: Vitebsk affair
+    src: /assets/Authors/Dashuk/gallery/dashukpic2.jpg
+  - alt: Soldier Vasily Bykov
+    src: /assets/Authors/Dashuk/gallery/dashukpic3.jpg
 ---

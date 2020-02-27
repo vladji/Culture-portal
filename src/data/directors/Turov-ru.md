@@ -102,17 +102,23 @@ geolocation:
     latitude: 53.945428
     longitude: 30.362203
 gallery:
-  - alt: Turov work 1
-    src: /assets/Authors/Turov/gallery/turovpic1.png
-  - alt: Turov work 2
-    src: /assets/Authors/Turov/gallery/turovpic2.png
-  - alt: Turov work 3
-    src: /assets/Authors/Turov/gallery/turovpic3.png
-  - alt: Turov work 4
-    src: /assets/Authors/Turov/gallery/turovpic4.png
-  - alt: Turov work 5
-    src: /assets/Authors/Turov/gallery/turovpic5.png
-  - alt: Turov work 6
-    src: /assets/Authors/Turov/gallery/turovpic6.png
+  - alt: Youth Stories
+    src: /assets/Authors/Turov/gallery/turovpic1.jpg
+  - alt: Through the cemetery
+    src: /assets/Authors/Turov/gallery/turovpic2.jpg
+  - alt: I come from childhood
+    src: /assets/Authors/Turov/gallery/turovpic3.jpg
+  - alt: War under the roofs
+    src: /assets/Authors/Turov/gallery/turovpic4.jpg
+  - alt: Sons go to battle
+    src: /assets/Authors/Turov/gallery/turovpic5.jpg
+  - alt: Afraid of grief - not to see happiness
+    src: /assets/Authors/Turov/gallery/turovpic6.jpg
+  - alt: Starting point
+    src: /assets/Authors/Turov/gallery/turovpic7.jpg
+  - alt: People in the swamp
+    src: /assets/Authors/Turov/gallery/turovpic8.jpg
+  - alt: Fern red
+    src: /assets/Authors/Turov/gallery/turovpic9.jpg
 ---
 
