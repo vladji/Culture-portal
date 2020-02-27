@@ -103,13 +103,25 @@ geolocation:
     latitude: 55.755814
     longitude: 37.617635
 gallery:
-  - alt: KorshSablin work 1
-    src: /assets/Authors/KorshSablin/gallery/korshsablinpic1.png
-  - alt: KorshSablin work 2
-    src: /assets/Authors/KorshSablin/gallery/korshsablinpic2.png
-  - alt: KorshSablin work 3
-    src: /assets/Authors/KorshSablin/gallery/korshsablinpic3.png
-  - alt: KorshSablin work 4
-    src: /assets/Authors/KorshSablin/gallery/korshsablinpic4.png
+  - alt: Born of fire
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic1.jpg
+  - alt: First platoon
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic2.jpg
+  - alt: Seekers of happiness
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic3.jpg
+  - alt: My love
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic4.jpg
+  - alt: New house
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic5.jpg
+  - alt: Konstantin Zaslonov
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic6.jpg
+  - alt: Who laughs last
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic7.jpg
+  - alt: Red leaves
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic8.jpg
+  - alt: First test
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic9.jpg
+  - alt: The collapse of the empire
+    src: /assets/Authors/KorshSablin/gallery/korshsablinpic10.jpg
 ---
 

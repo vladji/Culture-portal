@@ -1,0 +1,26 @@
+.logo-image {
+	font-size: 2rem;
+}
+
+.logo-text {
+	text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.logo-text::before {
+  content: '';
+  width: 0;
+  display: block;
+  left: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  background-color: #ffffff;
+  transition: all 0.8s;
+}
+
+.logo-text:hover::before {
+  width: 100%;
+}

@@ -5,6 +5,8 @@ import { graphql } from "gatsby"
 import TeamList from "../components/TeamList/teamList"
 import { shuffleArray } from "../utils/other"
 import { getFields } from "../utils/fields"
+import LettersParallax from "../components/parallax/letters-parallax/letters-parallax"
+import { ParallaxProvider } from 'react-parallax'
 
 
 const OurTeamPage = ({ data, location, pageContext }) => {
@@ -14,7 +16,8 @@ const OurTeamPage = ({ data, location, pageContext }) => {
   const source = data.about.frontmatter.fields;
   return (
     <Layout location={location}>
-      <h1 className="text-center">{getFields('mainHeader', source, lang)}</h1>
+      // <h1 className="text-center">{getFields('mainHeader', source, lang)}</h1>
+      <LettersParallax letters={['O', 'U', 'R', ' ', 'T', 'E', 'A', 'M']} />
       <TeamList team={shuffleArray(edges)} source={source} lang={lang} />
     </Layout>
   )

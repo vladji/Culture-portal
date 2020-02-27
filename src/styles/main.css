@@ -59,6 +59,47 @@ section {
   display: flex;
 }
 
+.btn-info {
+  border-color: #1263d0;
+  background-color: #1263d0;
+}
+
+.page-title {
+  margin: 50px auto;
+  text-align: center;
+  max-width: 50%;
+  position: relative;
+}
+
+.page-title.light {
+  color: #ffffff;
+}
+
+.content-centered {
+  max-width: 70%;
+  text-align: center;
+  margin: 20px auto 40px;
+}
+
+.visually-hidden {
+  position: absolute ;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.particles {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0; 
+  right: 0;
+  bottom: 0;
+}
+
 footer {
   display: flex;
   height: 50px;
@@ -76,5 +117,13 @@ footer {
 @media (max-width: 568px) {
   .block-responsive {
     display: block;
+  }
+
+  .page-title {
+    max-width: 95%;
+  }
+
+  .content-centered {
+    max-width: 100%;
   }
 }

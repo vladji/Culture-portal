@@ -86,17 +86,21 @@ geolocation:
     latitude: 53.043586
     longitude: 26.278139
 gallery:
-  - alt: Ptashuk work 1
-    src: /assets/Authors/Ptashuk/gallery/ptashukpic1.png
-  - alt: Ptashuk work 2
-    src: /assets/Authors/Ptashuk/gallery/ptashukpic2.png
-  - alt: Ptashuk work 3
-    src: /assets/Authors/Ptashuk/gallery/ptashukpic3.png
-  - alt: Ptashuk work 4
-    src: /assets/Authors/Ptashuk/gallery/ptashukpic4.png
-  - alt: Ptashuk work 5
-    src: /assets/Authors/Ptashuk/gallery/ptashukpic5.png
-  - alt: Ptashuk work 6
-    src: /assets/Authors/Ptashuk/gallery/ptashukpic6.png
+  - alt: About Vitya, about Masha and the Marine Corps
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic1.jpg
+  - alt: Forest swing
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic2.jpg
+  - alt: I'll take your pain
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic3.jpg
+  - alt: Sign of trouble
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic4.jpg
+  - alt: Our armored train
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic5.jpg
+  - alt: Cooperative Politburo, or it will be a long goodbye
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic6.jpg
+  - alt: In August the 44th
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic7.jpg
+  - alt: In June 41th
+    src: /assets/Authors/Ptashuk/gallery/ptashukpic8.jpg
 ---
 

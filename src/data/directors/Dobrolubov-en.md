@@ -47,7 +47,7 @@ listOfWorks:
   - film: Going to look for"
     id: '7'
     year: '1966'
-youtube: 8Lzi80kxo4E
+youtube: JRIF3iuQtpM
 geolocation:
   - description: Graduated from the Faculty of Journalism of the Belarusian State University..
     id: '1'
@@ -59,16 +59,16 @@ geolocation:
     latitude: 53.926980
     longitude: 27.630014
 gallery:
-  - alt: Dobrolubov work 1
-    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic1.png
-  - alt: Dobrolubov work 2
-    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic2.png
-  - alt: Dobrolubov work 3
-    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic3.png
-  - alt: Dobrolubov work 4
-    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic4.png
-  - alt: Dobrolubov work 5
-    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic5.png
-  - alt: Dobrolubov work 6
-    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic6.png
+  - alt: Mom i'm alive
+    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic1.jpg
+  - alt: Schedule for the day after tomorrow
+    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic2.jpg
+  - alt: As a secret to the whole world
+    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic3.jpg
+  - alt: Brother
+    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic4.jpg
+  - alt: Ivan Makarovich
+    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic5.jpg
+  - alt: Going to look for
+    src: /assets/Authors/Dobrolubov/gallery/dobrolubovpic6.jpg
 ---

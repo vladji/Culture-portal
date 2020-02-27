@@ -115,17 +115,17 @@ geolocation:
     latitude: 53.922589
     longitude: 27.601054
 gallery:
-  - alt: Rubinchik work 1
-    src: /assets/Authors/Rubinchik/gallery/rubinchikpic1.png
-  - alt: Rubinchik work 2
-    src: /assets/Authors/Rubinchik/gallery/rubinchikpic2.png
-  - alt: Rubinchik work 3
-    src: /assets/Authors/Rubinchik/gallery/rubinchikpic3.png
-  - alt: Rubinchik work 4
-    src: /assets/Authors/Rubinchik/gallery/rubinchikpic4.png
-  - alt: Rubinchik work 5
-    src: /assets/Authors/Rubinchik/gallery/rubinchikpic5.png
-  - alt: Rubinchik work 6
-    src: /assets/Authors/Rubinchik/gallery/rubinchikpic6.png
+  - alt: A son
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic1.jpg
+  - alt: Autumn Etude, Sixth Summerо
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic2.jpg
+  - alt: Grave of a lion
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic3.jpg
+  - alt: The last summer of childhood
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic4.jpg
+  - alt: Wreath of Sonnets
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic5.jpg
+  - alt: The Wild Hunt of King Stach
+    src: /assets/Authors/Rubinchik/gallery/rubinchikpic6.jpg
 ---
 
