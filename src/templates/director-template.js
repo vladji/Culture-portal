@@ -12,7 +12,7 @@ import { getFields } from "../utils/fields"
 
 
 const SecondPage = ({ data, location, pageContext }) => {
-  const {lang} = pageContext;
+  const { lang } = pageContext;
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   const source = data.about.frontmatter.fields;
@@ -54,7 +54,7 @@ const SecondPage = ({ data, location, pageContext }) => {
                       {
                         latitude: el.latitude,
                         longitude: el.longitude,
-                        id,
+                        id: el.id,
                       },
                     ]}
                   />
@@ -70,7 +70,7 @@ const SecondPage = ({ data, location, pageContext }) => {
       </section>
       <section className="container align-items-center d-flex flex-column">
         <h2>{getFields('galleryHeader', source, lang)}</h2>
-        <Gallery authorGallery={frontmatter.gallery}/>
+        <Gallery authorGallery={frontmatter.gallery} />
       </section>
     </Layout>
   )

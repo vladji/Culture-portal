@@ -40,7 +40,7 @@ class YoutubeModal extends Component {
             autoplay: 1,
           }}
         />
-        <div className="openModal" onClick={this.openModal}>
+        <div className="openModal" onKeyDown={this.openModal} onClick={this.openModal} role='button' tabIndex={0}>
           <YoutubePreviewBtn videoId={this.props.videoId} />
         </div>
       </div>
