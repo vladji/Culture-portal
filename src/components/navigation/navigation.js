@@ -47,7 +47,7 @@ const Navigation = ({ location }) => {
       <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} className="navbar-brand">
         <Logo />
       </Navbar.Brand>
-      <LangMenu location={location} lang={lang}/>
+
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="custom-mr_left">
@@ -56,6 +56,7 @@ const Navigation = ({ location }) => {
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'developers/')}>{getLabel('ourTeam')}</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'worklog/')}>{getLabel('worklog')}</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'styleguide/')}>{getLabel('styleguide')}</Nav.Link>
+          <LangMenu location={location} lang={lang}/>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

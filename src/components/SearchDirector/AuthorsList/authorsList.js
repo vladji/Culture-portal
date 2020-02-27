@@ -48,11 +48,7 @@ const AuthorList = ({ list, lang, sourceFields }) => {
     )
   })
 
-  return (
-    <div className="row align-items-stretch">
-      {items}
-    </div>
-  )
+  return <div className="row align-items-stretch">{items}</div>
 }
 
 export default AuthorList
