@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import './WorksList.css'
 
-const WorksList = ({ data }) => {
+const WorksList = ({ data, yearHeader, filmHeader }) => {
 	const items = data.map(el => {
 		return (
 			<tr key={el.description}>
@@ -19,8 +19,8 @@ const WorksList = ({ data }) => {
 			<Table className="table table-hover works-list">
 				<thead>
 					<tr>
-						<th>Year</th>
-						<th>Film</th>
+						<th>{yearHeader}</th>
+						<th>{filmHeader}</th>
 					</tr>
 				</thead>
 				<tbody>

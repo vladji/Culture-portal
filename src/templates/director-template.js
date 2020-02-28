@@ -42,7 +42,10 @@ const SecondPage = ({ data, location, pageContext }) => {
         </section>
         <section className="col-lg-5 col-xl-4">
           <h4>{getFields('worksLogHeader', source, lang)}</h4>
-          <WorksList data={frontmatter.listOfWorks.map(el => ({ date: el.year, description: el.film }))} />
+          <WorksList data={frontmatter.listOfWorks.map(el => ({ date: el.year, description: el.film }))}
+            yearHeader={getFields('workListYear', source, lang)}
+            filmHeader={getFields('workListFilm', source, lang)}
+          />
         </section>
       </div>
       {frontmatter.geolocation && frontmatter.geolocation.length ? (
@@ -74,7 +77,7 @@ const SecondPage = ({ data, location, pageContext }) => {
         <Reveal effect="fadeInUp">
           <h2>{getFields('videoHeader', source, lang)}</h2>
         </Reveal>
-          <YoutubeModal videoId={frontmatter.youtube} />
+        <YoutubeModal videoId={frontmatter.youtube} />
       </section>
       <section className="container align-items-center d-flex flex-column">
         <Reveal effect="fadeInUp">
