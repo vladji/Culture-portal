@@ -74,7 +74,7 @@ listOfWorks:
     year: '1978'
 youtube: KOiFtho8LO8
 geolocation:
-  - description: No data
+  - description: 'улица Центральная, Лешня, Копыльский район'
     id: '1'
     latitude: 53
     longitude: 27
