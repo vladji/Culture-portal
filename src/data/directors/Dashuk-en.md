@@ -18,7 +18,7 @@ timeline:
   - date: '1960'
     description: >-
      Works at the Belarusfilm studio: he was an administrator, an assistant cameraman, an assistant film director.
-  - date: 'с 1963'
+  - date: 'since 1963'
     description: Director, cameraman, script writer of documentary and feature films
   - date: '1967'
     description: >-
