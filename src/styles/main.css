@@ -19,10 +19,6 @@ li {
   list-style: none;
 }
 
-a.link {
-  text-decoration: underline;
-}
-
 section {
   padding-top: 3%;
 }
@@ -99,6 +95,18 @@ footer {
   padding: 0 15px;
 }
 
+
+@media (max-width: 768px) {
+  .page-title {
+    max-width: 65%;
+    font-size: 28px;
+  }
+
+  .content-centered {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 568px) {
   .block-responsive {
     display: block;
@@ -106,9 +114,7 @@ footer {
 
   .page-title {
     max-width: 95%;
+    font-size: 26px;
   }
 
-  .content-centered {
-    max-width: 100%;
-  }
 }
