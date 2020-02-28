@@ -72,7 +72,7 @@ listOfWorks:
     year: '1978'
 youtube: KOiFtho8LO8
 geolocation:
-  - description: No data
+  - description: 'вуліца Цэнтральная, Лешня, Капыльскі раён'
     id: '1'
     latitude: 53.922589
     longitude: 27.601054

@@ -75,7 +75,7 @@ listOfWorks:
     year: '1978'
 youtube: KOiFtho8LO8
 geolocation:
-  - description: No data
+  - description: 'Central Street, Leshnya, Kopylsky district'
     id: '1'
     latitude: 53
     longitude: 27
