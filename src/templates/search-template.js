@@ -26,11 +26,11 @@ const SearchTemplate = ({ location, data, pageContext }) => {
   return (
     <Layout location={location}>
       <div className="container-fluid">
-        <Fade cascade>
-          <h1 className="page-title">
-            {getFields('searchTitle', sourceFields, lang)}
-          </h1>
-        </Fade>
+      <Fade>
+        <h1 className="page-title">
+          {getFields('searchTitle', sourceFields, lang)}
+        </h1>
+      </Fade>
         <SearchDirector authors={transform(nodes)} lang={pageContext.lang} sourceFields={sourceFields} />
       </div>
     </Layout>

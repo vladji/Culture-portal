@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 import { getFields } from "../utils/fields"
 import Particles from 'react-particles-js';
 import particlesConfig from '../components/parallax/particles-config.js'
+import Fade from 'react-reveal/Fade'
 
 
 const Main = ({ data, location, pageContext }) => {
@@ -23,9 +24,11 @@ const Main = ({ data, location, pageContext }) => {
       <Particles params={particlesConfig} className="particles"/>
       <SEO title="Home" />
       <section className="about">
-        <h1 className="page-title">
-          {header}
-        </h1>
+        <Fade>
+          <h1 className="page-title">
+            {header}
+          </h1>
+        </Fade>
         <p className="content-centered">
           {content}
         </p>
