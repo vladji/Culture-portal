@@ -73,7 +73,7 @@ const SecondPage = ({ data, location, pageContext }) => {
         <Fade cascade>
           <h2>{getFields('videoHeader', source, lang)}</h2>
         </Fade>
-          <YoutubeModal videoId={frontmatter.youtube} />
+        <YoutubeModal videoId={frontmatter.youtube} />
       </section>
       <section className="container align-items-center d-flex flex-column">
         <Fade cascade>

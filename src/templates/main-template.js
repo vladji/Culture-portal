@@ -20,7 +20,7 @@ const Main = ({ data, location, pageContext }) => {
   const labelMore = getFields("labelMore", source, currentLang)
   return (
     <Layout location={location}>
-      <Particles params={particlesConfig} className="particles"/>
+      <Particles params={particlesConfig} className="particles" />
       <SEO title="Home" />
       <section className="about">
         <h1 className="page-title">
