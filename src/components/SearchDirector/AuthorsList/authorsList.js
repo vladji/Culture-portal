@@ -12,9 +12,9 @@ const AuthorList = ({ list, lang, sourceFields }) => {
 
   const items = list.map((author) => {
     return (
-      <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-4 mb-5 card-wrapper"
-        key={author.name}>
-        <Fade bottom>
+      <Fade>
+        <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-4 mb-5 card-wrapper"
+          key={author.name}>
           <div className="card h-100">
             <div className="card-body d-flex flex-column">
               <a href="/" onClick={(e) => {
@@ -44,12 +44,16 @@ const AuthorList = ({ list, lang, sourceFields }) => {
               </div>
             </div>
           </div>
-        </Fade>
-      </div>
+        </div>
+      </Fade>
     )
   })
 
-  return <div className="row align-items-stretch">{items}</div>
+  return (
+    <div className="row align-items-stretch">
+      {items}
+    </div>
+    )
 }
 
 export default AuthorList

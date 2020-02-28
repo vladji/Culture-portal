@@ -22,7 +22,7 @@ export default function Map({ geolocation }) {
         setViewport(viewport);
       }}
       mapboxApiAccessToken={mapBoxToken}
-      mapStyle="mapbox://styles/mapbox/streets-v11"
+      mapStyle="mapbox://styles/mapbox/dark-v10"
     >
       {geolocation.map(location => (
         <Marker

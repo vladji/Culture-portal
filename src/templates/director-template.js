@@ -11,6 +11,7 @@ import Gallery from "../components/Gallery/gallery2"
 import { getFields } from "../utils/fields"
 import WorksList from '../components/WorksList/WorksList'
 import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/Reveal';
 
 const SecondPage = ({ data, location, pageContext }) => {
   const { lang } = pageContext;
@@ -46,9 +47,9 @@ const SecondPage = ({ data, location, pageContext }) => {
       </div>
       {frontmatter.geolocation && frontmatter.geolocation.length ? (
         <section>
-          <Fade cascade>
+          <Reveal effect="fadeInUp">
             <h4 className="text-center">{getFields('geolocationHeader', source, lang)}</h4>
-          </Fade>
+          </Reveal>
           <div className="row flex-wrap justify-content-center align-items-center flex-column">
             {frontmatter.geolocation.map((el, id) => (
               <div key={id} className="col-9 p-3 d-flex flex-column align-items-center justify-content-between mb-5">
@@ -70,15 +71,15 @@ const SecondPage = ({ data, location, pageContext }) => {
         </section>
       ) : null}
       <section className="container align-items-center d-flex flex-column">
-        <Fade cascade>
+        <Reveal effect="fadeInUp">
           <h2>{getFields('videoHeader', source, lang)}</h2>
-        </Fade>
-        <YoutubeModal videoId={frontmatter.youtube} />
+        </Reveal>
+          <YoutubeModal videoId={frontmatter.youtube} />
       </section>
       <section className="container align-items-center d-flex flex-column">
-        <Fade cascade>
+        <Reveal effect="fadeInUp">
           <h2>{getFields('galleryHeader', source, lang)}</h2>
-        </Fade>
+        </Reveal>
         <Gallery authorGallery={frontmatter.gallery} />
       </section>
     </Layout>

@@ -1,7 +1,5 @@
 .search-bar {
-    width: 40%;
     margin: 30px auto;
-    display: block;
 }
 
 .search-bar[placeholder] {
@@ -17,6 +15,5 @@
     .search-bar {
         font-size: 1.4em;
         margin-bottom: 20px;
-        width: 100%;
     }
 }

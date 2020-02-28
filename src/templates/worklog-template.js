@@ -15,7 +15,7 @@ const Worklog = ({ data, location, pageContext }) => {
     <Layout location={location}>
       <SEO title="Worklog" />
       <section>
-      <Fade cascade>
+      <Fade>
         <h1 className="page-title">{getFields('worklogHeader', source, lang)}</h1>
       </Fade>
         <table className="table">
