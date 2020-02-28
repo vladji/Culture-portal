@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import { getFields } from "../utils/fields"
-
+import Fade from 'react-reveal/Fade'
 
 const Worklog = ({ data, location, pageContext }) => {
   const {lang} = pageContext;
@@ -15,7 +15,9 @@ const Worklog = ({ data, location, pageContext }) => {
     <Layout location={location}>
       <SEO title="Worklog" />
       <section>
+      <Fade cascade>
         <h1 className="page-title">{getFields('worklogHeader', source, lang)}</h1>
+      </Fade>
         <table className="table">
           <thead className="thead-default">
           <tr>

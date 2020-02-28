@@ -21,9 +21,6 @@ const Main = ({ data, location, pageContext }) => {
   return (
     <Layout location={location}>
       <Particles params={particlesConfig} className="particles"/>
-      <h1 className="visually-hidden">
-        Belarusian Filmmakers - portal, dedicated to film directors of Belarus
-      </h1>
       <SEO title="Home" />
       <section className="about">
         <h1 className="page-title">
@@ -39,7 +36,11 @@ const Main = ({ data, location, pageContext }) => {
             {author}
           </h2>
         </ImageParallax>
-        <DayAuthor authorsList={authorData} labelMore={labelMore} lang={pageContext.lang} />
+        <div className="row">
+          <div className="col-lg-10 offset-lg-1">
+            <DayAuthor authorsList={authorData} labelMore={labelMore} lang={pageContext.lang} />
+          </div>
+        </div>
       </section>
     </Layout>
   )
