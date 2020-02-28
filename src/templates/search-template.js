@@ -4,6 +4,8 @@ import SearchDirector from "../components/SearchDirector/searchDirector"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { getFields } from "../utils/fields"
+import Fade from 'react-reveal/Fade'
+
 
 const SearchTemplate = ({ location, data, pageContext }) => {
   const { allMarkdownRemark } = data
@@ -24,9 +26,11 @@ const SearchTemplate = ({ location, data, pageContext }) => {
   return (
     <Layout location={location}>
       <div className="container-fluid">
-        <h1 className="page-title">
-          {getFields('searchTitle', sourceFields, lang)}
-        </h1>
+        <Fade cascade>
+          <h1 className="page-title">
+            {getFields('searchTitle', sourceFields, lang)}
+          </h1>
+        </Fade>
         <SearchDirector authors={transform(nodes)} lang={pageContext.lang} sourceFields={sourceFields} />
       </div>
     </Layout>

@@ -8,7 +8,8 @@ const Timeline = ({ data }) => {
         <TimelineItem
           key={el.description || id}
           dateText={el.date}
-          dateInnerStyle={{textAlign: 'center', backgroundColor: '#4bbf73'}}
+          dateStyle={{ backgroundColor: "#4bbf73", textAlign: "center"}}
+          dateInnerStyle={{backgroundColor: "#ffffff", border: "2px solid #4bbf73", color: "#1a1a1a"}}
         >
         <p>
           {el.description}
@@ -18,7 +19,7 @@ const Timeline = ({ data }) => {
   })
 
   return (
-    <VerticalTimeline>
+    <VerticalTimeline lineColor={ "#cccccc"}>
       {items}
     </VerticalTimeline>
   )

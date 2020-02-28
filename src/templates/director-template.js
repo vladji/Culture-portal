@@ -9,6 +9,8 @@ import Timeline from "../components/Timeline/timeline"
 import YoutubeModal from "../components/YoutubeModal/youtubeModal"
 import Gallery from "../components/Gallery/gallery2"
 import { getFields } from "../utils/fields"
+import WorksList from '../components/WorksList/WorksList'
+import Fade from 'react-reveal/Fade';
 
 const SecondPage = ({ data, location, pageContext }) => {
   const { lang } = pageContext;
@@ -19,34 +21,38 @@ const SecondPage = ({ data, location, pageContext }) => {
     <Layout location={location}>
       <SEO title={frontmatter.title} lang={frontmatter.lang} />
       <section className="row align-items-center">
-        <div className="col-sm-5 col-md-3 py-2">
+        <div className="col-lg-4 offset-lg-1 py-2 mb-2">
           <AppImage src={frontmatter.imagepath} />
         </div>
-        <div className="col-sm-7 col-md-9 d-flex flex-column align-self-center py-2">
-          <h1>{frontmatter.title}</h1>
-          <h4>{frontmatter.directorsLifeYears}</h4>
-          <h4> {frontmatter.city}</h4>
-          <p className="text-justify">{frontmatter.titleText}</p>
-          <p className="text-justify">{frontmatter.directorsInfo}</p>
-        </div>
+        <Fade bottom cascade delay={1300}>
+          <div className="col-lg-6 d-flex flex-column align-self-center py-2">
+            <h1>{frontmatter.title}</h1>
+            <h5>{frontmatter.directorsLifeYears}</h5>
+            <h5> {frontmatter.city}</h5>
+            <p className="text-justify">{frontmatter.titleText}</p>
+            <p className="text-justify">{frontmatter.directorsInfo}</p>
+          </div>
+        </Fade>
       </section>
       <div className="row">
-        <section className="col-md-6">
-          <h2>{getFields('timelineHeader', source, lang)}</h2>
+        <section className="col-lg-6 offset-xl-1">
+          <h4>{getFields('timelineHeader', source, lang)}</h4>
           <Timeline data={frontmatter.timeline} />
         </section>
-        <section className="col-md-6">
-          <h2>{getFields('worksLogHeader', source, lang)}</h2>
-          <Timeline data={frontmatter.listOfWorks.map(el => ({ date: el.year, description: el.film }))} />
+        <section className="col-lg-5 col-xl-4">
+          <h4>{getFields('worksLogHeader', source, lang)}</h4>
+          <WorksList data={frontmatter.listOfWorks.map(el => ({ date: el.year, description: el.film }))} />
         </section>
       </div>
       {frontmatter.geolocation && frontmatter.geolocation.length ? (
         <section>
-          <h2 className="text-center">{getFields('geolocationHeader', source, lang)}</h2>
-          <div className="row flex-wrap justify-content-center">
+          <Fade cascade>
+            <h4 className="text-center">{getFields('geolocationHeader', source, lang)}</h4>
+          </Fade>
+          <div className="row flex-wrap justify-content-center align-items-center flex-column">
             {frontmatter.geolocation.map((el, id) => (
-              <div key={id} className="col-md-6 p-3 d-flex flex-column align-items-center justify-content-between">
-                {el.description ? <h4 className="text-center">{el.description}</h4> : null}
+              <div key={id} className="col-9 p-3 d-flex flex-column align-items-center justify-content-between mb-5">
+                {el.description ? <p className="text-center">{el.description}</p> : null}
                 {el.latitude && el.longitude ? (
                   <Map
                     geolocation={[
@@ -64,11 +70,15 @@ const SecondPage = ({ data, location, pageContext }) => {
         </section>
       ) : null}
       <section className="container align-items-center d-flex flex-column">
-        <h2>{getFields('videoHeader', source, lang)}</h2>
-        <YoutubeModal videoId={frontmatter.youtube} />
+        <Fade cascade>
+          <h2>{getFields('videoHeader', source, lang)}</h2>
+        </Fade>
+          <YoutubeModal videoId={frontmatter.youtube} />
       </section>
       <section className="container align-items-center d-flex flex-column">
-        <h2>{getFields('galleryHeader', source, lang)}</h2>
+        <Fade cascade>
+          <h2>{getFields('galleryHeader', source, lang)}</h2>
+        </Fade>
         <Gallery authorGallery={frontmatter.gallery} />
       </section>
     </Layout>
