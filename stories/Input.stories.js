@@ -5,21 +5,20 @@ export default {
   title: 'Input',
   decorators: [
     (story) => (
-      <div style={{ padding: '3%'}}>
+      <div style={{ padding: '3%' }}>
         {story()}
       </div>
-      )
-    ]
+    )
+  ]
 }
 
 const handleChange = () => {
-  console.log("changed!")
 }
 
 const mockData = {
   outherClasses: "mb-5",
   innerClasses: "search-bar",
-  handleChange: handleChange, 
+  handleChange: handleChange,
   placeholder: "Type name or city..."
 }
 

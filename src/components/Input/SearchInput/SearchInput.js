@@ -1,7 +1,6 @@
 import React from 'react'
 
 const SearchInput = ({ outherClasses, innerClasses, placeholder, handleChange }) => {
-	console.log(outherClasses);
 	return (
 		<div className={`form-group ${outherClasses}`}>
           <input
