@@ -41,7 +41,7 @@ module.exports = {
       options: {
         fonts: [
           `Roboto Condensed`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          `source sans pro\:300,400, 700` // you can also specify font weights and styles
         ],
         display: `swap`,
         subset: [`cyrillic`, `latin`],
