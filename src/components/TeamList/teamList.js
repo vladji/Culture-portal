@@ -1,6 +1,5 @@
 import React from "react"
 import AppImage from "../AppImage/AppImage"
-import styled, { keyframes } from 'styled-components';
 import { getFields } from "../../utils/fields"
 import Flip from 'react-reveal/Flip'
 
