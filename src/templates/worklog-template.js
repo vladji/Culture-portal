@@ -11,9 +11,14 @@ const Worklog = ({ data, location, pageContext }) => {
   const {lang} = pageContext;
   const source = data.about.frontmatter.fields;
   const workLog = data.worklogData.frontmatter;
+  const pageTitle = data.navigation.frontmatter.navigations
+
+  const getLabel = (title) => {
+    return pageTitle.find(el => el.name === title).navigation[lang]
+  }
   return (
     <Layout location={location}>
-      <SEO title="Worklog" />
+      <SEO title={getLabel('worklog')} />
       <section>
       <Fade>
         <h1 className="page-title">{getFields('worklogHeader', source, lang)}</h1>
@@ -63,5 +68,19 @@ export const query = graphql`
         }
       }
     }
+    navigation: markdownRemark(
+      frontmatter: { type: { eq: "navigation" } }
+    ) {
+      frontmatter {
+        navigations {
+          name
+          navigation {
+            ru
+            be
+            en
+          }
+        }
+      }
+  	}
   }
 `
