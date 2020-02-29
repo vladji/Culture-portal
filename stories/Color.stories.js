@@ -1,20 +1,17 @@
 import React from 'react'
 
-import '../src/styles/styleguide.css'
-
 export default {
   title: 'Color',
+  decorators: [
+    (story) => (
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        {story()}
+      </div>
+      )
+    ]
 };
 
-export const primary = () => {
-  return (
-    <div style={{backgroundColor: '#010000'}} className="color-card">
-        <span className="color-value">#010000</span>
-    </div>
-  )
-}
-
-export const secondary = () => {
+export const Primary = () => {
   return (
     <div style={{backgroundColor: '#1a1a1a'}} className="color-card">
       <span className="color-value">#1a1a1a</span>
@@ -22,7 +19,23 @@ export const secondary = () => {
   )
 }
 
-export const green = () => {
+export const Secondary = () => {
+  return (
+    <div style={{backgroundColor: '#ffffff'}} className="color-card">
+      <span className="color-value">#ffffff</span>
+    </div>
+  )
+}
+
+export const Font = () => {
+  return (
+    <div style={{backgroundColor: '#55595c'}} className="color-card">
+      <span className="color-value">#55595c</span>
+    </div>
+  )
+}
+
+export const Accent = () => {
   return (
     <div style={{backgroundColor: '#4bbf73'}} className="color-card">
       <span className="color-value">#4bbf73</span>
@@ -30,15 +43,15 @@ export const green = () => {
   )
 }
 
-export const red = () => {
+export const Black = () => {
   return (
-    <div style={{backgroundColor: '#d9534f'}} className="color-card">
-      <span className="color-value">#d9534f</span>
+    <div style={{backgroundColor: '#010000'}} className="color-card">
+        <span className="color-value">#010000</span>
     </div>
   )
 }
 
-export const grey = () => {
+export const Grey = () => {
   return (
     <div style={{backgroundColor: '#f7f7f9'}} className="color-card">
       <span className="color-value">#f7f7f9</span>

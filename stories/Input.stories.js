@@ -1,26 +1,34 @@
 import React from 'react'
-import { Form } from 'react-bootstrap'
-
-import '../src/styles/bootstrap.min.css'
-import '../src/styles/styleguide.css'
+import SearchInput from '../src/components/Input/SearchInput/SearchInput'
 
 export default {
   title: 'Input',
+  decorators: [
+    (story) => (
+      <div style={{ padding: '3%'}}>
+        {story()}
+      </div>
+      )
+    ]
 }
 
-/**
- * You have to provide unique id for input
- */
+const handleChange = () => {
+  console.log("changed!")
+}
 
-export const defaultInput = () => {
+const mockData = {
+  outherClasses: "mb-5",
+  innerClasses: "search-bar",
+  handleChange: handleChange, 
+  placeholder: "Type name or city..."
+}
+
+export const Search = () => {
   return (
-    <div style={{width: '300px'}}>
-      <Form.Group className="form-group">
-        <Form.Label className="col-form-label" htmlFor="inputDefault">
-          Default input
-        </Form.Label>
-        <Form.Control className="form-control" id="inputDefault" placeholder="Default input" />
-      </Form.Group>
+    <div className="row">
+      <div className="col-6">
+        <SearchInput {...mockData} />
+      </div>
     </div>
   )
 }

@@ -95,6 +95,18 @@ footer {
   padding: 0 15px;
 }
 
+.search-bar {
+    margin: 30px auto;
+}
+
+.search-bar[placeholder] {
+    text-overflow: ellipsis;
+}
+
+.search-bar:focus::-webkit-input-placeholder {
+    opacity: 1; transition: opacity 0.3s ease;
+    opacity: 0; transition: opacity 0.3s ease;
+}
 
 @media (max-width: 768px) {
   .page-title {
@@ -116,5 +128,10 @@ footer {
     max-width: 95%;
     font-size: 26px;
   }
+
+  .search-bar {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
 
 }
