@@ -18,19 +18,21 @@ function SearchDirector({ authors, lang, sourceFields }) {
     authorsListHander(newList);
   }
   return (
-    <div className="row justify-content-center">
-      <div className="col-sm-8 col-md-6">
-        <SearchInput 
-          outherClasses="mb-5"
-          innerClasses=" search-bar"
-          handleChange={updateListHandler} 
-          placeholder={getFields('searchPlaceholder', sourceFields, lang)} />
+    <>
+      <div className="row justify-content-center">
+        <div className="col-sm-8 col-md-6">
+          <SearchInput
+            outherClasses="mb-5"
+            innerClasses=" search-bar"
+            handleChange={updateListHandler}
+            placeholder={getFields('searchPlaceholder', sourceFields, lang)} />
         </div>
-        <div className="min-vh-100">
+      </div>
+      <div className="min-vh-100">
         <AuthorsList
           list={authorsList} lang={lang} sourceFields={sourceFields} />
-        </div>
-    </div>
+      </div>
+    </>
   );
 };
 
