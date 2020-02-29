@@ -5,12 +5,12 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import { getFields } from "../utils/fields"
 import Fade from 'react-reveal/Fade'
+import TeamWorkLog from "../components/Worklog/worklog"
 
 const Worklog = ({ data, location, pageContext }) => {
   const {lang} = pageContext;
   const source = data.about.frontmatter.fields;
-  console.log(data);
-  const works = data.worklogData.frontmatter.works;
+  const workLog = data.worklogData.frontmatter;
   return (
     <Layout location={location}>
       <SEO title="Worklog" />
@@ -18,30 +18,7 @@ const Worklog = ({ data, location, pageContext }) => {
       <Fade>
         <h1 className="page-title">{getFields('worklogHeader', source, lang)}</h1>
       </Fade>
-        <table className="table">
-          <thead className="thead-default">
-          <tr>
-            <th>{ }</th>
-            <th>{getFields('dateTableHeader', source, lang)}</th>
-            <th>{getFields('developerTableHeader', source, lang)}</th>
-            <th>{getFields('infoTableHeader', source, lang)}</th>
-            <th>{getFields('timeSpentTableHeader', source, lang)}</th>
-          </tr>
-          </thead>
-          <tbody>
-          {works.map((el,index)=>(
-            <tr>
-              <th scope="row">{index}</th>
-              <td>{el.date}</td>
-              <td>{el.developer}</td>
-              <td>{el.info}</td>
-              <td>{el.timeSpent}</td>
-            </tr>
-            )
-          )}
-
-          </tbody>
-        </table>
+        <TeamWorkLog workLog={workLog} source={source} lang={lang}/>
       </section>
     </Layout>
   )
@@ -61,6 +38,15 @@ export const query = graphql`
           info
           timeSpent
           }
+        problems {
+          problem
+          solution    
+        }
+        selfEvaluation {
+          data
+          ok    
+        }
+        selfEvaluationSum
       }
     }
     about: markdownRemark(
