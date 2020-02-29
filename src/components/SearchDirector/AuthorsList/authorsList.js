@@ -29,7 +29,9 @@ const AuthorList = ({ list, lang, sourceFields }) => {
               <h4 className="author-name">
                 {author.name}
               </h4>
-              <h5>{author.city}</h5>
+              <h5 className="author-city">
+                {author.city}
+              </h5>
               <div className="card-text flex-grow-1">
                 <p className='author-years'>{author.bday}</p>
                 <p className='author-title'>{author.titleText}</p>
