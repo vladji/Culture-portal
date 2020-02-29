@@ -28,7 +28,7 @@ const SecondPage = ({ data, location, pageContext }) => {
         <Fade bottom cascade delay={1300}>
           <div className="col-lg-6 d-flex flex-column align-self-center py-2">
             <h1>{frontmatter.title}</h1>
-            <h5>{frontmatter.directorsLifeYears}</h5>
+            <h5 className="text-muted">{frontmatter.directorsLifeYears}</h5>
             <h5> {frontmatter.city}</h5>
             <p className="text-justify">{frontmatter.titleText}</p>
             <p className="text-justify">{frontmatter.directorsInfo}</p>

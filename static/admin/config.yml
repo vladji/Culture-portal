@@ -90,3 +90,48 @@ collections:
               - { label: ru, name: ru , widget: string }
               - { label: be, name: be, widget: string }
               - { label: en, name: en, widget: string }
+  - name: developers
+    label: developers
+    folder: src/data/teammates
+    create: true
+    fields:
+      - {label: lang, name: lang,  widget: string}
+      - {label: slug, name: slug,  widget: string}
+      - {label: type, name: type,  widget: string}
+      - {label: title, name: title,  widget: string}
+      - {label: number, name: number,  widget: string}
+      - {label: path, name: path,  widget: string}
+      - {label: name, name: name,  widget: string}
+      - {label: github, name: github,  widget: string}
+      - {label: photo, name: photo,  widget: image}
+      - {label: role, name: role,  widget: string}
+  - name: worklog
+    label: worklog
+    folder: src/data/worklog
+    create: true
+    fields:
+      - {label: lang, name: lang,  widget: string}
+      - {label: slug, name: slug,  widget: string}
+      - {label: type, name: type,  widget: string}
+      - { name: id, label: id, widget: string }
+      - label: works
+        name: works
+        widget: list
+        fields:
+          - { label: date, name: date , widget: string }
+          - { label: developer, name: developer, widget: string }
+          - { label: info, name: info, widget: string }
+          - { label: timeSpent, name: timeSpent, widget: string }
+      - label: problems
+        name: problems
+        widget: list
+        fields:
+          - { label: problem, name: problem , widget: string }
+          - { label: solution, name: solution, widget: string }
+      - label: selfEvaluation
+        name: selfEvaluation
+        widget: list
+        fields:
+          - { label: data, name: data , widget: string }
+          - { label: ok, name: ok, widget: string }
+      - { label: selfEvaluationSum, name: selfEvaluationSum, widget: string }

@@ -6,7 +6,6 @@ import Logo from '../Logo/Logo'
 import { getLangPath } from "../../utils/language"
 import { getFields } from "../../utils/fields"
 
-import './navigation.css'
 
 
 const Navigation = ({ location }) => {
@@ -65,8 +64,8 @@ const Navigation = ({ location }) => {
   }
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark bg-primary">
-      <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} className="navbar-brand">
+    <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark bg-primary px-0">
+      <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} className="navbar-brand mr-0">
         <Logo title={logoTitle} />
       </Navbar.Brand>
 
@@ -77,7 +76,7 @@ const Navigation = ({ location }) => {
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'search/')}>{getLabel('filmmakers')}</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'developers/')}>{getLabel('ourTeam')}</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'worklog/')}>{getLabel('worklog')}</Nav.Link>
-          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'styleguide/')}>{getLabel('styleguide')}</Nav.Link>
+          <Nav.Link href="http://www.oksana-shuptar.me/storybook-styleguide/index.html" >{getLabel('styleguide')}</Nav.Link>
           <LangMenu location={location} lang={lang} />
         </Nav>
       </Navbar.Collapse>

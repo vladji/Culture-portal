@@ -1,25 +1,22 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import { storiesOf } from '@storybook/react'
+import { Navbar, Nav } from 'react-bootstrap'
 
 import '../src/styles/bootstrap.min.css'
-import '../src/styles/main.css'
 
 export default {
+  decorators: [story => <div style={{ padding: '3%', maxWidth: '300px' }}>{story()}</div>],
   title: 'Link',
 }
 
-export const regularLink = () => {
+export const NavLink = () => {
   return (
-    <a href="/" className="link">
-      This is just a regular link
-    </a>
-  )
-}
-
-export const buttonShapedLink = () => {
-  return (
-    <Button href="/" variant="outline-primary" className="btn btn-outline-primary">
-      Link
-    </Button>
+  <Navbar className="navbar navbar-dark bg-primary">
+	  <Nav>
+	    <Nav.Link href="/">
+	      Home page
+	    </Nav.Link>
+	   </Nav>
+   </Navbar>
   )
 }
