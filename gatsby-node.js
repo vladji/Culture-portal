@@ -12,7 +12,7 @@ exports.createPages = ({ graphql, actions }) => {
   const mainTemplate = path.resolve(`src/templates/main-template.js`)
   const searchTemplate = path.resolve(`src/templates/search-template.js`)
   const  worklogTemplate = path.resolve(`src/templates/worklog-template.js`)
-  const  styleguideTemplate = path.resolve(`src/templates/styleguide-template.js`)
+  // const  styleguideTemplate = path.resolve(`src/templates/styleguide-template.js`);
   return graphql(
     `
       {
@@ -80,14 +80,14 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-    langArr.forEach(lang => {
-      createPage({
-        path: `/styleguide/${makePath(lang)}`,
-        component: styleguideTemplate,
-        context: {
-          lang: lang,
-        },
-      })
-    })
+    // langArr.forEach(lang => {
+    //   createPage({
+    //     path: `/styleguide/${makePath(lang)}`,
+    //     component: styleguideTemplate,
+    //     context: {
+    //       lang: lang,
+    //     },
+    //   })
+    // })
   })
 }

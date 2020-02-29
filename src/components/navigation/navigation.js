@@ -76,7 +76,7 @@ const Navigation = ({ location }) => {
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'search/')}>{getLabel('filmmakers')}</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'developers/')}>{getLabel('ourTeam')}</Nav.Link>
           <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'worklog/')}>{getLabel('worklog')}</Nav.Link>
-          <Nav.Link href="/" onClick={(e) => onLinkClickHandler(e, 'styleguide/')}>{getLabel('styleguide')}</Nav.Link>
+          <Nav.Link href="http://www.oksana-shuptar.me/storybook-styleguide/index.html" >{getLabel('styleguide')}</Nav.Link>
           <LangMenu location={location} lang={lang} />
         </Nav>
       </Navbar.Collapse>
