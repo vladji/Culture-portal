@@ -6,7 +6,6 @@ import Logo from '../Logo/Logo'
 import { getLangPath } from "../../utils/language"
 import { getFields } from "../../utils/fields"
 
-import './navigation.css'
 
 
 const Navigation = ({ location }) => {
@@ -65,8 +64,8 @@ const Navigation = ({ location }) => {
   }
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark bg-primary">
-      <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} className="navbar-brand">
+    <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark bg-primary px-0">
+      <Navbar.Brand href="/" onClick={(e) => onLinkClickHandler(e, '')} className="navbar-brand mr-0">
         <Logo title={logoTitle} />
       </Navbar.Brand>
 
