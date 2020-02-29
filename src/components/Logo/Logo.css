@@ -24,3 +24,25 @@
 .logo-text:hover::before {
   width: 100%;
 }
+
+@media screen and (max-width: 465px) {
+  .logo-text {
+      font-size: 1rem;
+      margin: auto 0;
+  }
+
+  .logo-image {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo-text {
+      font-size: .7rem;
+      margin: auto 0;
+  }
+
+  .logo-image {
+    font-size: .9rem;
+  }
+}

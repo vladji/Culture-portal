@@ -6,6 +6,8 @@ import Logo from '../Logo/Logo'
 import { getLangPath } from "../../utils/language"
 import { getFields } from "../../utils/fields"
 
+import './navigation.css'
+
 
 const Navigation = ({ location }) => {
   const query = useStaticQuery(graphql`
