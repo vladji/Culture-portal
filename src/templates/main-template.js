@@ -60,6 +60,7 @@ export const query = graphql`
   query($lang: String!) {
     dayAuthor: allMarkdownRemark(
       filter: { frontmatter: { type: { eq: "director" }, lang: { eq: $lang } } }
+      sort: { fields: [frontmatter___slug] }
     ) {
       nodes {
         frontmatter {

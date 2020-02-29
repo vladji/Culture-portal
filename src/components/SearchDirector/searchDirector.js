@@ -6,6 +6,7 @@ import { getFields } from "../../utils/fields"
 import './searchDirector.css';
 
 function SearchDirector({ authors, lang, sourceFields }) {
+  console.log('authors', authors);
   const [authorsList, authorsListHander] = useState(authors);
 
   const updateListHandler = (e) => {
