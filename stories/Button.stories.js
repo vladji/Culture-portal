@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap'
 
 export default {
   component: Button,
+  title: 'Button',
   decorators: [story => <div style={{ padding: '3%' }}>{story()}</div>],
 }
 
