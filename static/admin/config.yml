@@ -115,7 +115,7 @@ collections:
       - {label: type, name: type,  widget: string}
       - { name: id, label: id, widget: string }
       - label: works
-        name: navigation
+        name: works
         widget: list
         fields:
           - { label: date, name: date , widget: string }
@@ -134,4 +134,4 @@ collections:
         fields:
           - { label: data, name: data , widget: string }
           - { label: ok, name: ok, widget: string }
-      - { label: selfEvaluation, name: selfEvaluation, widget: string }
+      - { label: selfEvaluationSum, name: selfEvaluationSum, widget: string }
