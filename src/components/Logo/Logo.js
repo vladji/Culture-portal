@@ -2,14 +2,14 @@ import React from 'react'
 
 import './Logo.css'
 
-const Logo = () => {
+const Logo = ({ title }) => {
 	return (
 		<>
 			<span role="img" className="logo-image">📽</span>️
 	        <span className="logo-text link">
-	        	Belarusian Filmmakers
-	        </span>
-	    </>
+				{title}
+			</span>
+		</>
 	)
 }
 

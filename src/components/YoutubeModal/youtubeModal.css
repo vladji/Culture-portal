@@ -42,19 +42,19 @@
   right: -1.5%;
   width: 1.5rem;
   height: 1.5rem;
-  border: 0.1rem solid #333;
-  border-radius: 50%;
-  background: #ccc;
+  background-color: transparent;
+  border: 0;
   float: right;
 }
 
 .modal-video-close-btn:before {
-  content: "x";
+  content: '\2716';
   position: absolute;
-  top: 48%;
-  right: 15%;
-  transform: translate(-50%, -50%);
-  color: #444;
+  top: -50%;
+  right: 0%;
+  transform: translate(50%, -50%);
+  color: #ccc;
+  font-size: 2rem;
 }
 
 .modal-video-close-btn:hover {
@@ -68,6 +68,10 @@
   color: #fff;
 }
 
+.modal-video-close-btn:focus {
+  outline: 0;
+}
+
 @media screen and (max-width: 1025px) {
   .trigger {
     width: 100%;
@@ -78,14 +82,18 @@
     height: 70%;
   }
   .modal-video-close-btn {
-    top: 0;
-    right: 0;
+    top: -1%;
+    right: 2.2%;
   }
 }
 
 @media screen and (max-width: 640px) {
   .modal-video-movie-wrap {
     height: 50%;
+  }
+
+  .modal-video-close-btn {
+    display: none;
   }
 }
 

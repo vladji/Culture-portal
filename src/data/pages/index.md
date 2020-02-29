@@ -3,6 +3,11 @@ type: page
 slug: /
 name: main
 fields:
+  - fieldName: logo
+    fieldData: 
+      ru: Белорусские кинорежиссеры
+      be: Беларускія кінарэжысёры
+      en: Belarusian filmmakers
   - fieldName: portalDescriptionLabel
     fieldData: 
       ru: Информация на данном портале посвящена кинорежиссерам Беларуси

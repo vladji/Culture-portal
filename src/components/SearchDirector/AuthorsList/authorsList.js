@@ -12,7 +12,7 @@ const AuthorList = ({ list, lang, sourceFields }) => {
 
   const items = list.map((author) => {
     return (
-      <Fade>
+      <Fade key={author.name}>
         <div className="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-4 mb-5 card-wrapper"
           key={author.name}>
           <div className="card h-100">
@@ -29,7 +29,9 @@ const AuthorList = ({ list, lang, sourceFields }) => {
               <h4 className="author-name">
                 {author.name}
               </h4>
-              <h5>{author.city}</h5>
+              <h5 className="author-city">
+                {author.city}
+              </h5>
               <div className="card-text flex-grow-1">
                 <p className='author-years'>{author.bday}</p>
                 <p className='author-title'>{author.titleText}</p>
@@ -53,7 +55,7 @@ const AuthorList = ({ list, lang, sourceFields }) => {
     <div className="row align-items-stretch">
       {items}
     </div>
-    )
+  )
 }
 
 export default AuthorList

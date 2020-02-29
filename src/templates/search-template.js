@@ -2,6 +2,7 @@ import React from "react"
 
 import SearchDirector from "../components/SearchDirector/searchDirector"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import { getFields } from "../utils/fields"
 import Fade from 'react-reveal/Fade'
@@ -12,6 +13,11 @@ const SearchTemplate = ({ location, data, pageContext }) => {
   const { nodes } = allMarkdownRemark
   const sourceFields = data.about.frontmatter.fields;
   const { lang } = pageContext
+  const pageTitle = data.navigation.frontmatter.navigations
+
+  const getLabel = (title) => {
+    return pageTitle.find(el => el.name === title).navigation[lang]
+  }
 
   const transform = arr =>
     arr.map(el => ({
@@ -25,12 +31,13 @@ const SearchTemplate = ({ location, data, pageContext }) => {
 
   return (
     <Layout location={location}>
+      <SEO title={getLabel('filmmakers')} />
       <div className="container-fluid">
-      <Fade>
-        <h1 className="page-title">
-          {getFields('searchTitle', sourceFields, lang)}
-        </h1>
-      </Fade>
+        <Fade>
+          <h1 className="page-title">
+            {getFields('searchTitle', sourceFields, lang)}
+          </h1>
+        </Fade>
         <SearchDirector authors={transform(nodes)} lang={pageContext.lang} sourceFields={sourceFields} />
       </div>
     </Layout>
@@ -69,5 +76,19 @@ export const query = graphql`
         }
       }
     }
+    navigation: markdownRemark(
+      frontmatter: { type: { eq: "navigation" } }
+    ) {
+      frontmatter {
+        navigations {
+          name
+          navigation {
+            ru
+            be
+            en
+          }
+        }
+      }
+  	}
   }
 `

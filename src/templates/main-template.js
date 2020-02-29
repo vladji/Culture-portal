@@ -19,10 +19,15 @@ const Main = ({ data, location, pageContext }) => {
   const content = getFields("portalDescriptionData", source, currentLang)
   const author = getFields("authorOfTheDay", source, currentLang);
   const labelMore = getFields("labelMore", source, currentLang)
+  const pageTitle = data.navigation.frontmatter.navigations
+
+  const getLabel = (title) => {
+    return pageTitle.find(el => el.name === title).navigation[pageContext.lang]
+  }
   return (
     <Layout location={location}>
       <Particles params={particlesConfig} className="particles" />
-      <SEO title="Home" />
+      <SEO title={getLabel('main')} />
       <section className="about">
         <Fade>
           <h1 className="page-title">
@@ -81,5 +86,19 @@ export const query = graphql`
         }
       }
     }
+    navigation: markdownRemark(
+      frontmatter: { type: { eq: "navigation" } }
+    ) {
+      frontmatter {
+        navigations {
+          name
+          navigation {
+            ru
+            be
+            en
+          }
+        }
+      }
+  	}
   }
 `
