@@ -7,38 +7,44 @@ import { getFields } from "../utils/fields"
 import Fade from 'react-reveal/Fade'
 
 const Worklog = ({ data, location, pageContext }) => {
-  const {lang} = pageContext;
+  const { lang } = pageContext;
   const source = data.about.frontmatter.fields;
   console.log(data);
   const works = data.worklogData.frontmatter.works;
+  const pageTitle = data.navigation.frontmatter.navigations
+
+  const getLabel = (title) => {
+    return pageTitle.find(el => el.name === title).navigation[lang]
+  }
+
   return (
     <Layout location={location}>
-      <SEO title="Worklog" />
+      <SEO title={getLabel('worklog')} />
       <section>
-      <Fade>
-        <h1 className="page-title">{getFields('worklogHeader', source, lang)}</h1>
-      </Fade>
+        <Fade>
+          <h1 className="page-title">{getFields('worklogHeader', source, lang)}</h1>
+        </Fade>
         <table className="table">
           <thead className="thead-default">
-          <tr>
-            <th>{ }</th>
-            <th>{getFields('dateTableHeader', source, lang)}</th>
-            <th>{getFields('developerTableHeader', source, lang)}</th>
-            <th>{getFields('infoTableHeader', source, lang)}</th>
-            <th>{getFields('timeSpentTableHeader', source, lang)}</th>
-          </tr>
+            <tr>
+              <th>{}</th>
+              <th>{getFields('dateTableHeader', source, lang)}</th>
+              <th>{getFields('developerTableHeader', source, lang)}</th>
+              <th>{getFields('infoTableHeader', source, lang)}</th>
+              <th>{getFields('timeSpentTableHeader', source, lang)}</th>
+            </tr>
           </thead>
           <tbody>
-          {works.map((el,index)=>(
-            <tr>
-              <th scope="row">{index}</th>
-              <td>{el.date}</td>
-              <td>{el.developer}</td>
-              <td>{el.info}</td>
-              <td>{el.timeSpent}</td>
-            </tr>
+            {works.map((el, index) => (
+              <tr>
+                <th scope="row">{index}</th>
+                <td>{el.date}</td>
+                <td>{el.developer}</td>
+                <td>{el.info}</td>
+                <td>{el.timeSpent}</td>
+              </tr>
             )
-          )}
+            )}
 
           </tbody>
         </table>
@@ -77,5 +83,19 @@ export const query = graphql`
         }
       }
     }
+    navigation: markdownRemark(
+      frontmatter: { type: { eq: "navigation" } }
+    ) {
+      frontmatter {
+        navigations {
+          name
+          navigation {
+            ru
+            be
+            en
+          }
+        }
+      }
+  	}
   }
 `
