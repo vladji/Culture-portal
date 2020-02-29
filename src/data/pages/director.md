@@ -9,24 +9,34 @@ fields:
       be: "Асноўныя моманты жыцця:"
       en: "Highlights of life:"
   - fieldName: worksLogHeader
-    fieldData: 
+    fieldData:
       ru: "Список работ:"
       be: "Спіс прац:"
       en: "List of works:"
-  - fieldName: geolocationHeader   
+  - fieldName: workListYear
+    fieldData:
+      ru: "Год"
+      be: "Год"
+      en: "Year"
+  - fieldName: workListFilm
+    fieldData:
+      ru: "Фильм"
+      be: "Фільм"
+      en: "Film"
+  - fieldName: geolocationHeader
     fieldData:
       ru: "Места основной деятельности:"
       be: "Месца асноўнай дзейнасці:"
       en: "Main business locations:"
-  - fieldName: videoHeader   
+  - fieldName: videoHeader 
     fieldData:
       ru: "Видео о кинорежиссере:"
       be: "Відэа пра кінарэжысёра:"
       en: "Video about the filmmaker:"
-  - fieldName: galleryHeader   
+  - fieldName: galleryHeader
     fieldData:
       ru: "Галерея:"
       be: "Галерэя:"
-      en: "Gallery:"      
+      en: "Gallery:"
             
       

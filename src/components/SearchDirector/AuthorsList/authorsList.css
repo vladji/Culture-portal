@@ -36,9 +36,26 @@
     }
 }
 
+@media (max-width: 767px) {
+    .author-city,
+    .author-years,
+    .author-title {
+        text-align: center;
+    }
+}
+
 @media (max-width: 500px) {
     .author-years,
     .author-title {
         display: none;
+    }
+    .author-city {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 0.8rem;
+        color: lightgray;
+    }
+    .link-wrapper {
+        text-align: center;
     }
 }
