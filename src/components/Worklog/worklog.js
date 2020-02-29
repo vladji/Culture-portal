@@ -1,56 +1,62 @@
-import React from 'react';
-import Table from 'react-bootstrap/Table';
-import Form from 'react-bootstrap/Form';
+import React from "react"
+import Form from "react-bootstrap/Form"
 
-import { functionalityEn, selfEvaluationEn, developIssuesEn } from './constants/constants';
 
-import './worklog.css';
+import "./worklog.css"
+import { getFields } from "../../utils/fields"
 
-const TeamWorklog = () => (
+const TeamWorkLog = ({ workLog, source, lang }) => {
+  const { works, problems, selfEvaluation, selfEvaluationSum } = workLog
+  return (
     <>
-        <Table responsive='sm' size='md' striped bordered hover>
-            <caption>TABLE WITH FUNCTIONALITY AND SPENT HOURS</caption>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Functionality</th>
-                    <th>Hours</th>
-                </tr>
-            </thead>
-            <tbody>
-                {functionalityEn.map(func => (
-                    <tr key={func.func}>
-                        <td>{func.number}</td>
-                        <td>{func.func}</td>
-                        <td>{func.hours}</td>
-                    </tr>
-                ))}
-            </tbody>
-        </Table>
+      <table className="table table-hover">
+        <caption>{getFields("worksTableCaption", source, lang)}</caption>
+        <thead>
+          <tr>
+            <th>{getFields("dateWorksTable", source, lang)}</th>
+            <th>{getFields("infoWorksTable", source, lang)}</th>
+            <th>{getFields("developerWorksTable", source, lang)}</th>
+            <th>{getFields("timeSpentWorksTable", source, lang)}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {works.map((el, i) => (
+            <tr key={i}>
+              <td>{el.date}</td>
+              <td>{el.info}</td>
+              <td>{el.developer}</td>
+              <td>{el.timeSpent} {getFields("unitTimeWorksTable", source, lang)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
 
-        <Table responsive='sm' size='sm' striped bordered hover>
-            <caption>MAIN PROBLEMS DURING DEVELOPING PROJECT</caption>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Problem descpirtion</th>
-                    <th>Solution</th>
-                </tr>
-            </thead>
-            <tbody>
-                {developIssuesEn.map(issue => (
-                    <tr key={issue.issue}>
-                        <td>{issue.number}</td>
-                        <td>{issue.issue}</td>
-                        <td>{issue.resolve}</td>
-                    </tr>       
-                ))}
-            </tbody>
-        </Table>
-        {selfEvaluationEn.map(point => (
-            <Form.Check key={point} label={point} defaultChecked disabled></Form.Check>
+      <table className="table table-hover">
+        <caption>{getFields("captionProblemsTable", source, lang)}</caption>
+        <thead>
+          <tr>
+            <th>{getFields("descriptionProblemsTable", source, lang)}</th>
+            <th>{getFields("solutionProblemsTable", source, lang)}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {problems.map((el, i) => (
+            <tr key={i}>
+              <td>{el.problem}</td>
+              <td>{el.solution}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <section>
+        <h2>{getFields("selfEvaluationHeader", source, lang)}</h2>
+        {selfEvaluation.map((point, i) => (
+          <Form.Check key={i} label={point.data} defaultChecked={point.ok==='true'} disabled />
         ))}
+        <h3>{getFields("selfEvaluationSumHeader", source, lang)} {selfEvaluationSum}</h3>
+      </section>
     </>
-);
+  )
+}
 
-export default TeamWorklog;
+export default TeamWorkLog
